@@ -12,7 +12,7 @@ export function formatDate(dateString: string, locale: string): string {
       month: "long",
       day: "numeric",
     }
-    formattedDate = date.toLocaleDateString(locale || "pl", options)
+    formattedDate = date.toLocaleDateString(locale || "pl-PL", options)
   } catch (error) {
     // Fallback to en-US if the locale is invalid
     const options: Intl.DateTimeFormatOptions = {
@@ -20,7 +20,7 @@ export function formatDate(dateString: string, locale: string): string {
       month: "long",
       day: "numeric",
     }
-    formattedDate = date.toLocaleDateString("pl", options)
+    formattedDate = date.toLocaleDateString("pl-PL", options)
   }
 
   return formattedDate

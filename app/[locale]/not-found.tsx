@@ -7,7 +7,7 @@ export default async function LocaleNotFound({
   params?: { locale: string }
 }) {
   // Handle the case where params might be undefined
-  const locale = params ? await Promise.resolve(params.locale) : "en"
+  const locale = params ? await Promise.resolve(params.locale) : "pl"
   const dict = await getDictionary(locale)
 
   return (
