@@ -14,7 +14,7 @@ export function Header({ locale, dictionary }: { locale: string; dictionary: any
       <div className="container flex h-16 items-center justify-between">
         <Link href={`/${locale}`} className="flex items-center gap-2">
           <Image src="/logo.svg" alt="FireGuard Systems" width={40} height={40} className="h-10 w-auto" />
-          <span className="font-bold text-xl hidden sm:inline-block">FireGuard Systems</span>
+          <span className="font-bold text-xl hidden sm:inline-block">Matbud Systemy Ppoż sp. z o.o.</span>
         </Link>
 
         <nav className="hidden md:flex gap-6">
