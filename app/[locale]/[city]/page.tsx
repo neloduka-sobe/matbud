@@ -17,8 +17,8 @@ interface CityPageProps {
 export async function generateMetadata(props: CityPageProps): Promise<Metadata> {
   // Await the entire params object first
   const params = await props.params
-  const locale = params.locale
-  const city = params.city
+  const locale = await params.locale
+  const city = await params.city
   
   const cities = await getCities(locale)
   const cityData = cities.find((c) => c.slug === city)
@@ -30,7 +30,7 @@ export async function generateMetadata(props: CityPageProps): Promise<Metadata> 
   }
 
   return {
-    title: `Systemy Przeciwpożarowe w ${cityData.name} | FireGuard Systems`,
+    title: `Systemy Przeciwpożarowe w ${cityData.name} | Matbud Systemy Ppoż sp. z o.o.`,
     description: `Profesjonalne rozwiązania przeciwpożarowe w ${cityData.name}. Instalacja, konserwacja i certyfikacja systemów alarmowych, tryskaczy i gaśnic.`,
     keywords: [
       `systemy przeciwpożarowe ${cityData.name}`,
@@ -61,7 +61,7 @@ export default async function CityPage(props: CityPageProps) {
   // Await the entire params object first
   const params = await props.params
   const locale = params.locale
-  const city = params.city
+  const city = await params.city
   
   const dict = await getDictionary(locale)
   const cities = await getCities(locale)
