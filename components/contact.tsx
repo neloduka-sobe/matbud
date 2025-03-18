@@ -74,9 +74,9 @@ export default function Contact({ dictionary }: { dictionary: any }) {
                   <div>
                     <h4 className="font-medium">{dictionary.contactInfo.addressTitle}</h4>
                     <address className="not-italic text-muted-foreground">
-                      123 Fire Safety Street
+                      Słocin 36F
                       <br />
-                      Safety City, SC 12345
+                      62-065 Grodzisk Wielkopolski
                     </address>
                   </div>
                 </div>
@@ -98,8 +98,8 @@ export default function Contact({ dictionary }: { dictionary: any }) {
                   <div>
                     <h4 className="font-medium">{dictionary.contactInfo.emailTitle}</h4>
                     <p className="text-muted-foreground">
-                      <a href="mailto:info@fireguardsystems.com" className="hover:text-primary transition-colors">
-                        info@fireguardsystems.com
+                      <a href="mailto:matbud@m-so.pl" className="hover:text-primary transition-colors">
+                        matbud@m-so.pl
                       </a>
                     </p>
                   </div>
@@ -111,14 +111,10 @@ export default function Contact({ dictionary }: { dictionary: any }) {
                 <ul className="space-y-2 text-muted-foreground">
                   <li className="flex justify-between">
                     <span>{dictionary.contactInfo.weekdays}</span>
-                    <span>8:00 AM - 6:00 PM</span>
+                    <span>8:00 - 16:00</span>
                   </li>
                   <li className="flex justify-between">
-                    <span>{dictionary.contactInfo.saturday}</span>
-                    <span>9:00 AM - 4:00 PM</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span>{dictionary.contactInfo.sunday}</span>
+                    <span>{dictionary.contactInfo.saturday} - {dictionary.contactInfo.sunday}</span>
                     <span>{dictionary.contactInfo.closed}</span>
                   </li>
                 </ul>

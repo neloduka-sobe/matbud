@@ -8,8 +8,8 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    default: "FireGuard Systems | Professional Fire Safety Solutions",
-    template: "%s | FireGuard Systems",
+    default: "Matbud Systemy Ppoż. Sp. z o.o. | Professional Fire Safety Solutions",
+    template: "%s | Matbud Systemy Ppoż. Sp. z o.o.",
   },
   description:
     "Professional fire safety systems installation, maintenance and certification services for commercial and residential buildings.",
@@ -40,22 +40,16 @@ export const metadata: Metadata = {
     "przeglądy ppoż",
     "bezpieczeństwo pożarowe",
   ],
-  authors: [{ name: "FireGuard Systems" }],
-  creator: "FireGuard Systems",
+  authors: [{ name: "Matbud Systemy Ppoż. sp. z o.o." }],
+  creator: "Matbud Systemy Ppoż. sp. z o.o.",
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://fireguardsystems.com",
-    title: "FireGuard Systems | Professional Fire Safety Solutions",
+    locale: "pl",
+    url: "https://matbud.net",
+    title: "Matbud Systemy Ppoż. sp. z o.o. | Professional Fire Safety Solutions",
     description:
       "Professional fire safety systems installation, maintenance and certification services for commercial and residential buildings.",
-    siteName: "FireGuard Systems",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "FireGuard Systems | Professional Fire Safety Solutions",
-    description:
-      "Professional fire safety systems installation, maintenance and certification services for commercial and residential buildings.",
+    siteName: "Matbud Systemy Ppoż. sp. z o.o.",
   },
 }
 
@@ -65,7 +59,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="pl" suppressHydrationWarning>
       <body className={inter.className}>{children}</body>
     </html>
   )
