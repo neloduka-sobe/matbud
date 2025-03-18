@@ -61,8 +61,8 @@ export default async function Home({
       <Gallery dictionary={dict.gallery} />
       <Certificates dictionary={dict.certificates} />
       <Clients dictionary={dict.clients} />
-      <LatestBlogs locale={locale} dictionary={dict.latestBlogs} />
       <Contact dictionary={dict.contact} />
+      <LatestBlogs locale={locale} dictionary={dict.latestBlogs} />
     </>
   )
 }
