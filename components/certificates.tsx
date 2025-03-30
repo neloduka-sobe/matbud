@@ -6,7 +6,13 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog"
 
-export default function Certificates({ dictionary }: { dictionary: any }) {
+interface DictionaryType {
+  title: string;
+  subtitle: string;
+  certificateNames: string[];
+}
+
+export default function Certificates({ dictionary }: { dictionary: DictionaryType }) {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
 
   const certificates = [

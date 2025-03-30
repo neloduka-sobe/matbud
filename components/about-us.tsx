@@ -1,7 +1,24 @@
 import Image from "next/image"
 import { CheckCircle } from "lucide-react"
 
-export default function AboutUs({ dictionary }: { dictionary: any }) {
+interface StatItem {
+  value: string;
+  label: string;
+}
+
+interface Dictionary {
+  title: string;
+  subtitle: string;
+  historyTitle: string;
+  historyContent: string;
+  missionTitle: string;
+  missionContent: string;
+  valuesTitle: string;
+  values: string[];
+  stats: StatItem[];
+}
+
+export default function AboutUs({ dictionary }: { dictionary: Dictionary }) {
   return (
     <section id="about" className="py-16 md:py-24">
       <div className="container">
@@ -42,7 +59,7 @@ export default function AboutUs({ dictionary }: { dictionary: any }) {
         </div>
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {dictionary.stats.map((stat: any, index: number) => (
+          {dictionary.stats.map((stat: StatItem, index: number) => (
             <div key={index} className="space-y-2">
               <p className="text-4xl font-bold text-primary">{stat.value}</p>
               <p className="text-muted-foreground">{stat.label}</p>
@@ -53,4 +70,3 @@ export default function AboutUs({ dictionary }: { dictionary: any }) {
     </section>
   )
 }
-
