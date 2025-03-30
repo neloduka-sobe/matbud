@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { createContext, useContext, useEffect, useState } from "react"
 
 type Theme = "dark" | "light" | "system"
@@ -33,17 +32,27 @@ export function ThemeProvider({
   useEffect(() => {
     const root = window.document.documentElement
 
-    root.classList.remove("light", "dark")
-
-    if (theme === "system") {
-      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
-
-      root.classList.add(systemTheme)
-      return
+    // Remove previous theme classes/attributes
+    if (attribute === "class") {
+      root.classList.remove("light", "dark")
+    } else {
+      root.removeAttribute(attribute)
     }
 
-    root.classList.add(theme)
-  }, [theme])
+    // Determine the theme to apply
+    const themeToApply = theme === "system"
+      ? window.matchMedia("(prefers-color-scheme: dark)").matches 
+        ? "dark" 
+        : "light"
+      : theme
+
+    // Apply the theme
+    if (attribute === "class") {
+      root.classList.add(themeToApply)
+    } else {
+      root.setAttribute(attribute, themeToApply)
+    }
+  }, [theme, attribute])
 
   const value = {
     theme,
@@ -60,8 +69,9 @@ export function ThemeProvider({
 export const useTheme = () => {
   const context = useContext(ThemeProviderContext)
 
-  if (context === undefined) throw new Error("useTheme must be used within a ThemeProvider")
+  if (context === undefined) {
+    throw new Error("useTheme must be used within a ThemeProvider")
+  }
 
   return context
 }
-

@@ -6,9 +6,18 @@ import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { LanguageSwitcher } from "@/components/language-switcher"
-import { ThemeToggle } from "@/components/theme-toggle" // Add theme toggle
+import { ThemeToggle } from "@/components/theme-toggle"
 
-export function Header({ locale, dictionary }: { locale: string; dictionary: any }) {
+interface Dictionary {
+  services: string;
+  about: string;
+  certificates: string;
+  clients: string;
+  blog: string;
+  contact: string;
+}
+
+export function Header({ locale, dictionary }: { locale: string; dictionary: Dictionary }) {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
@@ -39,7 +48,7 @@ export function Header({ locale, dictionary }: { locale: string; dictionary: any
         </nav>
 
         <div className="flex items-center gap-2">
-          <ThemeToggle /> {/* Add theme toggle */}
+          <ThemeToggle />
           <LanguageSwitcher locale={locale} />
           <Sheet>
             <SheetTrigger asChild className="md:hidden">
@@ -78,4 +87,3 @@ export function Header({ locale, dictionary }: { locale: string; dictionary: any
     </header>
   )
 }
-

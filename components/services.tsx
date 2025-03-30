@@ -1,7 +1,19 @@
 import { Shield, Bell, Droplets, FileCheck, Wrench, Building } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
-export default function Services({ dictionary }: { dictionary: any }) {
+interface ServiceItem {
+  title: string;
+  description: string;
+  features: string[];
+}
+
+interface DictionaryType {
+  title: string;
+  subtitle: string;
+  services: ServiceItem[];
+}
+
+export default function Services({ dictionary }: { dictionary: DictionaryType }) {
   const serviceIcons = [
     { icon: <Shield className="h-10 w-10 text-primary" />, name: "Fire Alarm Systems" },
     { icon: <Droplets className="h-10 w-10 text-primary" />, name: "Sprinkler Systems" },
@@ -20,7 +32,7 @@ export default function Services({ dictionary }: { dictionary: any }) {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {dictionary.services.map((service: any, index: number) => (
+          {dictionary.services.map((service, index) => (
             <Card key={index} className="border-2 border-muted hover:border-primary/50 transition-colors">
               <CardHeader>
                 <div className="mb-4">{serviceIcons[index].icon}</div>
@@ -29,7 +41,7 @@ export default function Services({ dictionary }: { dictionary: any }) {
               </CardHeader>
               <CardContent>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                  {service.features.map((feature: string, featureIndex: number) => (
+                  {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex}>{feature}</li>
                   ))}
                 </ul>
@@ -41,4 +53,3 @@ export default function Services({ dictionary }: { dictionary: any }) {
     </section>
   )
 }
-

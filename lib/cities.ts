@@ -4,7 +4,7 @@ export type City = {
   conjugation: string
 }
 
-export async function getCities(locale: string): Promise<City[]> {
+export async function getCities(): Promise<City[]> {
   return [
     {"name": "Warszawa", "slug": "systemy-ppoz-warszawa", "conjugation": "w Warszawie"},
     {"name": "Kraków", "slug": "systemy-ppoz-krakow", "conjugation": "w Krakowie"},

@@ -1,7 +1,14 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
-export default function Hero({ dictionary }: { dictionary: any }) {
+interface HeroDictionary {
+  title: string;
+  subtitle: string;
+  primaryCta: string;
+  secondaryCta: string;
+}
+
+export default function Hero({ dictionary }: { dictionary: HeroDictionary }) {
   return (
     <section className="hero-image relative min-h-[600px] flex items-center">
       <div className="container hero-content text-white">
@@ -26,4 +33,3 @@ export default function Hero({ dictionary }: { dictionary: any }) {
     </section>
   )
 }
-

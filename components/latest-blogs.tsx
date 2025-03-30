@@ -6,7 +6,19 @@ import { formatDate } from "@/lib/utils"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
-export default async function LatestBlogs({ locale, dictionary }: { locale: string; dictionary: any }) {
+interface Dictionary {
+  title: string;
+  subtitle: string;
+  viewAllButton: string;
+  readMore: string;
+}
+
+interface LatestBlogsProps {
+  locale: string;
+  dictionary: Dictionary;
+}
+
+export default async function LatestBlogs({ locale, dictionary }: LatestBlogsProps) {
   const allPosts = await getAllPosts(locale)
   const latestPosts = allPosts.slice(0, 3) // Get the 3 most recent posts
 
@@ -64,4 +76,3 @@ export default async function LatestBlogs({ locale, dictionary }: { locale: stri
     </section>
   )
 }
-
