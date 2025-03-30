@@ -1,15 +1,25 @@
 "use client"
 
 import Image from "next/image"
-import { useEffect, useState, useRef } from "react"
+import { useEffect, useState, useRef, useCallback } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { useMobile } from "@/hooks/use-mobile"
 
-export default function Clients({ dictionary }: { dictionary: any }) {
+interface Testimonial {
+  quote: string
+  name: string
+  position: string
+}
+
+interface Dictionary {
+  title: string
+  subtitle: string
+  testimonials: Testimonial[]
+}
+
+export default function Clients({ dictionary }: { dictionary: Dictionary }) {
   const [currentSlide, setCurrentSlide] = useState(0)
   const slideRef = useRef<HTMLDivElement>(null)
-  const isMobile = useMobile()
 
   const clients = [
     { logo: "/placeholder-logo.svg", name: "Client 1", testimonial: dictionary.testimonials[0] },
@@ -25,9 +35,9 @@ export default function Clients({ dictionary }: { dictionary: any }) {
     setCurrentSlide((prev) => (prev === 0 ? totalSlides - 1 : prev - 1))
   }
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setCurrentSlide((prev) => (prev === totalSlides - 1 ? 0 : prev + 1))
-  }
+  }, [totalSlides])
 
   useEffect(() => {
     if (slideRef.current) {
@@ -42,7 +52,7 @@ export default function Clients({ dictionary }: { dictionary: any }) {
     }, 5000)
 
     return () => clearInterval(interval)
-  }, [currentSlide])
+  }, [currentSlide, handleNext])
 
   return (
     <section id="clients" className="py-16 md:py-24">
@@ -60,7 +70,7 @@ export default function Clients({ dictionary }: { dictionary: any }) {
                   <div className="relative w-24 h-24 mb-6">
                     <Image src={client.logo || "/placeholder.svg"} alt={client.name} fill className="object-contain" />
                   </div>
-                  <blockquote className="mb-4 text-lg italic">"{client.testimonial.quote}"</blockquote>
+                  <blockquote className="mb-4 text-lg italic">&quot;{client.testimonial.quote}&quot;</blockquote>
                   <div>
                     <p className="font-semibold">{client.testimonial.name}</p>
                     <p className="text-sm text-muted-foreground">{client.testimonial.position}</p>
@@ -120,4 +130,3 @@ export default function Clients({ dictionary }: { dictionary: any }) {
     </section>
   )
 }
-

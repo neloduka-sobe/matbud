@@ -4,7 +4,14 @@ import { useState, useEffect } from "react"
 import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-export function CookieConsent({ locale, dictionary }: { locale: string; dictionary: any }) {
+interface Dictionary {
+  title: string;
+  description: string;
+  necessaryOnly: string;
+  acceptAll: string;
+}
+
+export function CookieConsent({ dictionary }: { dictionary: Dictionary }) {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -58,4 +65,3 @@ export function CookieConsent({ locale, dictionary }: { locale: string; dictiona
     </div>
   )
 }
-

@@ -4,14 +4,34 @@ import Link from "next/link"
 import Image from "next/image"
 import type { City } from "@/lib/cities"
 
-// Remove server-only imports and receive data as props
+// Define a type for the dictionary prop
+interface Dictionary {
+  footer: {
+    description: string
+    quickLinks: string
+    locations: string
+    contact: string
+    allRightsReserved: string
+    privacyPolicy: string
+    termsOfService: string
+  }
+  navigation: {
+    services: string
+    about: string
+    certificates: string
+    clients: string
+    blog: string
+    contact: string
+  }
+}
+
 export function Footer({
   locale,
   dictionary,
   cities,
 }: {
   locale: string
-  dictionary: any
+  dictionary: Dictionary
   cities: City[]
 }) {
   // Limit to 8 cities for the footer

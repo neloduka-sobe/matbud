@@ -6,7 +6,18 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog"
 
-export default function Gallery({ dictionary }: { dictionary: any }) {
+interface ImageData {
+  title: string;
+  description: string;
+}
+
+interface DictionaryType {
+  title: string;
+  subtitle: string;
+  images: ImageData[];
+}
+
+export default function Gallery({ dictionary }: { dictionary: DictionaryType }) {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
 
   const galleryImages = [
@@ -89,13 +100,13 @@ export default function Gallery({ dictionary }: { dictionary: any }) {
         </div>
 
         <Dialog open={selectedImage !== null} onOpenChange={(open) => !open && setSelectedImage(null)}>
-          <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none">
+          <DialogContent  className="max-w-4xl p-0 overflow-hidden bg-transparent border-none">
             <div className="relative bg-background p-2 rounded-lg">
-              <DialogClose className="absolute right-2 top-2 z-10">
-                <Button variant="ghost" size="icon">
+              <DialogClose asChild>
+                <button className="absolute right-2 top-2 z-10 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none">
                   <X className="h-4 w-4" />
                   <span className="sr-only">Close</span>
-                </Button>
+                </button>
               </DialogClose>
 
               {selectedImage !== null && (

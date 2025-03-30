@@ -26,7 +26,38 @@ const formSchema = z.object({
   }),
 })
 
-export default function Contact({ dictionary }: { dictionary: any }) {
+interface Dictionary {
+  title: string;
+  subtitle: string;
+  contactInfo: {
+    title: string;
+    addressTitle: string;
+    phoneTitle: string;
+    emailTitle: string;
+    hoursTitle: string;
+    weekdays: string;
+    saturday: string;
+    sunday: string;
+    closed: string;
+  };
+  form: {
+    title: string;
+    nameLabel: string;
+    namePlaceholder: string;
+    emailLabel: string;
+    emailPlaceholder: string;
+    phoneLabel: string;
+    phonePlaceholder: string;
+    messageLabel: string;
+    messagePlaceholder: string;
+    submit: string;
+    submitting: string;
+    successTitle: string;
+    successMessage: string;
+  };
+}
+
+export default function Contact({ dictionary }: { dictionary: Dictionary }) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const { toast } = useToast()
 
@@ -40,7 +71,7 @@ export default function Contact({ dictionary }: { dictionary: any }) {
     },
   })
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit() {
     setIsSubmitting(true)
 
     // Simulate API call
@@ -208,4 +239,3 @@ export default function Contact({ dictionary }: { dictionary: any }) {
     </section>
   )
 }
-
