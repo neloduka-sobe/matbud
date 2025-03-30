@@ -7,19 +7,15 @@ import { getCities } from "@/lib/cities"
 import { CheckCircle, MapPin, Phone, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-interface CityPageProps {
+interface PageProps {
   params: {
     locale: string
     city: string
   }
 }
 
-export async function generateMetadata(props: CityPageProps): Promise<Metadata> {
-  // Await the entire params object first
-  const params = await props.params
-  const locale = await params.locale
-  const city = await params.city
-  
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale, city } = params
   const cities = await getCities(locale)
   const cityData = cities.find((c) => c.slug === city)
 
@@ -43,13 +39,8 @@ export async function generateMetadata(props: CityPageProps): Promise<Metadata> 
   }
 }
 
-export async function generateStaticParams(props: {
-  params: { locale: string }
-}) {
-  // Await the entire params object first
-  const params = await props.params
-  const locale = params.locale
-  
+export async function generateStaticParams({ params }: { params: { locale: string } }) {
+  const { locale } = params
   const cities = await getCities(locale)
 
   return cities.map((city) => ({
@@ -57,12 +48,8 @@ export async function generateStaticParams(props: {
   }))
 }
 
-export default async function CityPage(props: CityPageProps) {
-  // Await the entire params object first
-  const params = await props.params
-  const locale = params.locale
-  const city = await params.city
-  
+export default async function Page({ params }: PageProps) {
+  const { locale, city } = params
   const dict = await getDictionary(locale)
   const cities = await getCities(locale)
   const cityData = cities.find((c) => c.slug === city)
