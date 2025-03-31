@@ -7,16 +7,26 @@ import { getCities } from "@/lib/cities"
 import { CheckCircle, MapPin, Phone, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-interface PageProps {
-  params: {
-    locale: string
-    city: string
-  }
+interface PageParams {
+  locale: string
+  city: string
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { locale, city } = params
-  const cities = await getCities(locale)
+type PageProps = {
+  params: { locale: string; city: string }
+  searchParams?: { [key: string]: string | string[] | undefined }
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: PageParams
+}): Promise<Metadata> {
+  // Explicitly access params properties rather than destructuring
+  const par = await params
+  const city = par.city
+  
+  const cities = await getCities()
   const cityData = cities.find((c) => c.slug === city)
 
   if (!cityData) {
@@ -39,26 +49,34 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 }
 
-export async function generateStaticParams({ params }: { params: { locale: string } }) {
-  const { locale } = params
-  const cities = await getCities(locale)
-
-  return cities.map((city) => ({
-    city: city.slug,
-  }))
+export async function generateStaticParams(): Promise<PageParams[]> {
+  const locales = ["pl"]
+  const results: PageParams[] = []
+  
+  for (const locale of locales) {
+    const cities = await getCities()
+    const paramsForLocale = cities.map((city) => ({
+      city: city.slug,
+      locale,
+    }))
+    results.push(...paramsForLocale)
+  }
+  
+  return results
 }
 
-export default async function Page({ params }: PageProps) {
-  const { locale, city } = params
+export default async function CityPage({ params }: PageProps) {
+  const par = await params
+  const locale = par.locale
+  const city = par.city
   const dict = await getDictionary(locale)
-  const cities = await getCities(locale)
+  const cities = await getCities()
   const cityData = cities.find((c) => c.slug === city)
 
   if (!cityData) {
     notFound()
   }
 
-  // Replace {city} placeholders with actual city name
   const title = dict.cityPage.title.replace(/{city}/g, cityData.name)
   const intro = dict.cityPage.intro.replace(/{city}/g, cityData.name)
   const servicesDescription = dict.cityPage.servicesDescription.replace(/{city}/g, cityData.name)
@@ -84,6 +102,7 @@ export default async function Page({ params }: PageProps) {
                 alt={`Fire Safety Services in ${cityData.name}`}
                 fill
                 className="object-cover"
+                priority
               />
             </div>
           </div>
@@ -219,6 +238,7 @@ export default async function Page({ params }: PageProps) {
                         type="text"
                         className="w-full p-2 border border-input rounded-md"
                         placeholder={dict.contact.form.namePlaceholder}
+                        required
                       />
                     </div>
 
@@ -231,6 +251,7 @@ export default async function Page({ params }: PageProps) {
                         type="tel"
                         className="w-full p-2 border border-input rounded-md"
                         placeholder={dict.contact.form.phonePlaceholder}
+                        required
                       />
                     </div>
                   </div>
@@ -244,6 +265,7 @@ export default async function Page({ params }: PageProps) {
                       type="email"
                       className="w-full p-2 border border-input rounded-md"
                       placeholder={dict.contact.form.emailPlaceholder}
+                      required
                     />
                   </div>
 
@@ -256,6 +278,7 @@ export default async function Page({ params }: PageProps) {
                       rows={4}
                       className="w-full p-2 border border-input rounded-md"
                       placeholder={dict.contact.form.messagePlaceholder}
+                      required
                     ></textarea>
                   </div>
 
