@@ -13,7 +13,7 @@ interface PageParams {
 }
 
 type PageProps = {
-  params: { locale: string; city: string }
+  params: PageParams
   searchParams?: { [key: string]: string | string[] | undefined }
 }
 
