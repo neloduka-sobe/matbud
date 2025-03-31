@@ -61,5 +61,5 @@ export async function getCities(): Promise<City[]> {
     {"name": "Przemyśl", "slug": "systemy-ppoz-przemysl", "conjugation": "w Przemyślu"},
     {"name": "Kędzierzyn-Koźle", "slug": "systemy-ppoz-kedzierzyn-kozle", "conjugation": "w Kędzierzynie-Koźlu"},
     {"name": "Piotrków Trybunalski", "slug": "systemy-ppoz-piotrkow-trybunalski", "conjugation": "w Piotrkowie Trybunalskim"}
-  ]
+  ];
 }

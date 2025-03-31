@@ -7,27 +7,27 @@ import { getCities } from "@/lib/cities"
 import { CheckCircle, MapPin, Phone, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-interface PageParams {
+type CityParams = {
   locale: string
   city: string
 }
 
-type PageProps = {
-  params: PageParams
-  searchParams?: { [key: string]: string | string[] | undefined }
+export async function generateStaticParams(): Promise<CityParams[]> {
+  const cities = await getCities()
+  const locales = ["pl"]
+
+  return locales.flatMap(locale => 
+    cities.map(city => ({
+      locale,
+      city: city.slug
+    }))
+  )
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: PageParams
-}): Promise<Metadata> {
-  // Explicitly access params properties rather than destructuring
-  const par = await params
-  const city = par.city
-  
+export async function generateMetadata({ params }: { params: CityParams }): Promise<Metadata> {
+  const { city } = params
   const cities = await getCities()
-  const cityData = cities.find((c) => c.slug === city)
+  const cityData = cities.find(c => c.slug === city)
 
   if (!cityData) {
     return {
@@ -36,52 +36,28 @@ export async function generateMetadata({
   }
 
   return {
-    title: `Systemy Przeciwpożarowe w ${cityData.name} | Matbud Systemy Ppoż sp. z o.o.`,
-    description: `Profesjonalne rozwiązania przeciwpożarowe w ${cityData.name}. Instalacja, konserwacja i certyfikacja systemów alarmowych, tryskaczy i gaśnic.`,
+    title: `Systemy Przeciwpożarowe w ${cityData.name} | Matbud Systemy Ppoż`,
+    description: `Profesjonalne rozwiązania przeciwpożarowe ${cityData.conjugation}. Instalacja, konserwacja i certyfikacja systemów.`,
     keywords: [
       `systemy przeciwpożarowe ${cityData.name}`,
       `ochrona przeciwpożarowa ${cityData.name}`,
       `instalacje ppoż ${cityData.name}`,
-      `zabezpieczenia przeciwpożarowe ${cityData.name}`,
-      `przeglądy ppoż ${cityData.name}`,
-      `projektowanie systemów ppoż ${cityData.name}`,
     ],
   }
 }
 
-export async function generateStaticParams(): Promise<PageParams[]> {
-  const locales = ["pl"]
-  const results: PageParams[] = []
-  
-  for (const locale of locales) {
-    const cities = await getCities()
-    const paramsForLocale = cities.map((city) => ({
-      city: city.slug,
-      locale,
-    }))
-    results.push(...paramsForLocale)
-  }
-  
-  return results
-}
-
-export default async function CityPage({ params }: PageProps) {
-  const par = await params
-  const locale = par.locale
-  const city = par.city
+export default async function CityPage({ params }: { params: CityParams }) {
+  const { locale, city } = params
   const dict = await getDictionary(locale)
   const cities = await getCities()
-  const cityData = cities.find((c) => c.slug === city)
+  const cityData = cities.find(c => c.slug === city)
 
   if (!cityData) {
     notFound()
   }
 
-  const title = dict.cityPage.title.replace(/{city}/g, cityData.name)
-  const intro = dict.cityPage.intro.replace(/{city}/g, cityData.name)
-  const servicesDescription = dict.cityPage.servicesDescription.replace(/{city}/g, cityData.name)
-  const whyChooseDescription = dict.cityPage.whyChooseDescription.replace(/{city}/g, cityData.name)
-  const ctaButton = dict.cityPage.ctaButton.replace(/{city}/g, cityData.name)
+  // Text replacements
+  const replaceCity = (text: string) => text.replace(/{city}/g, cityData.name)
 
   return (
     <>
@@ -90,16 +66,20 @@ export default async function CityPage({ params }: PageProps) {
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl font-bold tracking-tight mb-6">{title}</h1>
-              <p className="text-xl mb-8">{intro}</p>
+              <h1 className="text-4xl font-bold tracking-tight mb-6">
+                {replaceCity(dict.cityPage.title)}
+              </h1>
+              <p className="text-xl mb-8">{replaceCity(dict.cityPage.intro)}</p>
               <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
-                <Link href="#contact-form">{ctaButton}</Link>
+                <Link href="#contact-form">
+                  {replaceCity(dict.cityPage.ctaButton)}
+                </Link>
               </Button>
             </div>
             <div className="relative h-[300px] rounded-lg overflow-hidden">
               <Image
                 src="/city-services.jpg"
-                alt={`Fire Safety Services in ${cityData.name}`}
+                alt={`Usługi przeciwpożarowe w ${cityData.name}`}
                 fill
                 className="object-cover"
                 priority
@@ -113,14 +93,14 @@ export default async function CityPage({ params }: PageProps) {
       <section className="py-16 md:py-20">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 text-gray">
-              {dict.cityPage.servicesTitle.replace(/{city}/g, cityData.name)}
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">
+              {replaceCity(dict.cityPage.servicesTitle)}
             </h2>
-            <p className="text-lg mb-8">{servicesDescription}</p>
+            <p className="text-lg mb-8">{replaceCity(dict.cityPage.servicesDescription)}</p>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
-              {dict.cityPage.servicesList.map((service: string, index: number) => (
-                <div key={index} className="flex items-start gap-3 p-4 rounded-lg border border-muted bg-card">
+              {dict.cityPage.servicesList.map((service, index) => (
+                <div key={index} className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 bg-white">
                   <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="font-medium">{service}</p>
@@ -133,13 +113,13 @@ export default async function CityPage({ params }: PageProps) {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 md:py-20 bg-muted/30">
+      <section className="py-16 md:py-20 bg-gray-50">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 text-gray">
-              {dict.cityPage.whyChooseTitle.replace(/{city}/g, cityData.name)}
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">
+              {replaceCity(dict.cityPage.whyChooseTitle)}
             </h2>
-            <p className="text-lg mb-8">{whyChooseDescription}</p>
+            <p className="text-lg mb-8">{replaceCity(dict.cityPage.whyChooseDescription)}</p>
 
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <div className="bg-white p-6 rounded-lg shadow-sm text-center">
@@ -172,14 +152,14 @@ export default async function CityPage({ params }: PageProps) {
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-gray">
-                {dict.cityPage.contactTitle.replace(/{city}/g, cityData.name)}
+              <h2 className="text-3xl font-bold mb-4 text-gray-800">
+                {replaceCity(dict.cityPage.contactTitle)}
               </h2>
-              <p className="text-lg text-muted-foreground">{dict.cityPage.contactSubtitle}</p>
+              <p className="text-lg text-gray-600">{dict.cityPage.contactSubtitle}</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-card p-6 rounded-lg shadow-sm">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-semibold mb-6">{dict.contact.contactInfo.title}</h3>
 
                 <div className="space-y-6">
@@ -187,9 +167,8 @@ export default async function CityPage({ params }: PageProps) {
                     <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="font-medium">{dict.contact.contactInfo.addressTitle}</h4>
-                      <address className="not-italic text-muted-foreground">
-                        {cityData.name}, ul. Bezpieczeństwa 123
-                        <br />
+                      <address className="not-italic text-gray-600">
+                        {cityData.name}, ul. Bezpieczeństwa 123<br />
                         00-000 {cityData.name}
                       </address>
                     </div>
@@ -199,7 +178,7 @@ export default async function CityPage({ params }: PageProps) {
                     <Phone className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="font-medium">{dict.contact.contactInfo.phoneTitle}</h4>
-                      <p className="text-muted-foreground">
+                      <p className="text-gray-600">
                         <a href="tel:+48123456789" className="hover:text-primary transition-colors">
                           +48 123 456 789
                         </a>
@@ -211,12 +190,12 @@ export default async function CityPage({ params }: PageProps) {
                     <Mail className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="font-medium">{dict.contact.contactInfo.emailTitle}</h4>
-                      <p className="text-muted-foreground">
+                      <p className="text-gray-600">
                         <a
-                          href={`mailto:${cityData.slug}@fireguardsystems.com`}
+                          href={`mailto:kontakt@matbud-ppoz.pl`}
                           className="hover:text-primary transition-colors"
                         >
-                          {cityData.slug}@fireguardsystems.com
+                          kontakt@matbud-ppoz.pl
                         </a>
                       </p>
                     </div>
@@ -224,7 +203,7 @@ export default async function CityPage({ params }: PageProps) {
                 </div>
               </div>
 
-              <div className="bg-card p-6 rounded-lg shadow-sm">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-semibold mb-6">{dict.cityPage.formTitle}</h3>
 
                 <form className="space-y-4">
@@ -236,7 +215,7 @@ export default async function CityPage({ params }: PageProps) {
                       <input
                         id="name"
                         type="text"
-                        className="w-full p-2 border border-input rounded-md"
+                        className="w-full p-2 border border-gray-300 rounded-md"
                         placeholder={dict.contact.form.namePlaceholder}
                         required
                       />
@@ -249,7 +228,7 @@ export default async function CityPage({ params }: PageProps) {
                       <input
                         id="phone"
                         type="tel"
-                        className="w-full p-2 border border-input rounded-md"
+                        className="w-full p-2 border border-gray-300 rounded-md"
                         placeholder={dict.contact.form.phonePlaceholder}
                         required
                       />
@@ -263,7 +242,7 @@ export default async function CityPage({ params }: PageProps) {
                     <input
                       id="email"
                       type="email"
-                      className="w-full p-2 border border-input rounded-md"
+                      className="w-full p-2 border border-gray-300 rounded-md"
                       placeholder={dict.contact.form.emailPlaceholder}
                       required
                     />
@@ -276,7 +255,7 @@ export default async function CityPage({ params }: PageProps) {
                     <textarea
                       id="message"
                       rows={4}
-                      className="w-full p-2 border border-input rounded-md"
+                      className="w-full p-2 border border-gray-300 rounded-md"
                       placeholder={dict.contact.form.messagePlaceholder}
                       required
                     ></textarea>
