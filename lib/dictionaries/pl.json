@@ -56,10 +56,10 @@
     ]
   },
   "aboutUs": {
-    "title": "O FireGuard Systems",
+    "title": "O Nas",
     "subtitle": "Ponad 25 lat doświadczenia w bezpieczeństwie przeciwpożarowym",
     "historyTitle": "Nasza Historia",
-    "historyContent": "Założona w 1998 roku firma FireGuard Systems z małej lokalnej firmy przekształciła się w wiodącego dostawcę rozwiązań z zakresu bezpieczeństwa przeciwpożarowego. Dzięki zaangażowaniu w doskonałość i satysfakcję klienta, zbudowaliśmy reputację firmy niezawodnej i posiadającej fachową wiedzę w branży.",
+    "historyContent": "Założona w 1998 roku firma Matbud Systemy Ppoż. sp. z o.o. z małej lokalnej firmy przekształciła się w wiodącego dostawcę rozwiązań z zakresu bezpieczeństwa przeciwpożarowego. Dzięki zaangażowaniu w doskonałość i satysfakcję klienta, zbudowaliśmy reputację firmy niezawodnej i posiadającej fachową wiedzę w branży.",
     "missionTitle": "Nasza Misja",
     "missionContent": "Naszą misją jest ochrona życia i mienia poprzez dostarczanie najwyższej jakości systemów i usług z zakresu bezpieczeństwa przeciwpożarowego. Dążymy do pozostawania na czele technologii bezpieczeństwa przeciwpożarowego i dostarczania rozwiązań spełniających unikalne potrzeby każdego klienta.",
     "valuesTitle": "Nasze Wartości",
@@ -136,27 +136,27 @@
     "subtitle": "Zaufali nam klienci biznesowi i organizacje każdej wielkości",
     "testimonials": [
       {
-        "quote": "FireGuard Systems zapewniło wyjątkową obsługę od wstępnej konsultacji do instalacji. Ich zespół był profesjonalny, kompetentny i sprawny.",
+        "quote": "Matbud Systemy Ppoż. sp. z o.o. zapewniło wyjątkową obsługę od wstępnej konsultacji do instalacji. Ich zespół był profesjonalny, kompetentny i sprawny.",
         "name": "Jan Kowalski",
         "position": "Manager Obiektu, ABC Corporation"
       },
       {
-        "quote": "Współpracujemy z FireGuard od ponad 10 lat. Ich usługi konserwacyjne są niezawodne, a technicy zawsze punktualni i uprzejmi.",
+        "quote": "Współpracujemy z Matbud Systemy Ppoż. sp. z o.o. od ponad 10 lat. Ich usługi konserwacyjne są niezawodne, a technicy zawsze punktualni i uprzejmi.",
         "name": "Anna Wiśniewska",
         "position": "Manager Nieruchomości, Highland Towers"
       },
       {
-        "quote": "Audyt bezpieczeństwa przeciwpożarowego przeprowadzony przez FireGuard Systems był dokładny i wskazał kilka obszarów do poprawy, których wcześniej nie braliśmy pod uwagę. Gorąco polecam!",
+        "quote": "Audyt bezpieczeństwa przeciwpożarowego przeprowadzony przez Matbud Systemy Ppoż sp. z o.o. był dokładny i wskazał kilka obszarów do poprawy, których wcześniej nie braliśmy pod uwagę. Gorąco polecam!",
         "name": "Michał Nowak",
         "position": "Dyrektor ds. Bezpieczeństwa, Szpital Miejski"
       },
       {
-        "quote": "Po niewielkim incydencie pożarowym, zmodernizowaliśmy cały nasz system z FireGuard. Ich wiedza i dbałość o szczegóły dały nam spokój ducha.",
+        "quote": "Po niewielkim incydencie pożarowym, zmodernizowaliśmy cały nasz system z Matbud Systemy Ppoż. sp. z o.o. Ich wiedza i dbałość o szczegóły dały nam spokój ducha.",
         "name": "Emilia Zalewska",
         "position": "Dyrektor Generalny Hotelu"
       },
       {
-        "quote": "Reakcja awaryjna FireGuard była znakomita. Przywrócili nasze systemy do działania w ciągu kilku godzin po przepięciu, które uszkodziło nasz panel sterowania.",
+        "quote": "Reakcja awaryjna Matbud Systemy Ppoż. sp. z o.o. była znakomita. Przywrócili nasze systemy do działania w ciągu kilku godzin po przepięciu, które uszkodziło nasz panel sterowania.",
         "name": "Robert Wójcik",
         "position": "Manager Operacyjny, Zakład Produkcyjny"
       }
@@ -199,7 +199,7 @@
     }
   },
   "footer": {
-    "description": "FireGuard Systems dostarcza kompleksowe rozwiązania z zakresu bezpieczeństwa przeciwpożarowego dla budynków komercyjnych i mieszkalnych. Nasze usługi obejmują instalację, konserwację i certyfikację systemów sygnalizacji pożaru, tryskaczowych i innych.",
+    "description": "Matbud Systemy Ppoż. Sp. z o.o. dostarcza kompleksowe rozwiązania z zakresu bezpieczeństwa przeciwpożarowego dla budynków komercyjnych i mieszkalnych. Nasze usługi obejmują instalację, konserwację i certyfikację systemów sygnalizacji pożaru, tryskaczowych i innych.",
     "quickLinks": "Szybkie linki",
     "locations": "Obszary działania",
     "contact": "Kontakt",
@@ -215,7 +215,7 @@
   },
   "cityPage": {
     "title": "Systemy bezpieczeństwa przeciwpożarowego w {city}",
-    "intro": "FireGuard Systems świadczy profesjonalne usługi z zakresu bezpieczeństwa przeciwpożarowego w {city} i okolicach. Dzięki naszej lokalnej wiedzy i wiodącej w branży technologii, zapewniamy, że Twoja nieruchomość spełnia wszystkie wymagania bezpieczeństwa i przepisy.",
+    "intro": "Matbud Systemy Ppoż. sp. z o.o. świadczy profesjonalne usługi z zakresu bezpieczeństwa przeciwpożarowego w {city} i okolicach. Dzięki naszej lokalnej wiedzy i wiodącej w branży technologii, zapewniamy, że Twoja nieruchomość spełnia wszystkie wymagania bezpieczeństwa i przepisy.",
     "servicesTitle": "Nasze Usługi w {city}",
     "servicesDescription": "Oferujemy kompleksowy zakres usług z zakresu bezpieczeństwa przeciwpożarowego dla firm i mieszkańców w {city}:",
     "servicesList": [
@@ -226,7 +226,7 @@
       "Serwis awaryjny i naprawy 24/7",
       "Szkolenia z bezpieczeństwa przeciwpożarowego dla Twojego personelu"
     ],
-    "whyChooseTitle": "Dlaczego warto wybrać FireGuard Systems w {city}",
+    "whyChooseTitle": "Dlaczego warto wybrać Matbud Systemy Ppoż. sp. z o.o. w {city}",
     "whyChooseDescription": "Jako zaufany dostawca rozwiązań z zakresu bezpieczeństwa przeciwpożarowego w {city}, łączymy lokalną wiedzę z doświadczeniem branżowym. Nasi certyfikowani technicy rozumieją specyficzne wymagania i przepisy obowiązujące w Twojej okolicy, zapewniając, że Twoje systemy bezpieczeństwa przeciwpożarowego są zgodne z przepisami i skuteczne.",
     "ctaButton": "Skontaktuj się z naszym zespołem w {city}",
     "certifiedTechs": "Certyfikowani Technicy",
