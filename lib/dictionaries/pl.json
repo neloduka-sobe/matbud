@@ -1,249 +1,249 @@
-{ 
+{
   "navigation": {
-    "services": "Services",
-    "about": "About Us",
-    "certificates": "Certificates",
-    "clients": "Clients",
+    "services": "Usługi",
+    "about": "O nas",
+    "certificates": "Certyfikaty",
+    "clients": "Klienci",
     "blog": "Blog",
-    "contact": "Contact",
-    "gallery": "Gallery"
+    "contact": "Kontakt",
+    "gallery": "Galeria"
   },
   "hero": {
-    "title": "Professional Fire Safety Solutions",
-    "subtitle": "Protecting lives and property with state-of-the-art fire safety systems, expert installation, and reliable maintenance services.",
-    "primaryCta": "Get a Quote",
-    "secondaryCta": "Our Services"
+    "title": "Profesjonalne Systemy Bezpieczeństwa Przeciwpożarowego",
+    "subtitle": "Ochrona życia i mienia dzięki najnowocześniejszym systemom przeciwpożarowym, fachowej instalacji i niezawodnym usługom konserwacji.",
+    "primaryCta": "Uzyskaj wycenę",
+    "secondaryCta": "Nasze usługi"
   },
   "services": {
-    "title": "Our Services",
-    "subtitle": "Comprehensive fire safety solutions for commercial and residential buildings",
+    "title": "Nasze Usługi",
+    "subtitle": "Kompleksowe rozwiązania z zakresu bezpieczeństwa przeciwpożarowego dla budynków komercyjnych i mieszkalnych",
     "services": [
       {
-        "title": "Fire Alarm Systems",
-        "description": "Early detection and warning systems",
+        "title": "Systemy Sygnalizacji Pożaru",
+        "description": "Systemy wczesnego wykrywania i ostrzegania",
         "features": [
-          "Addressable fire alarm systems",
-          "Conventional fire alarm systems",
-          "Smoke and heat detectors",
-          "Manual call points"
+          "Adresowalne systemy sygnalizacji pożaru",
+          "Konwencjonalne systemy sygnalizacji pożaru",
+          "Czujniki dymu i ciepła",
+          "Ręczne ostrzegacze pożarowe"
         ]
       },
       {
-        "title": "Sprinkler Systems",
-        "description": "Automatic fire suppression",
-        "features": ["Wet pipe systems", "Dry pipe systems", "Pre-action systems", "Deluge systems"]
+        "title": "Systemy tryskaczowe",
+        "description": "Automatyczne tłumienie ognia",
+        "features": ["Systemy mokre", "Systemy suche", "Systemy pre-action", "Systemy zalewowe"]
       },
       {
-        "title": "Emergency Lighting",
-        "description": "Safe evacuation during emergencies",
-        "features": ["Exit signs", "Emergency lighting", "Backup power systems", "Evacuation route marking"]
+        "title": "Oświetlenie awaryjne",
+        "description": "Bezpieczna ewakuacja w sytuacjach awaryjnych",
+        "features": ["Znaki ewakuacyjne", "Oświetlenie awaryjne", "Systemy zasilania awaryjnego", "Oznakowanie dróg ewakuacyjnych"]
       },
       {
-        "title": "Fire Safety Inspections",
-        "description": "Regular checks and compliance",
-        "features": ["Annual inspections", "Compliance audits", "Risk assessments", "Safety recommendations"]
+        "title": "Inspekcje bezpieczeństwa przeciwpożarowego",
+        "description": "Regularne przeglądy i zgodność z przepisami",
+        "features": ["Inspekcje roczne", "Audyty zgodności", "Oceny ryzyka", "Zalecenia dotyczące bezpieczeństwa"]
       },
       {
-        "title": "Maintenance Services",
-        "description": "Keeping systems in optimal condition",
-        "features": ["Preventive maintenance", "Emergency repairs", "System upgrades", "24/7 emergency service"]
+        "title": "Usługi konserwacyjne",
+        "description": "Utrzymywanie systemów w optymalnym stanie",
+        "features": ["Konserwacja zapobiegawcza", "Naprawy awaryjne", "Modernizacje systemów", "Serwis awaryjny 24/7"]
       },
       {
-        "title": "Building Compliance",
-        "description": "Meeting regulatory requirements",
-        "features": ["Code compliance", "Documentation", "Certification", "Regulatory updates"]
+        "title": "Zgodność budynku z przepisami",
+        "description": "Spełnianie wymagań prawnych",
+        "features": ["Zgodność z kodeksem", "Dokumentacja", "Certyfikacja", "Aktualizacje przepisów"]
       }
     ]
   },
   "aboutUs": {
-    "title": "About FireGuard Systems",
-    "subtitle": "Over 25 years of experience in fire safety",
-    "historyTitle": "Our History",
-    "historyContent": "Founded in 1998, FireGuard Systems has grown from a small local business to a leading provider of fire safety solutions. With a commitment to excellence and customer satisfaction, we have built a reputation for reliability and expertise in the industry.",
-    "missionTitle": "Our Mission",
-    "missionContent": "Our mission is to protect lives and property by providing the highest quality fire safety systems and services. We are dedicated to staying at the forefront of fire safety technology and delivering solutions that meet the unique needs of each client.",
-    "valuesTitle": "Our Values",
+    "title": "O FireGuard Systems",
+    "subtitle": "Ponad 25 lat doświadczenia w bezpieczeństwie przeciwpożarowym",
+    "historyTitle": "Nasza Historia",
+    "historyContent": "Założona w 1998 roku firma FireGuard Systems z małej lokalnej firmy przekształciła się w wiodącego dostawcę rozwiązań z zakresu bezpieczeństwa przeciwpożarowego. Dzięki zaangażowaniu w doskonałość i satysfakcję klienta, zbudowaliśmy reputację firmy niezawodnej i posiadającej fachową wiedzę w branży.",
+    "missionTitle": "Nasza Misja",
+    "missionContent": "Naszą misją jest ochrona życia i mienia poprzez dostarczanie najwyższej jakości systemów i usług z zakresu bezpieczeństwa przeciwpożarowego. Dążymy do pozostawania na czele technologii bezpieczeństwa przeciwpożarowego i dostarczania rozwiązań spełniających unikalne potrzeby każdego klienta.",
+    "valuesTitle": "Nasze Wartości",
     "values": [
-      "Safety as our top priority",
-      "Excellence in service delivery",
-      "Integrity in all our dealings",
-      "Innovation in fire safety solutions",
-      "Commitment to customer satisfaction"
+      "Bezpieczeństwo jako nasz priorytet",
+      "Doskonałość w świadczeniu usług",
+      "Uczciwość we wszystkich naszych działaniach",
+      "Innowacyjność w rozwiązaniach bezpieczeństwa przeciwpożarowego",
+      "Zaangażowanie w satysfakcję klienta"
     ],
     "stats": [
       {
         "value": "25+",
-        "label": "Years of Experience"
+        "label": "Lat doświadczenia"
       },
       {
         "value": "5,000+",
-        "label": "Projects Completed"
+        "label": "Zrealizowanych projektów"
       },
       {
         "value": "98%",
-        "label": "Customer Satisfaction"
+        "label": "Satysfakcji klienta"
       },
       {
         "value": "24/7",
-        "label": "Support Available"
+        "label": "Dostępne wsparcie"
       }
     ]
   },
   "gallery": {
-    "title": "Our Project Gallery",
-    "subtitle": "Explore our recent fire safety installations and projects",
+    "title": "Nasza Galeria Projektów",
+    "subtitle": "Zobacz nasze ostatnie instalacje i projekty z zakresu bezpieczeństwa przeciwpożarowego",
     "images": [
       {
-        "title": "Commercial Fire Alarm System",
-        "description": "Installation of an advanced addressable fire alarm system in a corporate office building."
+        "title": "Komercyjny System Sygnalizacji Pożaru",
+        "description": "Instalacja zaawansowanego adresowalnego systemu sygnalizacji pożaru w budynku biurowym."
       },
       {
-        "title": "Sprinkler System Installation",
-        "description": "Complete sprinkler system design and installation for a shopping mall."
+        "title": "Instalacja Systemu Tryskaczowego",
+        "description": "Kompletny projekt i instalacja systemu tryskaczowego dla centrum handlowego."
       },
       {
-        "title": "Fire Safety Training",
-        "description": "Conducting comprehensive fire safety training for company employees."
+        "title": "Szkolenie z Bezpieczeństwa Przeciwpożarowego",
+        "description": "Przeprowadzanie kompleksowych szkoleń z zakresu bezpieczeństwa przeciwpożarowego dla pracowników firmy."
       },
       {
-        "title": "Fire Extinguisher Inspection",
-        "description": "Regular inspection and maintenance of fire extinguishers in a hotel."
+        "title": "Inspekcja Gaśnic",
+        "description": "Regularna inspekcja i konserwacja gaśnic w hotelu."
       },
       {
-        "title": "Emergency Evacuation System",
-        "description": "Installation of emergency lighting and evacuation signage in a school."
+        "title": "System Ewakuacji Awaryjnej",
+        "description": "Instalacja oświetlenia awaryjnego i oznakowania dróg ewakuacyjnych w szkole."
       },
       {
-        "title": "Fire Safety Audit",
-        "description": "Conducting a detailed fire safety audit for a manufacturing facility."
+        "title": "Audyt Bezpieczeństwa Przeciwpożarowego",
+        "description": "Przeprowadzanie szczegółowego audytu bezpieczeństwa przeciwpożarowego w zakładzie produkcyjnym."
       }
     ]
   },
   "certificates": {
-    "title": "Our Certifications",
-    "subtitle": "We maintain the highest industry standards and certifications",
+    "title": "Nasze Certyfikaty",
+    "subtitle": "Utrzymujemy najwyższe standardy branżowe i certyfikaty",
     "certificateNames": [
-      "ISO 9001:2015 Quality Management",
-      "NFPA Certified Fire Protection Specialist",
-      "UL Certified Fire Alarm Systems",
-      "FM Approved Fire Protection Systems",
-      "NICET Certified Technicians",
-      "OSHA Safety Certification"
+      "Zarządzanie Jakością ISO 9001:2015",
+      "Certyfikowany Specjalista Ochrony Przeciwpożarowej NFPA",
+      "Systemy Sygnalizacji Pożaru z Certyfikatem UL",
+      "Systemy Ochrony Przeciwpożarowej Zatwierdzone przez FM",
+      "Technicy z Certyfikatem NICET",
+      "Certyfikat Bezpieczeństwa OSHA"
     ]
   },
   "clients": {
-    "title": "Our Clients",
-    "subtitle": "Trusted by businesses and organizations of all sizes",
+    "title": "Nasi Klienci",
+    "subtitle": "Zaufali nam klienci biznesowi i organizacje każdej wielkości",
     "testimonials": [
       {
-        "quote": "FireGuard Systems provided exceptional service from initial consultation to installation. Their team was professional, knowledgeable, and efficient.",
-        "name": "John Smith",
-        "position": "Facility Manager, ABC Corporation"
+        "quote": "FireGuard Systems zapewniło wyjątkową obsługę od wstępnej konsultacji do instalacji. Ich zespół był profesjonalny, kompetentny i sprawny.",
+        "name": "Jan Kowalski",
+        "position": "Manager Obiektu, ABC Corporation"
       },
       {
-        "quote": "We've been working with FireGuard for over 10 years. Their maintenance service is reliable and their technicians are always prompt and courteous.",
-        "name": "Sarah Johnson",
-        "position": "Property Manager, Highland Towers"
+        "quote": "Współpracujemy z FireGuard od ponad 10 lat. Ich usługi konserwacyjne są niezawodne, a technicy zawsze punktualni i uprzejmi.",
+        "name": "Anna Wiśniewska",
+        "position": "Manager Nieruchomości, Highland Towers"
       },
       {
-        "quote": "The fire safety audit conducted by FireGuard Systems was thorough and identified several areas for improvement we hadn't considered. Highly recommended!",
-        "name": "Michael Brown",
-        "position": "Safety Director, City Hospital"
+        "quote": "Audyt bezpieczeństwa przeciwpożarowego przeprowadzony przez FireGuard Systems był dokładny i wskazał kilka obszarów do poprawy, których wcześniej nie braliśmy pod uwagę. Gorąco polecam!",
+        "name": "Michał Nowak",
+        "position": "Dyrektor ds. Bezpieczeństwa, Szpital Miejski"
       },
       {
-        "quote": "After experiencing a small fire incident, we upgraded our entire system with FireGuard. Their expertise and attention to detail gave us peace of mind.",
-        "name": "Emily Davis",
-        "position": "Hotel General Manager"
+        "quote": "Po niewielkim incydencie pożarowym, zmodernizowaliśmy cały nasz system z FireGuard. Ich wiedza i dbałość o szczegóły dały nam spokój ducha.",
+        "name": "Emilia Zalewska",
+        "position": "Dyrektor Generalny Hotelu"
       },
       {
-        "quote": "FireGuard's emergency response was outstanding. They had our systems back online within hours after a power surge damaged our control panel.",
-        "name": "Robert Wilson",
-        "position": "Operations Manager, Manufacturing Plant"
+        "quote": "Reakcja awaryjna FireGuard była znakomita. Przywrócili nasze systemy do działania w ciągu kilku godzin po przepięciu, które uszkodziło nasz panel sterowania.",
+        "name": "Robert Wójcik",
+        "position": "Manager Operacyjny, Zakład Produkcyjny"
       }
     ]
   },
   "latestBlogs": {
-    "title": "Latest from Our Blog",
-    "subtitle": "Stay updated with the latest fire safety news, tips, and industry insights",
-    "readMore": "Read More",
-    "viewAllButton": "View All Articles"
+    "title": "Najnowsze na Naszym Blogu",
+    "subtitle": "Bądź na bieżąco z najnowszymi wiadomościami, poradami i spostrzeżeniami branżowymi dotyczącymi bezpieczeństwa przeciwpożarowego",
+    "readMore": "Czytaj więcej",
+    "viewAllButton": "Zobacz wszystkie artykuły"
   },
   "contact": {
-    "title": "Contact Us",
-    "subtitle": "Get in touch with our team for a free consultation",
+    "title": "Skontaktuj się z nami",
+    "subtitle": "Skontaktuj się z naszym zespołem, aby uzyskać bezpłatną konsultację",
     "contactInfo": {
-      "title": "Our Information",
-      "addressTitle": "Address",
-      "phoneTitle": "Phone",
-      "emailTitle": "Email",
-      "hoursTitle": "Business Hours",
-      "weekdays": "Monday - Friday",
-      "saturday": "Saturday",
-      "sunday": "Sunday",
-      "closed": "Emergencies Only"
+      "title": "Nasze informacje",
+      "addressTitle": "Adres",
+      "phoneTitle": "Telefon",
+      "emailTitle": "E-mail",
+      "hoursTitle": "Godziny pracy",
+      "weekdays": "Poniedziałek - Piątek",
+      "saturday": "Sobota",
+      "sunday": "Niedziela",
+      "closed": "Tylko w nagłych przypadkach"
     },
     "form": {
-      "title": "Send Us a Message",
-      "nameLabel": "Your Name",
-      "namePlaceholder": "Enter your full name",
-      "emailLabel": "Email Address",
-      "emailPlaceholder": "Enter your email",
-      "phoneLabel": "Phone Number",
-      "phonePlaceholder": "Enter your phone number",
-      "messageLabel": "Your Message",
-      "messagePlaceholder": "How can we help you?",
-      "submit": "Send Message",
-      "submitting": "Sending...",
-      "successTitle": "Message Sent",
-      "successMessage": "Thank you for contacting us. We'll get back to you shortly."
+      "title": "Wyślij nam wiadomość",
+      "nameLabel": "Twoje imię i nazwisko",
+      "namePlaceholder": "Wprowadź swoje pełne imię i nazwisko",
+      "emailLabel": "Adres e-mail",
+      "emailPlaceholder": "Wprowadź swój adres e-mail",
+      "phoneLabel": "Numer telefonu",
+      "phonePlaceholder": "Wprowadź swój numer telefonu",
+      "messageLabel": "Twoja wiadomość",
+      "messagePlaceholder": "Jak możemy Ci pomóc?",
+      "submit": "Wyślij wiadomość",
+      "submitting": "Wysyłanie...",
+      "successTitle": "Wiadomość wysłana",
+      "successMessage": "Dziękujemy za skontaktowanie się z nami. Odpowiemy wkrótce."
     }
   },
   "footer": {
-    "description": "FireGuard Systems provides comprehensive fire safety solutions for commercial and residential buildings. Our services include installation, maintenance, and certification of fire alarm systems, sprinklers, and more.",
-    "quickLinks": "Quick Links",
-    "locations": "Service Areas",
-    "contact": "Contact Us",
-    "allRightsReserved": "All rights reserved.",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service"
+    "description": "FireGuard Systems dostarcza kompleksowe rozwiązania z zakresu bezpieczeństwa przeciwpożarowego dla budynków komercyjnych i mieszkalnych. Nasze usługi obejmują instalację, konserwację i certyfikację systemów sygnalizacji pożaru, tryskaczowych i innych.",
+    "quickLinks": "Szybkie linki",
+    "locations": "Obszary działania",
+    "contact": "Kontakt",
+    "allRightsReserved": "Wszelkie prawa zastrzeżone.",
+    "privacyPolicy": "Polityka prywatności",
+    "termsOfService": "Warunki świadczenia usług"
   },
   "blog": {
-    "title": "Fire Safety Blog",
-    "description": "Stay updated with the latest fire safety news, tips, and industry insights",
-    "readMore": "Read More",
-    "backToBlog": "Back to Blog"
+    "title": "Blog o Bezpieczeństwie Przeciwpożarowym",
+    "description": "Bądź na bieżąco z najnowszymi wiadomościami, poradami i spostrzeżeniami branżowymi dotyczącymi bezpieczeństwa przeciwpożarowego",
+    "readMore": "Czytaj więcej",
+    "backToBlog": "Powrót do bloga"
   },
   "cityPage": {
-    "title": "Fire Safety Systems in {city}",
-    "intro": "FireGuard Systems provides professional fire safety solutions in {city} and the surrounding areas. With our local expertise and industry-leading technology, we ensure your property meets all safety requirements and regulations.",
-    "servicesTitle": "Our Services in {city}",
-    "servicesDescription": "We offer a comprehensive range of fire safety services to businesses and residents in {city}:",
+    "title": "Systemy bezpieczeństwa przeciwpożarowego w {city}",
+    "intro": "FireGuard Systems świadczy profesjonalne usługi z zakresu bezpieczeństwa przeciwpożarowego w {city} i okolicach. Dzięki naszej lokalnej wiedzy i wiodącej w branży technologii, zapewniamy, że Twoja nieruchomość spełnia wszystkie wymagania bezpieczeństwa i przepisy.",
+    "servicesTitle": "Nasze Usługi w {city}",
+    "servicesDescription": "Oferujemy kompleksowy zakres usług z zakresu bezpieczeństwa przeciwpożarowego dla firm i mieszkańców w {city}:",
     "servicesList": [
-      "Fire alarm system installation and maintenance",
-      "Sprinkler system design and installation",
-      "Emergency lighting solutions",
-      "Fire safety inspections and compliance audits",
-      "24/7 emergency service and repairs",
-      "Fire safety training for your staff"
+      "Instalacja i konserwacja systemów sygnalizacji pożaru",
+      "Projektowanie i instalacja systemów tryskaczowych",
+      "Rozwiązania oświetlenia awaryjnego",
+      "Inspekcje bezpieczeństwa przeciwpożarowego i audyty zgodności",
+      "Serwis awaryjny i naprawy 24/7",
+      "Szkolenia z bezpieczeństwa przeciwpożarowego dla Twojego personelu"
     ],
-    "whyChooseTitle": "Why Choose FireGuard Systems in {city}",
-    "whyChooseDescription": "As a trusted provider of fire safety solutions in {city}, we combine local knowledge with industry expertise. Our certified technicians understand the specific requirements and regulations in your area, ensuring your fire safety systems are compliant and effective.",
-    "ctaButton": "Contact Our {city} Team",
-    "certifiedTechs": "Certified Technicians",
-    "support": "Emergency Support",
-    "contactTitle": "Contact Our {city} Office",
-    "contactSubtitle": "Fill out the form below and our local team will get back to you shortly",
-    "formTitle": "Send Us a Message"
+    "whyChooseTitle": "Dlaczego warto wybrać FireGuard Systems w {city}",
+    "whyChooseDescription": "Jako zaufany dostawca rozwiązań z zakresu bezpieczeństwa przeciwpożarowego w {city}, łączymy lokalną wiedzę z doświadczeniem branżowym. Nasi certyfikowani technicy rozumieją specyficzne wymagania i przepisy obowiązujące w Twojej okolicy, zapewniając, że Twoje systemy bezpieczeństwa przeciwpożarowego są zgodne z przepisami i skuteczne.",
+    "ctaButton": "Skontaktuj się z naszym zespołem w {city}",
+    "certifiedTechs": "Certyfikowani Technicy",
+    "support": "Wsparcie Awaryjne",
+    "contactTitle": "Skontaktuj się z naszym biurem w {city}",
+    "contactSubtitle": "Wypełnij poniższy formularz, a nasz lokalny zespół skontaktuje się z Tobą wkrótce",
+    "formTitle": "Wyślij nam wiadomość"
   },
   "cookieConsent": {
-    "title": "Cookie Consent",
-    "description": "We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies.",
-    "acceptAll": "Accept All",
-    "necessaryOnly": "Necessary Only"
+    "title": "Zgoda na pliki cookie",
+    "description": "Używamy plików cookie, aby poprawić Twoje doświadczenie przeglądania, wyświetlać spersonalizowane reklamy lub treści oraz analizować nasz ruch. Klikając „Akceptuj wszystkie”, wyrażasz zgodę na używanie przez nas plików cookie.",
+    "acceptAll": "Akceptuj wszystkie",
+    "necessaryOnly": "Tylko niezbędne"
   },
   "notFound": {
-    "title": "Page Not Found",
-    "description": "Sorry, we couldn't find the page you're looking for. It might have been moved or deleted.",
-    "backHome": "Return to Home"
+    "title": "Strona nie znaleziona",
+    "description": "Przepraszamy, nie mogliśmy znaleźć strony, której szukasz. Mogła zostać przeniesiona lub usunięta.",
+    "backHome": "Powrót do strony głównej"
   }
 }
