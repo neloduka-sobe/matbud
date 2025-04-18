@@ -7,9 +7,9 @@ import { formatDate } from "@/lib/utils"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Blog | Fire Safety Tips and News",
+  title: "Blog",
   description:
-    "Stay updated with the latest fire safety news, tips, and industry insights from FireGuard Systems experts.",
+    "Bądź na bieżąco z najnowszymi wiadomościami na temat bezpieczeństwa pożarowego, wskazówkami i spostrzeżeniami branżowymi od ekspertów Matbud Systemy Ppoż. sp. z o.o.",
 }
 
 interface PageProps {

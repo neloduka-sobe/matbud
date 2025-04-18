@@ -39,7 +39,7 @@ export async function generateMetadata({
       description: post.excerpt,
       type: "article",
       publishedTime: post.date,
-      authors: ["FireGuard Systems"],
+      authors: ["Matbud Systemy Ppoż. sp. z o.o."],
     },
   }
 }
