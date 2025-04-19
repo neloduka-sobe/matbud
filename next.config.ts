@@ -1,6 +1,5 @@
 import type { NextConfig } from "next";
 
-// Get the repository name from environment or default to 'matbud'
 const repoName = process.env.REPOSITORY_NAME || 'matbud';
 
 const nextConfig: NextConfig = {

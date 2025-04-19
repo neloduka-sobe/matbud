@@ -1,5 +1,5 @@
 ---
-title: "Zrozumienie współczesnych systemów sygnalizacji pożarowej"
+title: "Zrozumienieć współczesne systemy sygnalizacji pożarowej"
 date: "2023-06-22"
 excerpt: "Kompleksowy przewodnik po dostępnych obecnie typach systemów sygnalizacji pożarowej i jak wybrać odpowiedni dla swoich potrzeb."
 coverImage: "/blog/fire-alarm-systems.jpg"
