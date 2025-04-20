@@ -59,7 +59,7 @@ export function CookieConsent({ dictionary }: { dictionary: Dictionary }) {
           onClick={acceptNecessary}
         >
           <X className="h-4 w-4" />
-          <span className="sr-only">Close</span>
+          <span className="sr-only">Zamknij</span>
         </Button>
       </div>
     </div>

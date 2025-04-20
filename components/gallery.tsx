@@ -129,7 +129,7 @@ export default function Gallery({ dictionary }: { dictionary: DictionaryType }) 
                       }}
                     >
                       <ChevronLeft className="h-8 w-8" />
-                      <span className="sr-only">Previous</span>
+                      <span className="sr-only">Poprzedni</span>
                     </Button>
 
                     <Button
@@ -142,7 +142,7 @@ export default function Gallery({ dictionary }: { dictionary: DictionaryType }) 
                       }}
                     >
                       <ChevronRight className="h-8 w-8" />
-                      <span className="sr-only">Next</span>
+                      <span className="sr-only">Następny</span>
                     </Button>
                   </div>
 

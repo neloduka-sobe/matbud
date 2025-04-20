@@ -67,7 +67,7 @@ export default function Certificates({ dictionary }: { dictionary: DictionaryTyp
               <DialogClose className="absolute right-2 top-2 z-10">
                 <Button variant="ghost" size="icon">
                   <X className="h-4 w-4" />
-                  <span className="sr-only">Close</span>
+                  <span className="sr-only">Zamknij</span>
                 </Button>
               </DialogClose>
 
@@ -90,7 +90,7 @@ export default function Certificates({ dictionary }: { dictionary: DictionaryTyp
                     }}
                   >
                     <ChevronLeft className="h-8 w-8" />
-                    <span className="sr-only">Previous</span>
+                    <span className="sr-only">Poprzedni</span>
                   </Button>
 
                   <Button
@@ -103,7 +103,7 @@ export default function Certificates({ dictionary }: { dictionary: DictionaryTyp
                     }}
                   >
                     <ChevronRight className="h-8 w-8" />
-                    <span className="sr-only">Next</span>
+                    <span className="sr-only">Następny</span>
                   </Button>
                 </div>
               )}

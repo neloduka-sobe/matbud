@@ -118,7 +118,7 @@ export default function Contact({ dictionary }: { dictionary: Dictionary }) {
                     <h4 className="font-medium">{dictionary.contactInfo.phoneTitle}</h4>
                     <p className="text-muted-foreground">
                       <a href="tel:+11234567890" className="hover:text-primary transition-colors">
-                        +1 (123) 456-7890
+                        +48 61 448 10 28
                       </a>
                     </p>
                   </div>

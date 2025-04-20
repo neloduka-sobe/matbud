@@ -87,7 +87,7 @@ export default function Clients({ dictionary }: { dictionary: Dictionary }) {
             onClick={handlePrevious}
           >
             <ChevronLeft className="h-6 w-6" />
-            <span className="sr-only">Previous</span>
+            <span className="sr-only">Poprzedni</span>
           </Button>
 
           <Button
@@ -97,7 +97,7 @@ export default function Clients({ dictionary }: { dictionary: Dictionary }) {
             onClick={handleNext}
           >
             <ChevronRight className="h-6 w-6" />
-            <span className="sr-only">Next</span>
+            <span className="sr-only">Następny</span>
           </Button>
         </div>
 

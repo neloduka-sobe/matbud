@@ -42,8 +42,8 @@ export function Footer({
       <div className="container grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <Link href={`/${locale}`} className="flex items-center gap-2 mb-4">
-            <Image src="/logo.svg" alt="FireGuard Systems" width={40} height={40} className="h-10 w-auto" />
-            <span className="font-bold text-xl">FireGuard Systems</span>
+            <Image src="/logo.svg" alt="Matbud Systemy Ppoż. sp. z o.o." width={40} height={40} className="h-10 w-auto" />
+            <span className="font-bold text-xl">Matbud Systemy Ppoż. sp. z o.o.</span>
           </Link>
           <p className="text-muted-foreground">{dictionary.footer.description}</p>
         </div>
@@ -106,16 +106,17 @@ export function Footer({
         <div>
           <h3 className="font-semibold text-lg mb-4">{dictionary.footer.contact}</h3>
           <address className="not-italic space-y-2 text-muted-foreground">
-            <p>123 Fire Safety Street</p>
-            <p>Safety City, SC 12345</p>
+            <p>Słocin 36F</p>
+            <p>62-065 Grodzisk Wielkopolski</p>
             <p className="mt-4">
               <a href="tel:+11234567890" className="hover:text-primary transition-colors">
-                +1 (123) 456-7890
+                +48 61 448 10 28
+
               </a>
             </p>
             <p>
-              <a href="mailto:info@fireguardsystems.com" className="hover:text-primary transition-colors">
-                info@fireguardsystems.com
+              <a href="mailto:matbud@m-so.pl" className="hover:text-primary transition-colors">
+                matbud@m-so.pl
               </a>
             </p>
           </address>
@@ -125,7 +126,7 @@ export function Footer({
       <div className="container mt-8 pt-8 border-t">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} FireGuard Systems. {dictionary.footer.allRightsReserved}
+            &copy; {new Date().getFullYear()} Matbud Systemy Ppoż. sp. z o.o. {dictionary.footer.allRightsReserved}
           </p>
           <div className="flex gap-4">
             <Link

@@ -16,10 +16,13 @@ export function LanguageSwitcher({ locale }: { locale: string }) {
   const pathnameWithoutLocale = pathname.replace(`/${locale}`, "") || "/"
 
   const languageNames: Record<string, string> = {
-    en: "English",
-    fr: "Français",
-    de: "Deutsch",
-    es: "Español",
+    pl: "🇵🇱 Polski",
+    en: "🇬🇧 English",
+    es: "🇪🇸 Español",
+    de: "🇩🇪 Deutsch",
+    ru: "🇷🇺 Русский",
+    cz: "🇨🇿 Česky",
+    sk: "🇸🇰 Slovenská",
   }
 
   return (
