@@ -42,7 +42,7 @@ export function Footer({
       <div className="container grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <Link href={`/${locale}`} className="flex items-center gap-2 mb-4">
-            <Image src="/logo.svg" alt="Matbud Systemy Ppoż. sp. z o.o." width={40} height={40} className="h-10 w-auto" />
+            <Image src="/matbud/logo.svg" alt="Matbud Systemy Ppoż. Sp. z o.o." width={40} height={40} className="h-10 w-auto" />
             <span className="font-bold text-xl">Matbud Systemy Ppoż. sp. z o.o.</span>
           </Link>
           <p className="text-muted-foreground">{dictionary.footer.description}</p>

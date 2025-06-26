@@ -22,11 +22,11 @@ export default function Clients({ dictionary }: { dictionary: Dictionary }) {
   const slideRef = useRef<HTMLDivElement>(null)
 
   const clients = [
-    { logo: "/placeholder-logo.svg", name: "Client 1", testimonial: dictionary.testimonials[0] },
-    { logo: "/placeholder-logo.svg", name: "Client 2", testimonial: dictionary.testimonials[1] },
-    { logo: "/placeholder-logo.svg", name: "Client 3", testimonial: dictionary.testimonials[2] },
-    { logo: "/placeholder-logo.svg", name: "Client 4", testimonial: dictionary.testimonials[3] },
-    { logo: "/placeholder-logo.svg", name: "Client 5", testimonial: dictionary.testimonials[4] },
+    { logo: "/matbud/logo.svg", name: "Client 1", testimonial: dictionary.testimonials[0] },
+    { logo: "/matbud/logo.svg", name: "Client 2", testimonial: dictionary.testimonials[1] },
+    { logo: "/matbud/logo.svg", name: "Client 3", testimonial: dictionary.testimonials[2] },
+    { logo: "/matbud/logo.svg", name: "Client 4", testimonial: dictionary.testimonials[3] },
+    { logo: "/matbud/logo.svg", name: "Client 5", testimonial: dictionary.testimonials[4] },
   ]
 
   const totalSlides = clients.length
@@ -68,7 +68,7 @@ export default function Clients({ dictionary }: { dictionary: Dictionary }) {
               <div key={index} className="w-full flex-shrink-0 px-4 md:px-12">
                 <div className="bg-muted/50 rounded-lg p-6 md:p-8 flex flex-col items-center text-center">
                   <div className="relative w-24 h-24 mb-6">
-                    <Image src={client.logo || "/placeholder.svg"} alt={client.name} fill className="object-contain" />
+                    <Image src={client.logo || "/placeholder.svg"} alt="Matbud Systemy Ppoż. Sp. z o.o." fill className="object-contain" />
                   </div>
                   <blockquote className="mb-4 text-lg italic">&quot;{client.testimonial.quote}&quot;</blockquote>
                   <div>
@@ -118,7 +118,7 @@ export default function Clients({ dictionary }: { dictionary: Dictionary }) {
               <div className="relative w-24 h-24">
                 <Image
                   src={client.logo || "/placeholder.svg"}
-                  alt={client.name}
+                  alt="Matbud Systemy Ppoż. Sp. z o.o."
                   fill
                   className="object-contain grayscale hover:grayscale-0 transition-all"
                 />
