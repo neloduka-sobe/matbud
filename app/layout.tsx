@@ -8,11 +8,11 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    default: "Matbud Systemy Ppoż. Sp. z o.o. | Professional Fire Safety Solutions",
+    default: "Matbud Systemy Ppoż. Sp. z o.o. | Systemy Przeciwpożarowe",
     template: "%s | Matbud Systemy Ppoż. Sp. z o.o.",
   },
   description:
-    "Professional fire safety systems installation, maintenance and certification services for commercial and residential buildings.",
+    "Profesjonalne usługi instalacji, konserwacji i certyfikacji systemów bezpieczeństwa pożarowego dla budynków komercyjnych i mieszkalnych.",
   keywords: [
     "systemy przeciwpożarowe",
     "ochrona przeciwpożarowa",
@@ -46,9 +46,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pl",
     url: "https://matbud.net",
-    title: "Matbud Systemy Ppoż. sp. z o.o. | Professional Fire Safety Solutions",
+    title: "Matbud Systemy Ppoż. sp. z o.o. | Systemy Przeciwpożarowe",
     description:
-      "Professional fire safety systems installation, maintenance and certification services for commercial and residential buildings.",
+      "Profesjonalne usługi instalacji, konserwacji i certyfikacji systemów bezpieczeństwa pożarowego dla budynków komercyjnych i mieszkalnych.",
     siteName: "Matbud Systemy Ppoż. sp. z o.o.",
   },
 }

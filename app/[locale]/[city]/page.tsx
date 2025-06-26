@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getDictionary } from "@/lib/dictionaries"; // Assuming this path is correct
-import { getCities } from "@/lib/cities";         // Assuming this path is correct
+import { getDictionary } from "@/lib/dictionaries";
+import { getCities } from "@/lib/cities";
 import { CheckCircle, MapPin, Phone, Mail } from "lucide-react";
-import { Button } from "@/components/ui/button";   // Assuming this path is correct
+import { Button } from "@/components/ui/button";
 
 // Type definition for the specific route parameters
 type CityParams = {
@@ -13,20 +13,16 @@ type CityParams = {
   city: string;
 };
 
-// Define the standard props structure Next.js often expects for pages
-// This interface is used to fix the build error related to type constraints
-
-
 // Generates static paths for all city pages during the build
 export async function generateStaticParams(): Promise<CityParams[]> {
   const cities = await getCities();
-  const locales = ["pl"]; // Define supported locales
+  const locales = ["pl"];
 
   // Create paths for each locale and city combination
   return locales.flatMap(locale =>
     cities.map(city => ({
       locale,
-      city: city.slug // Use the city slug for the URL parameter
+      city: city.slug
     }))
   );
 }
@@ -34,11 +30,8 @@ export async function generateStaticParams(): Promise<CityParams[]> {
 // Generates metadata (like title, description) for each city page
 // Uses the PageProps interface to satisfy Next.js type constraints
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  // --- FIX 1: Perform an await *before* accessing params ---
   const cities = await getCities();
-  // Now it's safe to access params synchronously
   const { city } = await params;
-  // --- End of Fix 1 ---
 
   // Find the specific city data based on the slug from params
   const cityData = cities.find(c => c.slug === city);
@@ -46,7 +39,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   // Handle case where city data is not found
   if (!cityData) {
     return {
-      title: "City Not Found", // Fallback title
+      title: "City Not Found",
     };
   }
 
@@ -85,8 +78,8 @@ export default async function CityPage({ params }: PageProps) {
   const replaceCity = (text: string | undefined): string => {
     // Handle potential undefined text gracefully
     if (text === undefined) return "";
-    // Use the city's proper name for display
-    return text.replace(/{city}/g, cityData.name);
+    // Use the city's conjugation for display
+    return text.replace(/{city}/g, cityData.conjugation);
   };
 
 
@@ -110,11 +103,11 @@ export default async function CityPage({ params }: PageProps) {
             </div>
             <div className="relative h-[300px] rounded-lg overflow-hidden shadow-lg">
               <Image
-                src="/placeholder-city-services.jpg" // Use a relevant placeholder or dynamic image
+                src="/placeholder-city-services.jpg"
                 alt={`Usługi przeciwpożarowe w ${cityData.name}`}
                 fill
                 className="object-cover"
-                priority // Load hero image faster
+                priority
               />
             </div>
           </div>
@@ -238,7 +231,7 @@ export default async function CityPage({ params }: PageProps) {
                       <p className="text-gray-600">
                         {/* Replace with actual email address */}
                         <a
-                          href={`mailto:kontakt@matbud-ppoz.pl`} // Consider city-specific email if applicable
+                          href={`mailto:kontakt@matbud-ppoz.pl`}
                           className="hover:text-primary transition-colors duration-200"
                         >
                           kontakt@matbud-ppoz.pl
@@ -263,7 +256,7 @@ export default async function CityPage({ params }: PageProps) {
                       </label>
                       <input
                         id="name"
-                        name="name" // Add name attribute for form submission
+                        name="name"
                         type="text"
                         className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition duration-200"
                         placeholder={dict.contact?.form?.namePlaceholder ?? 'Jan Kowalski'}
@@ -278,7 +271,7 @@ export default async function CityPage({ params }: PageProps) {
                        </label>
                        <input
                          id="phone"
-                         name="phone" // Add name attribute
+                         name="phone"
                          type="tel"
                          className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition duration-200"
                          placeholder={dict.contact?.form?.phonePlaceholder ?? '+48 123 456 789'}
@@ -294,7 +287,7 @@ export default async function CityPage({ params }: PageProps) {
                     </label>
                     <input
                       id="email"
-                      name="email" // Add name attribute
+                      name="email"
                       type="email"
                       className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition duration-200"
                       placeholder={dict.contact?.form?.emailPlaceholder ?? 'jan.kowalski@example.com'}
@@ -309,8 +302,8 @@ export default async function CityPage({ params }: PageProps) {
                     </label>
                     <textarea
                       id="message"
-                      name="message" // Add name attribute
-                      rows={5} // Increased rows for better UX
+                      name="message"
+                      rows={5}
                       className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition duration-200"
                       placeholder={dict.contact?.form?.messagePlaceholder ?? 'Opisz czego potrzebujesz...'}
                       required

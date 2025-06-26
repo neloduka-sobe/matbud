@@ -10,9 +10,9 @@ import LatestBlogs from "@/components/latest-blogs"
 import Contact from "@/components/contact"
 
 export const metadata: Metadata = {
-  title: "FireGuard Systems | Professional Fire Safety Solutions",
+  title: "Matbud Systemy Ppoż. Sp. z o.o. | Systemy Przeciwpożarowe",
   description:
-    "Professional fire safety systems installation, maintenance and certification services for commercial and residential buildings.",
+    "Profesjonalne usługi instalacji, konserwacji i certyfikacji systemów bezpieczeństwa pożarowego dla budynków komercyjnych i mieszkalnych.",
   keywords: [
     "systemy przeciwpożarowe",
     "ochrona przeciwpożarowa",
@@ -47,7 +47,6 @@ export default async function Home({
 }: {
   params: { locale: string }
 }) {
-  // Await the params object before accessing its properties
   const resolvedParams = await Promise.resolve(params)
   const locale = resolvedParams.locale
   

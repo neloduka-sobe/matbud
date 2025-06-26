@@ -18,7 +18,6 @@ interface PostPageProps {
 export async function generateMetadata({ 
   params 
 }: PostPageProps): Promise<Metadata> {
-  // First, await the params object
   const paramsCopy = await Promise.resolve(params)
   const locale = paramsCopy.locale
   const slug = paramsCopy.slug
@@ -49,7 +48,6 @@ export async function generateStaticParams({
 }: {
   params: { locale: string }
 }) {
-  // Await the params object
   const paramsCopy = await Promise.resolve(params)
   const locale = paramsCopy.locale
   
@@ -63,7 +61,6 @@ export async function generateStaticParams({
 export default async function PostPage({ 
   params 
 }: PostPageProps) {
-  // Await the params object
   const paramsCopy = await Promise.resolve(params)
   const locale = paramsCopy.locale
   const slug = paramsCopy.slug

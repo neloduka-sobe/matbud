@@ -15,13 +15,13 @@ export default async function LocaleNotFound({
       <h2 className="text-3xl font-semibold mb-4">{dict.notFound?.title || "Page Not Found"}</h2>
       <p className="text-xl text-muted-foreground mb-8 max-w-md">
         {dict.notFound?.description ||
-          "Sorry, we couldn't find the page you're looking for. It might have been moved or deleted."}
+          "Przepraszamy, nie mogliśmy znaleźć strony, której szukasz. Mogła ona zostać przeniesiona lub usunięta."}
       </p>
       <Link
         href={`/${locale}`}
         className="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-md font-medium transition-colors"
       >
-        {dict.notFound?.backHome || "Return to Home"}
+        {dict.notFound?.backHome || "Wróć na stronę główną."}
       </Link>
     </div>
   )
