@@ -214,10 +214,10 @@
     "backToBlog": "Powrót do bloga"
   },
   "cityPage": {
-    "title": "Systemy bezpieczeństwa przeciwpożarowego {city}",
-    "intro": "Matbud Systemy Ppoż. sp. z o.o. świadczy profesjonalne usługi z zakresu bezpieczeństwa przeciwpożarowego {city} i okolicach. Dzięki naszej lokalnej wiedzy i wiodącej w branży technologii, zapewniamy, że Twoja nieruchomość spełnia wszystkie wymagania bezpieczeństwa i przepisy.",
-    "servicesTitle": "Nasze Usługi {city}",
-    "servicesDescription": "Oferujemy kompleksowy zakres usług z zakresu bezpieczeństwa przeciwpożarowego dla firm i mieszkańców {city}:",
+    "title": "Systemy bezpieczeństwa przeciwpożarowego w {city}",
+    "intro": "Matbud Systemy Ppoż. sp. z o.o. świadczy profesjonalne usługi z zakresu bezpieczeństwa przeciwpożarowego w {city} i okolicach. Dzięki naszej lokalnej wiedzy i wiodącej w branży technologii, zapewniamy, że Twoja nieruchomość spełnia wszystkie wymagania bezpieczeństwa i przepisy.",
+    "servicesTitle": "Nasze Usługi w {city}",
+    "servicesDescription": "Oferujemy kompleksowy zakres usług z zakresu bezpieczeństwa przeciwpożarowego dla firm i mieszkańców w {city}:",
     "servicesList": [
       "Instalacja i konserwacja systemów sygnalizacji pożaru",
       "Projektowanie i instalacja systemów tryskaczowych",
@@ -226,18 +226,18 @@
       "Serwis awaryjny i naprawy 24/7",
       "Szkolenia z bezpieczeństwa przeciwpożarowego dla Twojego personelu"
     ],
-    "whyChooseTitle": "Dlaczego warto wybrać Matbud Systemy Ppoż. sp. z o.o. {city}",
-    "whyChooseDescription": "Jako zaufany dostawca rozwiązań z zakresu bezpieczeństwa przeciwpożarowego {city}, łączymy lokalną wiedzę z doświadczeniem branżowym. Nasi certyfikowani technicy rozumieją specyficzne wymagania i przepisy obowiązujące w Twojej okolicy, zapewniając, że Twoje systemy bezpieczeństwa przeciwpożarowego są zgodne z przepisami i skuteczne.",
-    "ctaButton": "Skontaktuj się z naszym zespołem {city}",
+    "whyChooseTitle": "Dlaczego warto wybrać Matbud Systemy Ppoż. sp. z o.o. w {city}",
+    "whyChooseDescription": "Jako zaufany dostawca rozwiązań z zakresu bezpieczeństwa przeciwpożarowego w {city}, łączymy lokalną wiedzę z doświadczeniem branżowym. Nasi certyfikowani technicy rozumieją specyficzne wymagania i przepisy obowiązujące w Twojej okolicy, zapewniając, że Twoje systemy bezpieczeństwa przeciwpożarowego są zgodne z przepisami i skuteczne.",
+    "ctaButton": "Skontaktuj się z naszym zespołem w {city}",
     "certifiedTechs": "Certyfikowani Technicy",
     "support": "Wsparcie Awaryjne",
-    "contactTitle": "Skontaktuj się z naszym biurem {city}",
+    "contactTitle": "Skontaktuj się z naszym biurem w {city}",
     "contactSubtitle": "Wypełnij poniższy formularz, a nasz lokalny zespół skontaktuje się z Tobą wkrótce",
     "formTitle": "Wyślij nam wiadomość"
   },
   "cookieConsent": {
     "title": "Zgoda na pliki cookie",
-    "description": "Używamy plików cookie, aby poprawić Twoje doświadczenie przeglądania, wyświetlać spersonalizowane reklamy lub treści oraz analizować nasz ruch. Klikając \"Akceptuj wszystkie\", wyrażasz zgodę na używanie przez nas plików cookie.",
+    "description": "Używamy plików cookie, aby poprawić Twoje doświadczenie przeglądania, wyświetlać spersonalizowane reklamy lub treści oraz analizować nasz ruch. Klikając „Akceptuj wszystkie”, wyrażasz zgodę na używanie przez nas plików cookie.",
     "acceptAll": "Akceptuj wszystkie",
     "necessaryOnly": "Tylko niezbędne"
   },

@@ -58,7 +58,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 // The main page component - this is an async Server Component
 // Uses the PageProps interface to satisfy Next.js type constraints
 export default async function CityPage({ params }: PageProps) {
-  const { locale, city } = await params; // Destructure locale and city slug from params
+  const { locale, city } = await params;
 
   // Fetch dictionary and city data concurrently
   const [dict, cities] = await Promise.all([
@@ -78,7 +78,6 @@ export default async function CityPage({ params }: PageProps) {
   const replaceCity = (text: string | undefined): string => {
     // Handle potential undefined text gracefully
     if (text === undefined) return "";
-    // Use the city's conjugation for display
     return text.replace(/{city}/g, cityData.conjugation);
   };
 

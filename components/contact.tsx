@@ -74,7 +74,7 @@ export default function Contact({ dictionary }: { dictionary: Dictionary }) {
   async function onSubmit() {
     setIsSubmitting(true)
 
-    // Simulate API call
+    // Simulate API call TODO
     await new Promise((resolve) => setTimeout(resolve, 1500))
 
     toast({

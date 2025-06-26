@@ -20,7 +20,6 @@ export default async function LocaleLayout({
   children: ReactNode
   params: { locale: string }
 }) {
-  // In Next.js 15, we need to await the params object itself
   const resolvedParams = await Promise.resolve(params)
   const locale = resolvedParams.locale
 

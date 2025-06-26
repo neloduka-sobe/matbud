@@ -6,7 +6,7 @@ import Link from "next/link"
 import { Globe } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
-import { i18n } from "@/lib/i18n-config-client" // Use client-safe version
+import { i18n } from "@/lib/i18n-config-client"
 
 export function LanguageSwitcher({ locale }: { locale: string }) {
   const [isOpen, setIsOpen] = useState(false)
