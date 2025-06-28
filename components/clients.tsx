@@ -15,6 +15,12 @@ interface Dictionary {
   title: string
   subtitle: string
   testimonials: Testimonial[]
+  clientLogoAlt: string
+  companyLogoAlt: string
+  navigation: {
+    previous: string
+    next: string
+  }
 }
 
 export default function Clients({ dictionary }: { dictionary: Dictionary }) {
@@ -68,7 +74,7 @@ export default function Clients({ dictionary }: { dictionary: Dictionary }) {
               <div key={index} className="w-full flex-shrink-0 px-4 md:px-12">
                 <div className="bg-muted/50 rounded-lg p-6 md:p-8 flex flex-col items-center text-center">
                   <div className="relative w-24 h-24 mb-6">
-                    <Image src={client.logo || "/placeholder.svg"} alt="Matbud Systemy Ppoż. Sp. z o.o." fill className="object-contain" />
+                    <Image src={client.logo || "/placeholder.svg"} alt={dictionary.clientLogoAlt} fill className="object-contain" />
                   </div>
                   <blockquote className="mb-4 text-lg italic">&quot;{client.testimonial.quote}&quot;</blockquote>
                   <div>
@@ -87,7 +93,7 @@ export default function Clients({ dictionary }: { dictionary: Dictionary }) {
             onClick={handlePrevious}
           >
             <ChevronLeft className="h-6 w-6" />
-            <span className="sr-only">Poprzedni</span>
+            <span className="sr-only">{dictionary.navigation.previous}</span>
           </Button>
 
           <Button
@@ -97,7 +103,7 @@ export default function Clients({ dictionary }: { dictionary: Dictionary }) {
             onClick={handleNext}
           >
             <ChevronRight className="h-6 w-6" />
-            <span className="sr-only">Następny</span>
+            <span className="sr-only">{dictionary.navigation.next}</span>
           </Button>
         </div>
 
@@ -118,7 +124,7 @@ export default function Clients({ dictionary }: { dictionary: Dictionary }) {
               <div className="relative w-24 h-24">
                 <Image
                   src={client.logo || "/placeholder.svg"}
-                  alt="Matbud Systemy Ppoż. Sp. z o.o."
+                  alt={dictionary.companyLogoAlt}
                   fill
                   className="object-contain grayscale hover:grayscale-0 transition-all"
                 />

@@ -16,6 +16,7 @@ interface Dictionary {
   valuesTitle: string;
   values: string[];
   stats: StatItem[];
+  aboutImageAlt: string;
 }
 
 export default function AboutUs({ dictionary }: { dictionary: Dictionary }) {
@@ -31,7 +32,7 @@ export default function AboutUs({ dictionary }: { dictionary: Dictionary }) {
           <div className="relative h-[400px]">
             <Image
               src="/placeholder.svg?height=400&width=600"
-              alt="About FireGuard Systems"
+              alt={dictionary.aboutImageAlt}
               fill
               className="object-cover rounded-lg"
             />

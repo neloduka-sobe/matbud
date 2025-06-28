@@ -87,7 +87,8 @@
         "value": "24/7",
         "label": "Dostępne wsparcie"
       }
-    ]
+    ],
+    "aboutImageAlt": "O Matbud Systemy Ppoż"
   },
   "gallery": {
     "title": "Nasza Galeria Projektów",
@@ -117,7 +118,11 @@
         "title": "Audyt Bezpieczeństwa Przeciwpożarowego",
         "description": "Przeprowadzanie szczegółowego audytu bezpieczeństwa przeciwpożarowego w zakładzie produkcyjnym."
       }
-    ]
+    ],
+    "navigation": {
+      "previous": "Poprzedni",
+      "next": "Następny"
+    }
   },
   "certificates": {
     "title": "Nasze Certyfikaty",
@@ -129,7 +134,11 @@
       "Systemy Ochrony Przeciwpożarowej Zatwierdzone przez FM",
       "Technicy z Certyfikatem NICET",
       "Certyfikat Bezpieczeństwa OSHA"
-    ]
+    ],
+    "navigation": {
+      "previous": "Poprzedni",
+      "next": "Następny"
+    }
   },
   "clients": {
     "title": "Nasi Klienci",
@@ -160,7 +169,13 @@
         "name": "Robert Wójcik",
         "position": "Manager Operacyjny, Zakład Produkcyjny"
       }
-    ]
+    ],
+    "clientLogoAlt": "Logo klienta",
+    "companyLogoAlt": "Matbud Systemy Ppoż. Sp. z o.o.",
+    "navigation": {
+      "previous": "Poprzedni",
+      "next": "Następny"
+    }
   },
   "latestBlogs": {
     "title": "Najnowsze na Naszym Blogu",
@@ -211,7 +226,8 @@
     "contact": "Kontakt",
     "allRightsReserved": "Wszelkie prawa zastrzeżone.",
     "privacyPolicy": "Polityka prywatności",
-    "termsOfService": "Warunki świadczenia usług"
+    "termsOfService": "Warunki świadczenia usług",
+    "companyLogoAlt": "Matbud Systemy Ppoż. Sp. z o.o."
   },
   "blog": {
     "title": "Blog o Bezpieczeństwie Przeciwpożarowym",
@@ -251,5 +267,40 @@
     "title": "Strona nie znaleziona",
     "description": "Przepraszamy, nie mogliśmy znaleźć strony, której szukasz. Mogła zostać przeniesiona lub usunięta.",
     "backHome": "Powrót do strony głównej"
+  },
+  "common": {
+    "themeToggle": "Zmień Tryb",
+    "menu": "Menu",
+    "companyName": "Matbud Systemy Ppoż. Sp. z o.o.",
+    "companyNameShort": "Matbud Systemy Ppoż.",
+    "pageTitle": "Systemy Przeciwpożarowe",
+    "pageDescription": "Profesjonalne usługi instalacji, konserwacji i certyfikacji systemów bezpieczeństwa pożarowego dla budynków komercyjnych i mieszkalnych.",
+    "keywords": [
+      "systemy przeciwpożarowe",
+      "ochrona przeciwpożarowa",
+      "instalacje ppoż",
+      "zabezpieczenia przeciwpożarowe",
+      "systemy sygnalizacji pożarowej",
+      "systemy gaszenia pożarów",
+      "projektowanie systemów ppoż",
+      "konserwacja systemów ppoż",
+      "audyt przeciwpożarowy",
+      "czujki pożarowe",
+      "systemy oddymiania",
+      "hydranty przeciwpożarowe",
+      "centrale sygnalizacji pożarowej",
+      "systemy tryskaczowe",
+      "gaśnice",
+      "szkolenia ppoż",
+      "przepisy przeciwpożarowe",
+      "instrukcja bezpieczeństwa pożarowego",
+      "normy ppoż",
+      "ocena zagrożenia wybuchem",
+      "matbud systemy ppoż",
+      "ochrona ppoż",
+      "instalacje przeciwpożarowe",
+      "przeglądy ppoż",
+      "bezpieczeństwo pożarowe"
+    ]
   }
 }

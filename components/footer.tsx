@@ -14,6 +14,7 @@ interface Dictionary {
     allRightsReserved: string
     privacyPolicy: string
     termsOfService: string
+    companyLogoAlt: string
   }
   navigation: {
     services: string
@@ -22,6 +23,10 @@ interface Dictionary {
     clients: string
     blog: string
     contact: string
+  }
+  common: {
+    companyName: string
+    companyNameShort: string
   }
 }
 
@@ -42,8 +47,8 @@ export function Footer({
       <div className="container grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <Link href={`/${locale}`} className="flex items-center gap-2 mb-4">
-            <Image src="/matbud/logo.svg" alt="Matbud Systemy Ppoż. Sp. z o.o." width={40} height={40} className="h-10 w-auto" />
-            <span className="font-bold text-xl">Matbud Systemy Ppoż. sp. z o.o.</span>
+            <Image src="/matbud/logo.svg" alt={dictionary.footer.companyLogoAlt} width={40} height={40} className="h-10 w-auto" />
+            <span className="font-bold text-xl">{dictionary.common.companyNameShort}</span>
           </Link>
           <p className="text-muted-foreground">{dictionary.footer.description}</p>
         </div>
@@ -126,7 +131,7 @@ export function Footer({
       <div className="container mt-8 pt-8 border-t">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Matbud Systemy Ppoż. sp. z o.o. {dictionary.footer.allRightsReserved}
+            &copy; {new Date().getFullYear()} {dictionary.common.companyName} {dictionary.footer.allRightsReserved}
           </p>
           <div className="flex gap-4">
             <Link

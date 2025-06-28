@@ -15,6 +15,10 @@ interface DictionaryType {
   title: string;
   subtitle: string;
   images: ImageData[];
+  navigation: {
+    previous: string;
+    next: string;
+  };
 }
 
 export default function Gallery({ dictionary }: { dictionary: DictionaryType }) {
@@ -125,7 +129,7 @@ export default function Gallery({ dictionary }: { dictionary: DictionaryType }) 
                       }}
                     >
                       <ChevronLeft className="h-8 w-8" />
-                      <span className="sr-only">Poprzedni</span>
+                      <span className="sr-only">{dictionary.navigation.previous}</span>
                     </Button>
 
                     <Button
@@ -138,7 +142,7 @@ export default function Gallery({ dictionary }: { dictionary: DictionaryType }) 
                       }}
                     >
                       <ChevronRight className="h-8 w-8" />
-                      <span className="sr-only">Następny</span>
+                      <span className="sr-only">{dictionary.navigation.next}</span>
                     </Button>
                   </div>
 

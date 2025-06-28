@@ -6,10 +6,15 @@ import { getAllPosts } from "@/lib/blog"
 import { formatDate } from "@/lib/utils"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
-export const metadata: Metadata = {
-  title: "Blog",
-  description:
-    "Bądź na bieżąco z najnowszymi wiadomościami na temat bezpieczeństwa pożarowego, wskazówkami i spostrzeżeniami branżowymi od ekspertów Matbud Systemy Ppoż. sp. z o.o.",
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const resolvedParams = await params
+  const locale = resolvedParams.locale
+  const dict = await getDictionary(locale)
+  
+  return {
+    title: dict.blog.title,
+    description: dict.blog.description,
+  }
 }
 
 interface PageProps {

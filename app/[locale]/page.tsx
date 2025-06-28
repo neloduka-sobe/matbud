@@ -9,37 +9,16 @@ import Gallery from "@/components/gallery"
 import LatestBlogs from "@/components/latest-blogs"
 import Contact from "@/components/contact"
 
-export const metadata: Metadata = {
-  title: "Matbud Systemy Ppoż. Sp. z o.o. | Systemy Przeciwpożarowe",
-  description:
-    "Profesjonalne usługi instalacji, konserwacji i certyfikacji systemów bezpieczeństwa pożarowego dla budynków komercyjnych i mieszkalnych.",
-  keywords: [
-    "systemy przeciwpożarowe",
-    "ochrona przeciwpożarowa",
-    "instalacje ppoż",
-    "zabezpieczenia przeciwpożarowe",
-    "systemy sygnalizacji pożarowej",
-    "systemy gaszenia pożarów",
-    "projektowanie systemów ppoż",
-    "konserwacja systemów ppoż",
-    "audyt przeciwpożarowy",
-    "czujki pożarowe",
-    "systemy oddymiania",
-    "hydranty przeciwpożarowe",
-    "centrale sygnalizacji pożarowej",
-    "systemy tryskaczowe",
-    "gaśnice",
-    "szkolenia ppoż",
-    "przepisy przeciwpożarowe",
-    "instrukcja bezpieczeństwa pożarowego",
-    "normy ppoż",
-    "ocena zagrożenia wybuchem",
-    "matbud systemy ppoż",
-    "ochrona ppoż",
-    "instalacje przeciwpożarowe",
-    "przeglądy ppoż",
-    "bezpieczeństwo pożarowe",
-  ],
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const resolvedParams = await Promise.resolve(params)
+  const locale = resolvedParams.locale
+  const dict = await getDictionary(locale)
+  
+  return {
+    title: `${dict.common.companyName} | ${dict.common.pageTitle}`,
+    description: dict.common.pageDescription,
+    keywords: dict.common.keywords,
+  }
 }
 
 export default async function Home({

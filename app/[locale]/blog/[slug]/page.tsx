@@ -23,6 +23,7 @@ export async function generateMetadata({
   const slug = paramsCopy.slug
   
   const post = await getPostBySlug(slug, locale)
+  const dict = await getDictionary(locale)
 
   if (!post) {
     return {
@@ -38,7 +39,7 @@ export async function generateMetadata({
       description: post.excerpt,
       type: "article",
       publishedTime: post.date,
-      authors: ["Matbud Systemy Ppoż. sp. z o.o."],
+      authors: [dict.common.companyName],
     },
   }
 }

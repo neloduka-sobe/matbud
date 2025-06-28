@@ -32,7 +32,7 @@ export default async function LocaleLayout({
 
   return (
     <ThemeProvider attribute="class" defaultTheme="light">
-      <Header locale={locale} dictionary={dict.navigation} />
+      <Header locale={locale} dictionary={dict} />
       <main>{children}</main>
       <Footer locale={locale} dictionary={dict} cities={cities} />
       <CookieConsent locale={locale} dictionary={dict.cookieConsent} />
