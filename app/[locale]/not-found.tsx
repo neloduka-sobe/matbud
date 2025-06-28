@@ -7,22 +7,9 @@ export default async function LocaleNotFound({
 }: {
   params?: { locale: string }
 }) {
-  // For debugging - let's see what we're getting
-  console.log("404 - Params:", params)
   
-  // Temporarily force English to test
-  let locale = "en"
-  
-  if (params && params.locale) {
-    locale = await Promise.resolve(params.locale)
-    console.log("404 - Using locale from params:", locale)
-  } else {
-    console.log("404 - No params, using forced locale:", locale)
-  }
-  
+  const locale = params?.locale || i18n.defaultLocale
   const dict = await getDictionary(locale)
-  console.log("404 - Final locale:", locale)
-  console.log("404 - Dictionary notFound:", dict.notFound)
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[70vh] text-center px-4">

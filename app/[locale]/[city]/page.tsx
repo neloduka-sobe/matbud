@@ -69,7 +69,7 @@ export default async function CityPage({ params }: PageProps) {
   // Fetch dictionary and city data concurrently
   const [dict, cities] = await Promise.all([
     getDictionary(locale),
-    getCities()
+    getCities(locale)
   ]);
 
   // Find the specific city data using the slug
