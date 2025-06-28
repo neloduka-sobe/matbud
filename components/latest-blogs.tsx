@@ -27,8 +27,8 @@ export default async function LatestBlogs({ locale, dictionary }: LatestBlogsPro
       <div className="container">
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <div>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4 text-gray">{dictionary.title}</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl">{dictionary.subtitle}</p>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4 text-foreground">{dictionary.title}</h2>
+            <p className="text-xl text-foreground/80 max-w-2xl">{dictionary.subtitle}</p>
           </div>
           <Button asChild className="mt-4 md:mt-0 bg-primary hover:bg-primary-dark">
             <Link href={`/${locale}/blog`} className="flex items-center gap-2">
@@ -58,7 +58,7 @@ export default async function LatestBlogs({ locale, dictionary }: LatestBlogsPro
                 </CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
-                <p className="line-clamp-3 text-muted-foreground">{post.excerpt}</p>
+                <p className="line-clamp-3 text-foreground/70">{post.excerpt}</p>
               </CardContent>
               <CardFooter>
                 <Link

@@ -79,8 +79,8 @@ export default function Gallery({ dictionary }: { dictionary: DictionaryType }) 
     <section id="gallery" className="py-16 md:py-24">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4 text-gray">{dictionary.title}</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">{dictionary.subtitle}</p>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4 text-foreground">{dictionary.title}</h2>
+          <p className="text-xl text-foreground/80 max-w-3xl mx-auto">{dictionary.subtitle}</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -108,7 +108,7 @@ export default function Gallery({ dictionary }: { dictionary: DictionaryType }) 
             <DialogTitle className="sr-only">
               {dictionary.title}
             </DialogTitle>
-            <div className="relative bg-background p-2 rounded-lg">
+            <div className="relative bg-background/95 backdrop-blur-sm p-2 rounded-lg border border-border/50">
               {selectedImage !== null && (
                 <>
                   <div className="relative h-[80vh] max-h-[600px]">
@@ -122,7 +122,7 @@ export default function Gallery({ dictionary }: { dictionary: DictionaryType }) 
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="absolute left-2 top-1/2 -translate-y-1/2 bg-background/80 hover:bg-background"
+                      className="absolute left-2 top-1/2 -translate-y-1/2 bg-background/90 hover:bg-background border border-border/50 shadow-lg"
                       onClick={(e) => {
                         e.stopPropagation()
                         handlePrevious()
@@ -135,7 +135,7 @@ export default function Gallery({ dictionary }: { dictionary: DictionaryType }) 
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="absolute right-2 top-1/2 -translate-y-1/2 bg-background/80 hover:bg-background"
+                      className="absolute right-2 top-1/2 -translate-y-1/2 bg-background/90 hover:bg-background border border-border/50 shadow-lg"
                       onClick={(e) => {
                         e.stopPropagation()
                         handleNext()
@@ -146,9 +146,9 @@ export default function Gallery({ dictionary }: { dictionary: DictionaryType }) 
                     </Button>
                   </div>
 
-                  <div className="p-4">
-                    <h3 className="text-xl font-semibold mb-2">{galleryImages[selectedImage].title}</h3>
-                    <p className="text-muted-foreground">{galleryImages[selectedImage].description}</p>
+                  <div className="p-4 bg-background/50 backdrop-blur-sm rounded-b-lg">
+                    <h3 className="text-xl font-semibold mb-2 text-foreground">{galleryImages[selectedImage].title}</h3>
+                    <p className="text-foreground/80">{galleryImages[selectedImage].description}</p>
                   </div>
                 </>
               )}
