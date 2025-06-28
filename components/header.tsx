@@ -17,6 +17,7 @@ interface Dictionary {
     blog: string;
     contact: string;
     gallery: string;
+    careers: string;
   };
   common: {
     companyName: string;
@@ -51,6 +52,9 @@ export function Header({ locale, dictionary }: { locale: string; dictionary: Dic
           <Link href={`/${locale}/blog`} className="text-sm font-medium transition-colors hover:text-primary">
             {dictionary.navigation.blog}
           </Link>
+          <Link href={`/${locale}/careers`} className="text-sm font-medium transition-colors hover:text-primary">
+            {dictionary.navigation.careers}
+          </Link>
           <Link href={`/${locale}#contact`} className="text-sm font-medium transition-colors hover:text-primary">
             {dictionary.navigation.contact}
           </Link>
@@ -84,6 +88,9 @@ export function Header({ locale, dictionary }: { locale: string; dictionary: Dic
                 </Link>
                 <Link href={`/${locale}/blog`} className="text-lg font-medium transition-colors hover:text-primary">
                   {dictionary.navigation.blog}
+                </Link>
+                <Link href={`/${locale}/careers`} className="text-lg font-medium transition-colors hover:text-primary">
+                  {dictionary.navigation.careers}
                 </Link>
                 <Link href={`/${locale}#contact`} className="text-lg font-medium transition-colors hover:text-primary">
                   {dictionary.navigation.contact}

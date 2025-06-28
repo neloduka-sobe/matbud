@@ -6,7 +6,8 @@
     "clients": "Klienci",
     "blog": "Blog",
     "contact": "Kontakt",
-    "gallery": "Galeria"
+    "gallery": "Galeria",
+    "careers": "Kariera"
   },
   "hero": {
     "title": "Profesjonalne Systemy Bezpieczeństwa Przeciwpożarowego",
@@ -535,5 +536,38 @@
       "przeglądy ppoż",
       "bezpieczeństwo pożarowe"
     ]
+  },
+  "careers": {
+    "title": "Kariera w Matbud Systemy Ppoż.",
+    "subtitle": "Dołącz do naszego zespołu i pomóż nam chronić życie i mienie poprzez najnowocześniejsze systemy przeciwpożarowe",
+    "description": "Poszukujemy utalentowanych i zmotywowanych profesjonalistów, którzy chcą rozwijać się w dynamicznej branży bezpieczeństwa przeciwpożarowego. Oferujemy stabilne zatrudnienie, możliwości rozwoju i atrakcyjne benefity.",
+    "whyJoinUs": {
+      "title": "Dlaczego warto dołączyć do nas?",
+      "items": [
+        "Stabilne zatrudnienie w rozwijającej się firmie",
+        "Możliwości rozwoju zawodowego i szkolenia",
+        "Konkurencyjne wynagrodzenie i benefity",
+        "Praca w zespole doświadczonych profesjonalistów",
+        "Różnorodne projekty i wyzwania techniczne",
+        "Wpływ na bezpieczeństwo ludzi i mienia"
+      ]
+    },
+    "jobTypes": {
+      "full-time": "Pełny etat",
+      "part-time": "Część etatu",
+      "contract": "Umowa zlecenie"
+    },
+    "jobDetails": {
+      "location": "Lokalizacja",
+      "type": "Typ zatrudnienia",
+      "experience": "Doświadczenie",
+      "requirements": "Wymagania",
+      "responsibilities": "Obowiązki",
+      "benefits": "Benefity",
+      "applyNow": "Aplikuj teraz",
+      "backToJobs": "Powrót do ofert pracy"
+    },
+    "noJobsAvailable": "Aktualnie nie mamy dostępnych ofert pracy",
+    "checkBackLater": "Sprawdź ponownie później lub wyślij nam swoje CV na adres praca@matbud.net"
   }
 }
