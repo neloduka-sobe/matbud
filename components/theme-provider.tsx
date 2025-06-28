@@ -28,6 +28,16 @@ export function ThemeProvider({
   ...props
 }: ThemeProviderProps) {
   const [theme, setTheme] = useState<Theme>(defaultTheme)
+  const [mounted, setMounted] = useState(false)
+
+  // Initialize theme from localStorage on mount
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme") as Theme
+    if (storedTheme && ["light", "dark", "system"].includes(storedTheme)) {
+      setTheme(storedTheme)
+    }
+    setMounted(true)
+  }, [])
 
   useEffect(() => {
     const root = window.document.documentElement
@@ -56,7 +66,16 @@ export function ThemeProvider({
 
   const value = {
     theme,
-    setTheme: (theme: Theme) => setTheme(theme),
+    setTheme: (newTheme: Theme) => {
+      setTheme(newTheme)
+      // Persist theme to localStorage
+      localStorage.setItem("theme", newTheme)
+    },
+  }
+
+  // Prevent hydration mismatch by not rendering until mounted
+  if (!mounted) {
+    return <div style={{ visibility: "hidden" }}>{children}</div>
   }
 
   return (
