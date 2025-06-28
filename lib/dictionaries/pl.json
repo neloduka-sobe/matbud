@@ -185,17 +185,23 @@
     "form": {
       "title": "Wyślij nam wiadomość",
       "nameLabel": "Twoje imię i nazwisko",
-      "namePlaceholder": "Wprowadź swoje pełne imię i nazwisko",
+      "namePlaceholder": "Imię i nazwisko",
       "emailLabel": "Adres e-mail",
-      "emailPlaceholder": "Wprowadź swój adres e-mail",
+      "emailPlaceholder": "mail@example.com",
       "phoneLabel": "Numer telefonu",
-      "phonePlaceholder": "Wprowadź swój numer telefonu",
+      "phonePlaceholder": "+48 123 456 789",
       "messageLabel": "Twoja wiadomość",
       "messagePlaceholder": "Jak możemy Ci pomóc?",
       "submit": "Wyślij wiadomość",
       "submitting": "Wysyłanie...",
       "successTitle": "Wiadomość wysłana",
-      "successMessage": "Dziękujemy za skontaktowanie się z nami. Odpowiemy wkrótce."
+      "successMessage": "Dziękujemy za skontaktowanie się z nami. Odpowiemy wkrótce.",
+      "validation": {
+        "nameMin": "Imię musi mieć co najmniej 2 znaki.",
+        "emailInvalid": "Proszę podać prawidłowy adres e-mail.",
+        "phoneMin": "Proszę podać prawidłowy numer telefonu.",
+        "messageMin": "Wiadomość musi mieć co najmniej 10 znaków."
+      }
     }
   },
   "footer": {
@@ -237,7 +243,7 @@
   },
   "cookieConsent": {
     "title": "Zgoda na pliki cookie",
-    "description": "Używamy plików cookie, aby poprawić Twoje doświadczenie przeglądania, wyświetlać spersonalizowane reklamy lub treści oraz analizować nasz ruch. Klikając „Akceptuj wszystkie”, wyrażasz zgodę na używanie przez nas plików cookie.",
+    "description": "Używamy plików cookie, aby poprawić Twoje doświadczenie przeglądania, wyświetlać spersonalizowane reklamy lub treści oraz analizować nasz ruch. Klikając \"Akceptuj wszystkie\", wyrażasz zgodę na używanie przez nas plików cookie.",
     "acceptAll": "Akceptuj wszystkie",
     "necessaryOnly": "Tylko niezbędne"
   },

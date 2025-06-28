@@ -6,6 +6,7 @@ import { getDictionary } from "@/lib/dictionaries";
 import { getCities } from "@/lib/cities";
 import { CheckCircle, MapPin, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ContactForm from "@/components/contact-form";
 
 // Type definition for the specific route parameters
 type CityParams = {
@@ -21,7 +22,7 @@ interface PageProps {
 // Generates static paths for all city pages during the build
 export async function generateStaticParams(): Promise<CityParams[]> {
   const cities = await getCities();
-  const locales = ["pl"];
+  const locales = ["pl", "en"];
 
   // Create paths for each locale and city combination
   return locales.flatMap(locale =>
@@ -210,10 +211,9 @@ export default async function CityPage({ params }: PageProps) {
                     <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="font-medium">{dict.contact?.contactInfo?.addressTitle ?? 'Adres Biura'}</h4>
-                      {/* Use a placeholder address structure - replace with real data if available */}
                       <address className="not-italic text-muted-foreground">
-                        ul. Przykładowa 123<br />
-                        00-000 {cityData.name}
+                        Słocin 36F<br />
+                        62-065 Grodzisk Wielkopolski
                       </address>
                     </div>
                   </div>
@@ -224,9 +224,8 @@ export default async function CityPage({ params }: PageProps) {
                     <div>
                        <h4 className="font-medium">{dict.contact?.contactInfo?.phoneTitle ?? 'Telefon'}</h4>
                        <p className="text-muted-foreground">
-                         {/* Replace with actual phone number */}
-                         <a href="tel:+48123456789" className="hover:text-primary transition-colors duration-200">
-                           +48 123 456 789
+                         <a href="tel:+48614481028" className="hover:text-primary transition-colors duration-200">
+                           +48 61 448 10 28
                          </a>
                        </p>
                      </div>
@@ -238,12 +237,11 @@ export default async function CityPage({ params }: PageProps) {
                     <div>
                       <h4 className="font-medium">{dict.contact?.contactInfo?.emailTitle ?? 'Email'}</h4>
                       <p className="text-muted-foreground">
-                        {/* Replace with actual email address */}
                         <a
-                          href={`mailto:kontakt@matbud-ppoz.pl`}
+                          href="mailto:matbud@m-so.pl"
                           className="hover:text-primary transition-colors duration-200"
                         >
-                          kontakt@matbud-ppoz.pl
+                          matbud@m-so.pl
                         </a>
                       </p>
                     </div>
@@ -252,80 +250,29 @@ export default async function CityPage({ params }: PageProps) {
               </div>
 
               {/* Contact Form Side */}
-              <div className="bg-card p-6 md:p-8 rounded-lg shadow-md border">
-                <h3 className="text-xl font-semibold mb-6">{dict.cityPage?.formTitle ?? 'Zapytaj o Ofertę'}</h3>
-
-                {/* Replace with an actual form component (e.g., using react-hook-form) */}
-                <form className="space-y-5">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                    {/* Name Field */}
-                    <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-medium">
-                        {dict.contact?.form?.nameLabel ?? 'Imię i Nazwisko'}
-                      </label>
-                      <input
-                        id="name"
-                        name="name"
-                        type="text"
-                        className="w-full p-3 border border-input rounded-md focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition duration-200 bg-background"
-                        placeholder={dict.contact?.form?.namePlaceholder ?? 'Jan Kowalski'}
-                        required
-                      />
-                    </div>
-
-                    {/* Phone Field */}
-                    <div className="space-y-2">
-                       <label htmlFor="phone" className="text-sm font-medium">
-                         {dict.contact?.form?.phoneLabel ?? 'Numer Telefonu'}
-                       </label>
-                       <input
-                         id="phone"
-                         name="phone"
-                         type="tel"
-                         className="w-full p-3 border border-input rounded-md focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition duration-200 bg-background"
-                         placeholder={dict.contact?.form?.phonePlaceholder ?? '+48 123 456 789'}
-                         required
-                       />
-                    </div>
-                  </div>
-
-                  {/* Email Field */}
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium">
-                      {dict.contact?.form?.emailLabel ?? 'Adres Email'}
-                    </label>
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      className="w-full p-3 border border-input rounded-md focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition duration-200 bg-background"
-                      placeholder={dict.contact?.form?.emailPlaceholder ?? 'jan.kowalski@example.com'}
-                      required
-                    />
-                  </div>
-
-                  {/* Message Field */}
-                  <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium">
-                      {dict.contact?.form?.messageLabel ?? 'Twoja Wiadomość'}
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={5}
-                      className="w-full p-3 border border-input rounded-md focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition duration-200 bg-background"
-                      placeholder={dict.contact?.form?.messagePlaceholder ?? 'Opisz czego potrzebujesz...'}
-                      required
-                    ></textarea>
-                  </div>
-
-                  {/* Submit Button */}
-                  <Button type="submit" size="lg" className="w-full bg-primary hover:bg-primary-dark transition-colors duration-200">
-                    {dict.contact?.form?.submit ?? 'Wyślij Zapytanie'}
-                  </Button>
-                </form>
-                {/* Add form submission handling logic here */}
-              </div>
+              <ContactForm 
+                dictionary={dict.contact?.form || {
+                  title: dict.cityPage?.formTitle || 'Wyślij nam wiadomość',
+                  nameLabel: 'Imię i Nazwisko',
+                  namePlaceholder: 'Jan Kowalski',
+                  emailLabel: 'Adres Email',
+                  emailPlaceholder: 'jan.kowalski@example.com',
+                  phoneLabel: 'Numer Telefonu',
+                  phonePlaceholder: '+48 123 456 789',
+                  messageLabel: 'Twoja Wiadomość',
+                  messagePlaceholder: 'Opisz czego potrzebujesz...',
+                  submit: 'Wyślij Zapytanie',
+                  submitting: 'Wysyłanie...',
+                  successTitle: 'Wiadomość wysłana',
+                  successMessage: 'Dziękujemy za skontaktowanie się z nami. Odpowiemy wkrótce.',
+                  validation: {
+                    nameMin: 'Imię musi mieć co najmniej 2 znaki.',
+                    emailInvalid: 'Proszę podać prawidłowy adres e-mail.',
+                    phoneMin: 'Proszę podać prawidłowy numer telefonu.',
+                    messageMin: 'Wiadomość musi mieć co najmniej 10 znaków.'
+                  }
+                }}
+              />
             </div>
           </div>
         </div>
