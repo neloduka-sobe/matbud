@@ -27,7 +27,7 @@ export async function generateMetadata({
 
   if (!post) {
     return {
-      title: "Post Not Found",
+      title: dict.blog.postNotFound,
     }
   }
 

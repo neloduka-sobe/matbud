@@ -9,6 +9,7 @@ interface Dictionary {
   description: string;
   necessaryOnly: string;
   acceptAll: string;
+  close: string;
 }
 
 export function CookieConsent({ dictionary }: { dictionary: Dictionary }) {
@@ -59,7 +60,7 @@ export function CookieConsent({ dictionary }: { dictionary: Dictionary }) {
           onClick={acceptNecessary}
         >
           <X className="h-4 w-4" />
-          <span className="sr-only">Zamknij</span>
+          <span className="sr-only">{dictionary.close}</span>
         </Button>
       </div>
     </div>

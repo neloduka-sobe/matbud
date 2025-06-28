@@ -233,7 +233,8 @@
     "title": "Blog o Bezpieczeństwie Przeciwpożarowym",
     "description": "Bądź na bieżąco z najnowszymi wiadomościami, poradami i spostrzeżeniami branżowymi dotyczącymi bezpieczeństwa przeciwpożarowego",
     "readMore": "Czytaj więcej",
-    "backToBlog": "Powrót do bloga"
+    "backToBlog": "Powrót do bloga",
+    "postNotFound": "Artykuł nie znaleziony"
   },
   "cityPage": {
     "title": "Systemy bezpieczeństwa przeciwpożarowego w {city}",
@@ -488,7 +489,8 @@
     "title": "Zgoda na pliki cookie",
     "description": "Używamy plików cookie, aby poprawić Twoje doświadczenie przeglądania, wyświetlać spersonalizowane reklamy lub treści oraz analizować nasz ruch. Klikając \"Akceptuj wszystkie\", wyrażasz zgodę na używanie przez nas plików cookie.",
     "acceptAll": "Akceptuj wszystkie",
-    "necessaryOnly": "Tylko niezbędne"
+    "necessaryOnly": "Tylko niezbędne",
+    "close": "Zamknij"
   },
   "notFound": {
     "title": "Strona nie znaleziona",
@@ -502,6 +504,10 @@
     "companyNameShort": "Matbud Systemy Ppoż.",
     "pageTitle": "Systemy Przeciwpożarowe",
     "pageDescription": "Profesjonalne usługi instalacji, konserwacji i certyfikacji systemów bezpieczeństwa pożarowego dla budynków komercyjnych i mieszkalnych.",
+    "defaultTitle": "Matbud Systemy Ppoż. Sp. z o.o. | Systemy Przeciwpożarowe",
+    "titleTemplate": "%s | Matbud Systemy Ppoż. Sp. z o.o.",
+    "defaultDescription": "Profesjonalne usługi instalacji, konserwacji i certyfikacji systemów bezpieczeństwa pożarowego dla budynków komercyjnych i mieszkalnych.",
+    "siteName": "Matbud Systemy Ppoż. Sp. z o.o.",
     "keywords": [
       "systemy przeciwpożarowe",
       "ochrona przeciwpożarowa",
