@@ -4,7 +4,7 @@ import Image from "next/image"
 import { useState } from "react"
 import { ChevronLeft, ChevronRight, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogClose, DialogTitle } from "@/components/ui/dialog"
 
 interface DictionaryType {
   title: string;
@@ -62,15 +62,14 @@ export default function Certificates({ dictionary }: { dictionary: DictionaryTyp
         </div>
 
         <Dialog open={selectedImage !== null} onOpenChange={(open) => !open && setSelectedImage(null)}>
-          <DialogContent className="max-w-3xl p-0 overflow-hidden bg-transparent border-none">
+          <DialogContent
+            className="max-w-3xl p-0 overflow-hidden bg-transparent border-none"
+            aria-labelledby="cert-dialog-title"
+          >
+            <DialogTitle className="sr-only">
+              {dictionary.title}
+            </DialogTitle>
             <div className="relative bg-background p-2 rounded-lg">
-              <DialogClose className="absolute right-2 top-2 z-10">
-                <Button variant="ghost" size="icon">
-                  <X className="h-4 w-4" />
-                  <span className="sr-only">Zamknij</span>
-                </Button>
-              </DialogClose>
-
               {selectedImage !== null && (
                 <div className="relative h-[80vh] max-h-[600px]">
                   <Image
