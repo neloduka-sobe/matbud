@@ -13,6 +13,11 @@ type CityParams = {
   city: string;
 };
 
+// Interface for page props
+interface PageProps {
+  params: Promise<{ locale: string; city: string }>;
+}
+
 // Generates static paths for all city pages during the build
 export async function generateStaticParams(): Promise<CityParams[]> {
   const cities = await getCities();
@@ -81,19 +86,24 @@ export default async function CityPage({ params }: PageProps) {
     return text.replace(/{city}/g, cityData.conjugation);
   };
 
+  // Helper function to trim text to a certain number of words
+  function trimWords(text: string | undefined, maxWords: number): string {
+    if (!text) return "";
+    const words = text.split(" ");
+    return words.length > maxWords ? words.slice(0, maxWords).join(" ") + "..." : text;
+  }
 
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-dark to-primary py-16 md:py-24 text-white">
+      <section className="bg-gradient-to-r from-primary-dark to-primary dark:from-black/70 dark:via-black/50 dark:to-black/30 py-16 md:py-24 text-white">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl font-bold tracking-tight mb-6">
-                {/* Use replaceCity helper for dynamic text */}
-                {replaceCity(dict.cityPage?.title)}
+                {trimWords(replaceCity(dict.cityPage?.title), 7)}
               </h1>
-              <p className="text-xl mb-8">{replaceCity(dict.cityPage?.intro)}</p>
+              <p className="text-xl mb-8">{trimWords(replaceCity(dict.cityPage?.intro), 20)}</p>
               <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
                 <Link href="#contact-form">
                   {replaceCity(dict.cityPage?.ctaButton)}
@@ -117,19 +127,19 @@ export default async function CityPage({ params }: PageProps) {
       <section className="py-16 md:py-20">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center md:text-left">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">
+            <h2 className="text-3xl font-bold mb-6">
               {replaceCity(dict.cityPage?.servicesTitle)}
             </h2>
-            <p className="text-lg mb-10 text-gray-600">{replaceCity(dict.cityPage?.servicesDescription)}</p>
+            <p className="text-lg mb-10 text-muted-foreground">{replaceCity(dict.cityPage?.servicesDescription)}</p>
 
             {/* Check if servicesList exists before mapping */}
             {dict.cityPage?.servicesList && (
                <div className="grid md:grid-cols-2 gap-6 mb-12">
                 {dict.cityPage.servicesList.map((service, index) => (
-                  <div key={index} className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 bg-white hover:shadow-md transition-shadow duration-200">
+                  <div key={index} className="flex items-start gap-3 p-4 rounded-lg border bg-card hover:shadow-md transition-shadow duration-200">
                     <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-medium text-gray-700">{service}</p>
+                      <p className="font-medium">{service}</p>
                     </div>
                   </div>
                 ))}
@@ -140,38 +150,38 @@ export default async function CityPage({ params }: PageProps) {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 md:py-20 bg-gray-50">
+      <section className="py-16 md:py-20 bg-muted/50">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-             <h2 className="text-3xl font-bold mb-6 text-gray-800">
+             <h2 className="text-3xl font-bold mb-6">
                 {replaceCity(dict.cityPage?.whyChooseTitle)}
              </h2>
-             <p className="text-lg mb-12 text-gray-600">{replaceCity(dict.cityPage?.whyChooseDescription)}</p>
+             <p className="text-lg mb-12 text-muted-foreground">{replaceCity(dict.cityPage?.whyChooseDescription)}</p>
 
              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12">
                 {/* Stat 1: Experience */}
-                <div className="bg-white p-6 rounded-lg shadow-sm text-center border border-gray-100">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-primary/20">
+                <div className="bg-card p-6 rounded-lg shadow-sm text-center border">
+                  <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-primary/20">
                     {/* Dynamically use value from dictionary if available */}
                     <span className="text-primary text-2xl font-bold">{dict.aboutUs?.stats?.[0]?.value ?? '25+'}</span>
                   </div>
-                  <h3 className="font-semibold mb-1 text-gray-700">{dict.aboutUs?.stats?.[0]?.label ?? 'Lat Doświadczenia'}</h3>
+                  <h3 className="font-semibold mb-1">{dict.aboutUs?.stats?.[0]?.label ?? 'Lat Doświadczenia'}</h3>
                 </div>
 
                 {/* Stat 2: Certified Techs */}
-                <div className="bg-white p-6 rounded-lg shadow-sm text-center border border-gray-100">
-                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-primary/20">
+                <div className="bg-card p-6 rounded-lg shadow-sm text-center border">
+                   <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-primary/20">
                      <span className="text-primary text-2xl font-bold">100%</span>
                    </div>
-                   <h3 className="font-semibold mb-1 text-gray-700">{dict.cityPage?.certifiedTechs ?? 'Certyfikowani Technicy'}</h3>
+                   <h3 className="font-semibold mb-1">{dict.cityPage?.certifiedTechs ?? 'Certyfikowani Technicy'}</h3>
                  </div>
 
                 {/* Stat 3: Support */}
-                <div className="bg-white p-6 rounded-lg shadow-sm text-center border border-gray-100">
-                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-primary/20">
+                <div className="bg-card p-6 rounded-lg shadow-sm text-center border">
+                   <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-primary/20">
                       <span className="text-primary text-2xl font-bold">24/7</span>
                    </div>
-                   <h3 className="font-semibold mb-1 text-gray-700">{dict.cityPage?.support ?? 'Wsparcie Techniczne'}</h3>
+                   <h3 className="font-semibold mb-1">{dict.cityPage?.support ?? 'Wsparcie Techniczne'}</h3>
                  </div>
              </div>
           </div>
@@ -183,27 +193,27 @@ export default async function CityPage({ params }: PageProps) {
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-gray-800">
+              <h2 className="text-3xl font-bold mb-4">
                 {replaceCity(dict.cityPage?.contactTitle)}
               </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">{dict.cityPage?.contactSubtitle}</p>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{dict.cityPage?.contactSubtitle}</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
               {/* Contact Info Side */}
-              <div className="bg-white p-6 md:p-8 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-xl font-semibold mb-6 text-gray-800">{dict.contact?.contactInfo?.title ?? 'Informacje Kontaktowe'}</h3>
+              <div className="bg-card p-6 md:p-8 rounded-lg shadow-md border">
+                <h3 className="text-xl font-semibold mb-6">{dict.contact?.contactInfo?.title ?? 'Informacje Kontaktowe'}</h3>
 
                 <div className="space-y-6">
                   {/* Address */}
                   <div className="flex items-start gap-4">
                     <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="font-medium text-gray-700">{dict.contact?.contactInfo?.addressTitle ?? 'Adres Biura'}</h4>
+                      <h4 className="font-medium">{dict.contact?.contactInfo?.addressTitle ?? 'Adres Biura'}</h4>
                       {/* Use a placeholder address structure - replace with real data if available */}
-                      <address className="not-italic text-gray-600">
+                      <address className="not-italic text-muted-foreground">
                         ul. Przykładowa 123<br />
-                        {cityData?.zipCode ?? '00-000'} {cityData.name} {/* Assuming zipCode exists */}
+                        00-000 {cityData.name}
                       </address>
                     </div>
                   </div>
@@ -212,8 +222,8 @@ export default async function CityPage({ params }: PageProps) {
                   <div className="flex items-start gap-4">
                     <Phone className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                     <div>
-                       <h4 className="font-medium text-gray-700">{dict.contact?.contactInfo?.phoneTitle ?? 'Telefon'}</h4>
-                       <p className="text-gray-600">
+                       <h4 className="font-medium">{dict.contact?.contactInfo?.phoneTitle ?? 'Telefon'}</h4>
+                       <p className="text-muted-foreground">
                          {/* Replace with actual phone number */}
                          <a href="tel:+48123456789" className="hover:text-primary transition-colors duration-200">
                            +48 123 456 789
@@ -226,8 +236,8 @@ export default async function CityPage({ params }: PageProps) {
                   <div className="flex items-start gap-4">
                     <Mail className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="font-medium text-gray-700">{dict.contact?.contactInfo?.emailTitle ?? 'Email'}</h4>
-                      <p className="text-gray-600">
+                      <h4 className="font-medium">{dict.contact?.contactInfo?.emailTitle ?? 'Email'}</h4>
+                      <p className="text-muted-foreground">
                         {/* Replace with actual email address */}
                         <a
                           href={`mailto:kontakt@matbud-ppoz.pl`}
@@ -242,22 +252,22 @@ export default async function CityPage({ params }: PageProps) {
               </div>
 
               {/* Contact Form Side */}
-              <div className="bg-white p-6 md:p-8 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-xl font-semibold mb-6 text-gray-800">{dict.cityPage?.formTitle ?? 'Zapytaj o Ofertę'}</h3>
+              <div className="bg-card p-6 md:p-8 rounded-lg shadow-md border">
+                <h3 className="text-xl font-semibold mb-6">{dict.cityPage?.formTitle ?? 'Zapytaj o Ofertę'}</h3>
 
                 {/* Replace with an actual form component (e.g., using react-hook-form) */}
                 <form className="space-y-5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     {/* Name Field */}
                     <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-medium text-gray-700">
+                      <label htmlFor="name" className="text-sm font-medium">
                         {dict.contact?.form?.nameLabel ?? 'Imię i Nazwisko'}
                       </label>
                       <input
                         id="name"
                         name="name"
                         type="text"
-                        className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition duration-200"
+                        className="w-full p-3 border border-input rounded-md focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition duration-200 bg-background"
                         placeholder={dict.contact?.form?.namePlaceholder ?? 'Jan Kowalski'}
                         required
                       />
@@ -265,14 +275,14 @@ export default async function CityPage({ params }: PageProps) {
 
                     {/* Phone Field */}
                     <div className="space-y-2">
-                       <label htmlFor="phone" className="text-sm font-medium text-gray-700">
+                       <label htmlFor="phone" className="text-sm font-medium">
                          {dict.contact?.form?.phoneLabel ?? 'Numer Telefonu'}
                        </label>
                        <input
                          id="phone"
                          name="phone"
                          type="tel"
-                         className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition duration-200"
+                         className="w-full p-3 border border-input rounded-md focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition duration-200 bg-background"
                          placeholder={dict.contact?.form?.phonePlaceholder ?? '+48 123 456 789'}
                          required
                        />
@@ -281,14 +291,14 @@ export default async function CityPage({ params }: PageProps) {
 
                   {/* Email Field */}
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium text-gray-700">
+                    <label htmlFor="email" className="text-sm font-medium">
                       {dict.contact?.form?.emailLabel ?? 'Adres Email'}
                     </label>
                     <input
                       id="email"
                       name="email"
                       type="email"
-                      className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition duration-200"
+                      className="w-full p-3 border border-input rounded-md focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition duration-200 bg-background"
                       placeholder={dict.contact?.form?.emailPlaceholder ?? 'jan.kowalski@example.com'}
                       required
                     />
@@ -296,14 +306,14 @@ export default async function CityPage({ params }: PageProps) {
 
                   {/* Message Field */}
                   <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium text-gray-700">
+                    <label htmlFor="message" className="text-sm font-medium">
                       {dict.contact?.form?.messageLabel ?? 'Twoja Wiadomość'}
                     </label>
                     <textarea
                       id="message"
                       name="message"
                       rows={5}
-                      className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition duration-200"
+                      className="w-full p-3 border border-input rounded-md focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition duration-200 bg-background"
                       placeholder={dict.contact?.form?.messagePlaceholder ?? 'Opisz czego potrzebujesz...'}
                       required
                     ></textarea>
