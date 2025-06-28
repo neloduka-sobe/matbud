@@ -4,8 +4,8 @@ export type City = {
   conjugation: string
 }
 
-export async function getCities(): Promise<City[]> {
-  return [
+export async function getCities(locale?: string): Promise<City[]> {
+  const polishCities = [
     {"name": "Warszawa", "slug": "systemy-ppoz-warszawa", "conjugation": "w Warszawie"},
     {"name": "Kraków", "slug": "systemy-ppoz-krakow", "conjugation": "w Krakowie"},
     {"name": "Łódź", "slug": "systemy-ppoz-lodz", "conjugation": "w Łodzi"},
@@ -62,4 +62,16 @@ export async function getCities(): Promise<City[]> {
     {"name": "Kędzierzyn-Koźle", "slug": "systemy-ppoz-kedzierzyn-kozle", "conjugation": "w Kędzierzynie-Koźlu"},
     {"name": "Piotrków Trybunalski", "slug": "systemy-ppoz-piotrkow-trybunalski", "conjugation": "w Piotrkowie Trybunalskim"}
   ];
+
+  // For Polish locale, return cities with conjugation
+  if (locale === "pl") {
+    return polishCities;
+  }
+
+  // For other locales (English, etc.), return cities without conjugation
+  // Just use the city name since the dictionary already includes "in"
+  return polishCities.map(city => ({
+    ...city,
+    conjugation: city.name
+  }));
 }

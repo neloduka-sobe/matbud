@@ -30,6 +30,11 @@ export async function getAllPosts(locale: string): Promise<Post[]> {
   // Get the locale-specific directory
   const localeDirectory = path.join(postsDirectory, locale)
 
+  // Check if the locale directory exists, if not return empty array
+  if (!fs.existsSync(localeDirectory)) {
+    return []
+  }
+
   const fileNames = fs.readdirSync(localeDirectory)
   const allPostsData = fileNames
     .filter((fileName) => fileName.endsWith(".md") || fileName.endsWith(".mdx"))
@@ -71,6 +76,10 @@ export async function getPostBySlug(slug: string, locale: string): Promise<Post 
   // Get the locale-specific directory
   const localeDirectory = path.join(postsDirectory, locale)
 
+  // Check if the locale directory exists, if not return null
+  if (!fs.existsSync(localeDirectory)) {
+    return null
+  }
 
   try {
     // Check for both .md and .mdx extensions
