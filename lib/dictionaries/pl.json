@@ -257,6 +257,149 @@
     "contactSubtitle": "Wypełnij poniższy formularz, a nasz lokalny zespół skontaktuje się z Tobą wkrótce",
     "formTitle": "Wyślij nam wiadomość"
   },
+  "termsOfService": {
+    "title": "Warunki Świadczenia Usług",
+    "lastUpdated": "Ostatnia aktualizacja",
+    "lastUpdatedDate": "15 grudnia 2024",
+    "introduction": "Niniejsze Warunki Świadczenia Usług regulują świadczenie usług przez Matbud Systemy Ppoż. Sp. z o.o. oraz określają prawa i obowiązki stron w związku z korzystaniem z naszych usług z zakresu bezpieczeństwa przeciwpożarowego.",
+    "sections": {
+      "definitions": {
+        "title": "Definicje",
+        "content": "W niniejszych Warunkach Świadczenia Usług:",
+        "items": [
+          "\"Firma\" oznacza Matbud Systemy Ppoż. Sp. z o.o.",
+          "\"Klient\" oznacza osobę fizyczną lub prawną korzystającą z usług Firmy",
+          "\"Usługi\" oznacza usługi z zakresu bezpieczeństwa przeciwpożarowego świadczone przez Firmę",
+          "\"Umowa\" oznacza umowę o świadczenie usług zawartą między Firmą a Klientem"
+        ]
+      },
+      "scope": {
+        "title": "Zakres usług",
+        "content": "Firma świadczy następujące usługi z zakresu bezpieczeństwa przeciwpożarowego:",
+        "items": [
+          "Projektowanie i instalacja systemów sygnalizacji pożaru",
+          "Instalacja i konserwacja systemów tryskaczowych",
+          "Montaż oświetlenia awaryjnego i znaków ewakuacyjnych",
+          "Inspekcje bezpieczeństwa przeciwpożarowego",
+          "Audyty zgodności z przepisami przeciwpożarowymi",
+          "Szkolenia z zakresu bezpieczeństwa przeciwpożarowego",
+          "Serwis awaryjny i naprawy systemów",
+          "Konserwacja zapobiegawcza urządzeń przeciwpożarowych"
+        ]
+      },
+      "obligations": {
+        "title": "Zobowiązania Firmy",
+        "content": "Firma zobowiązuje się do:",
+        "items": [
+          "Świadczenia usług zgodnie z obowiązującymi przepisami i normami",
+          "Wykorzystywania wysokiej jakości materiałów i urządzeń",
+          "Zapewnienia wykwalifikowanego personelu do realizacji zleceń",
+          "Przestrzegania terminów realizacji ustalonych z Klientem",
+          "Zapewnienia serwisu awaryjnego w uzgodnionych godzinach",
+          "Przechowywania dokumentacji technicznej i gwarancyjnej",
+          "Przeprowadzania regularnych szkoleń personelu"
+        ]
+      },
+      "clientObligations": {
+        "title": "Zobowiązania Klienta",
+        "content": "Klient zobowiązuje się do:",
+        "items": [
+          "Dostarczenia wszystkich niezbędnych informacji i dokumentacji",
+          "Zapewnienia dostępu do obiektu w uzgodnionych terminach",
+          "Przestrzegania zaleceń bezpieczeństwa przekazanych przez Firmę",
+          "Niezwłocznego zgłaszania awarii i problemów technicznych",
+          "Umożliwienia przeprowadzenia niezbędnych inspekcji i testów",
+          "Przechowywania dokumentacji technicznej w bezpiecznym miejscu",
+          "Przestrzegania harmonogramu konserwacji i przeglądów"
+        ]
+      },
+      "pricing": {
+        "title": "Cennik i płatności",
+        "content": "Zasady ustalania cen i płatności:",
+        "items": [
+          "Ceny usług są ustalane indywidualnie na podstawie zakresu prac",
+          "Firma wystawia faktury VAT zgodnie z obowiązującymi przepisami",
+          "Termin płatności wynosi 14 dni od daty wystawienia faktury",
+          "W przypadku opóźnienia w płatności naliczane są odsetki ustawowe",
+          "Koszty materiałów i urządzeń są rozliczane osobno",
+          "Ceny nie obejmują podatku VAT, który jest doliczany zgodnie z przepisami"
+        ]
+      },
+      "warranty": {
+        "title": "Gwarancja i odpowiedzialność",
+        "content": "Firma udziela gwarancji na świadczone usługi i urządzenia zgodnie z przepisami prawa. Gwarancja obejmuje:",
+        "items": [
+          "24-miesięczną gwarancję na urządzenia przeciwpożarowe",
+          "12-miesięczną gwarancję na prace instalacyjne",
+          "Bezpłatne usunięcie wad w okresie gwarancyjnym",
+          "Odpowiedzialność za szkody wyrządzone przez wady urządzeń",
+          "Ograniczenie odpowiedzialności do wartości umowy",
+          "Wyłączenie odpowiedzialności za szkody pośrednie"
+        ]
+      },
+      "safety": {
+        "title": "Bezpieczeństwo i zgodność",
+        "content": "Firma zapewnia, że wszystkie świadczone usługi są zgodne z:",
+        "items": [
+          "Przepisami prawa budowlanego",
+          "Normami bezpieczeństwa przeciwpożarowego",
+          "Wymaganiami technicznymi dla systemów przeciwpożarowych",
+          "Zaleceniami producentów urządzeń",
+          "Przepisami BHP obowiązującymi w obiekcie",
+          "Międzynarodowymi standardami bezpieczeństwa"
+        ]
+      },
+      "confidentiality": {
+        "title": "Poufność",
+        "content": "Firma zobowiązuje się do zachowania poufności informacji przekazanych przez Klienta, w tym:",
+        "items": [
+          "Danych technicznych obiektu",
+          "Informacji o systemach bezpieczeństwa",
+          "Danych kontaktowych i adresowych",
+          "Szczegółów realizowanych projektów",
+          "Informacji handlowych i biznesowych",
+          "Danych osobowych pracowników Klienta"
+        ]
+      },
+      "termination": {
+        "title": "Rozwiązanie umowy",
+        "content": "Umowa może zostać rozwiązana w następujących przypadkach:",
+        "items": [
+          "Za porozumieniem stron",
+          "W przypadku rażącego naruszenia warunków umowy",
+          "W przypadku niewypłacalności jednej ze stron",
+          "W przypadku siły wyższej uniemożliwiającej realizację umowy",
+          "Z zachowaniem 30-dniowego okresu wypowiedzenia",
+          "Z obowiązkiem rozliczenia wykonanych prac"
+        ]
+      },
+      "disputes": {
+        "title": "Rozstrzyganie sporów",
+        "content": "W przypadku sporów wynikających z realizacji umowy:",
+        "items": [
+          "Strony dążą do polubownego rozwiązania sporu",
+          "W przypadku braku porozumienia spór rozstrzyga sąd właściwy",
+          "Stosuje się prawo polskie",
+          "Językiem postępowania jest język polski",
+          "Strony mogą skorzystać z mediacji",
+          "Rozstrzygnięcia sądu są ostateczne"
+        ]
+      },
+      "contact": {
+        "title": "Kontakt w sprawie warunków świadczenia usług",
+        "content": "W przypadku pytań dotyczących niniejszych Warunków Świadczenia Usług, skontaktuj się z nami:",
+        "items": [
+          "E-mail: matbud@m-so.pl",
+          "Telefon: +48 61 448 10 28",
+          "Adres: Słocin 36F, 62-065 Grodzisk Wielkopolski"
+        ]
+      },
+      "changes": {
+        "title": "Zmiany warunków świadczenia usług",
+        "content": "Firma zastrzega sobie prawo do zmiany niniejszych Warunków Świadczenia Usług. O wszelkich zmianach Klienci będą informowani z wyprzedzeniem co najmniej 30 dni poprzez stronę internetową lub bezpośrednio."
+      }
+    }
+  },
   "privacyPolicy": {
     "title": "Polityka Prywatności",
     "lastUpdated": "Ostatnia aktualizacja",
