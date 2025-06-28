@@ -67,19 +67,66 @@ export default function ContactForm({ dictionary, className = "" }: ContactFormP
     },
   })
 
-  async function onSubmit() {
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true)
 
-    // Simulate API call TODO
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    try {
+      const response = await fetch('https://fotvatzzgsanqjdynkfs.functions.supabase.co/submit-contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: values.name,
+          email: values.email,
+          phone: values.phone,
+          message: values.message,
+        }),
+      })
 
-    toast({
-      title: dictionary.successTitle,
-      description: dictionary.successMessage,
-    })
+      if (!response.ok) {
+        // Handle different error scenarios
+        if (response.status === 405) {
+          throw new Error('Method not allowed. Please check if the endpoint supports POST requests.')
+        } else if (response.status === 404) {
+          throw new Error('Endpoint not found. Please verify the Supabase function URL.')
+        } else {
+          throw new Error(`Server error: ${response.status}`)
+        }
+      }
 
-    form.reset()
-    setIsSubmitting(false)
+      toast({
+        title: dictionary.successTitle,
+        description: dictionary.successMessage,
+      })
+
+      form.reset()
+    } catch (error) {
+      console.error('Error submitting contact form:', error)
+      
+      // Provide more specific error messages
+      let errorMessage = "Failed to send message. Please try again later."
+      
+      if (error instanceof Error) {
+        if (error.message.includes('CORS')) {
+          errorMessage = "CORS error: The server needs to be configured to allow requests from this domain."
+        } else if (error.message.includes('Method not allowed')) {
+          errorMessage = "Server configuration error: POST method not supported."
+        } else if (error.message.includes('Endpoint not found')) {
+          errorMessage = "Server configuration error: Contact endpoint not found."
+        } else if (error.message.includes('Failed to fetch')) {
+          errorMessage = "Network error: Unable to connect to the server."
+        }
+      }
+      
+      toast({
+        title: "Error",
+        description: errorMessage,
+        variant: "destructive",
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -163,4 +210,4 @@ export default function ContactForm({ dictionary, className = "" }: ContactFormP
       </Form>
     </div>
   )
-} 
+}
