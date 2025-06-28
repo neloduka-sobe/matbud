@@ -22,6 +22,7 @@ interface Dictionary {
     certificates: string
     clients: string
     blog: string
+    careers: string
     contact: string
   }
   common: {
@@ -82,6 +83,11 @@ export function Footer({
             <li>
               <Link href={`/${locale}/blog`} className="text-muted-foreground hover:text-primary transition-colors">
                 {dictionary.navigation.blog}
+              </Link>
+            </li>
+            <li>
+              <Link href={`/${locale}/careers`} className="text-muted-foreground hover:text-primary transition-colors">
+                {dictionary.navigation.careers}
               </Link>
             </li>
             <li>

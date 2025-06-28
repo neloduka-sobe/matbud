@@ -4,7 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { ThemeToggle } from "@/components/theme-toggle"
 
@@ -70,6 +70,9 @@ export function Header({ locale, dictionary }: { locale: string; dictionary: Dic
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
+              <SheetTitle className="sr-only">
+                {dictionary.common.menu}
+              </SheetTitle>
               <div className="flex flex-col gap-6 mt-8">
                 <Link href={`/${locale}#services`} className="text-lg font-medium transition-colors hover:text-primary">
                   {dictionary.navigation.services}
