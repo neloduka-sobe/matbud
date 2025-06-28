@@ -22,7 +22,7 @@ interface PageProps {
 // Generates static paths for all city pages during the build
 export async function generateStaticParams(): Promise<CityParams[]> {
   const cities = await getCities();
-  const locales = ["pl", "en"];
+  const locales = ["pl"];
 
   // Create paths for each locale and city combination
   return locales.flatMap(locale =>
