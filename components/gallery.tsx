@@ -4,7 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import { ChevronLeft, ChevronRight, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogClose, DialogTitle } from "@/components/ui/dialog"
 
 interface ImageData {
   title: string;
@@ -100,15 +100,11 @@ export default function Gallery({ dictionary }: { dictionary: DictionaryType }) 
         </div>
 
         <Dialog open={selectedImage !== null} onOpenChange={(open) => !open && setSelectedImage(null)}>
-          <DialogContent  className="max-w-4xl p-0 overflow-hidden bg-transparent border-none">
+          <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none" aria-labelledby="gallery-dialog-title">
+            <DialogTitle className="sr-only">
+              {dictionary.title}
+            </DialogTitle>
             <div className="relative bg-background p-2 rounded-lg">
-              <DialogClose asChild>
-                <button className="absolute right-2 top-2 z-10 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none">
-                  <X className="h-4 w-4" />
-                  <span className="sr-only">Close</span>
-                </button>
-              </DialogClose>
-
               {selectedImage !== null && (
                 <>
                   <div className="relative h-[80vh] max-h-[600px]">
