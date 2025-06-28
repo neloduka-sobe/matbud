@@ -1,12 +1,13 @@
 import Link from "next/link"
 import { getDictionary } from "@/lib/dictionaries"
+import { i18n } from "@/lib/i18n-config"
 
 export default async function LocaleNotFound({
   params,
 }: {
   params?: { locale: string }
 }) {
-  const locale = params ? await Promise.resolve(params.locale) : "en"
+  const locale = params ? await Promise.resolve(params.locale) : i18n.defaultLocale
   const dict = await getDictionary(locale)
 
   return (
