@@ -1,4 +1,9 @@
-#Matbud Systemy Ppoż. Sp. z o.o. website
+## Tech Stack
+* Next.js
+* Tailwind
+* Node
+* Supabase
+* GH Pages
 
 ## Deployment
 
