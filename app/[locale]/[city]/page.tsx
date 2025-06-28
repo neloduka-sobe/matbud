@@ -246,6 +246,21 @@ export default async function CityPage({ params }: PageProps) {
                       </p>
                     </div>
                   </div>
+
+                  {/* Business Hours */}
+                  <div className="mt-8">
+                    <h4 className="font-medium mb-4">{dict.contact?.contactInfo?.hoursTitle ?? 'Godziny Pracy'}</h4>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex justify-between">
+                        <span>{dict.contact?.contactInfo?.weekdays ?? 'Poniedziałek - Piątek'}</span>
+                        <span>8:00 - 16:00</span>
+                      </li>
+                      <li className="flex justify-between">
+                        <span>{dict.contact?.contactInfo?.saturday ?? 'Sobota'} - {dict.contact?.contactInfo?.sunday ?? 'Niedziela'}</span>
+                        <span>{dict.contact?.contactInfo?.closed ?? 'Zamknięte'}</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
