@@ -10,7 +10,7 @@ interface HeroDictionary {
 
 export default function Hero({ dictionary }: { dictionary: HeroDictionary }) {
   return (
-    <section className="hero-image relative min-h-[600px] flex items-center">
+    <section className="hero-image relative">
       <div className="container hero-content text-white">
         <div className="max-w-2xl space-y-6">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">{dictionary.title}</h1>
