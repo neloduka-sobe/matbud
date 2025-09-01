@@ -15,7 +15,7 @@ Każda firma stoi w obliczu unikalnych zagrożeń pożarowych, w zależności od
 
 - Awarie sprzętu elektrycznego
 - Usterki systemów ogrzewania i chłodzenia
-- Wyposażenie kuchenne w pomieszczeniach socjalnych lub stołówkach
+- Wyposażenie kuchenne w pomieszczeniach socjalnych
 - Przechowywanie materiałów łatwopalnych
 - Błąd ludzki i zaniedbanie
 
@@ -23,67 +23,69 @@ Identyfikacja tych zagrożeń poprzez kompleksową ocenę ryzyka pożarowego jes
 
 ## Podstawowe środki bezpieczeństwa pożarowego
 
-### 1. Instalacja i konserwacja systemów wykrywania pożaru
+### 1. Systemy wykrywania pożaru
 
-Wczesne wykrycie ma kluczowe znaczenie dla minimalizacji szkód i ratowania życia. Twoja firma powinna posiadać:
+Wczesne wykrycie ma kluczowe znaczenie dla minimalizacji szkód i ratowania życia:
 
-- Czujki dymu na każdej kondygnacji i w obszarach krytycznych
-- Czujki ciepła w obszarach, gdzie czujki dymu mogą wywoływać fałszywe alarmy
-- Czujniki tlenku węgla tam, gdzie ma to zastosowanie
-- Centralny system sygnalizacji pożarowej, który ostrzega wszystkich użytkowników budynku
+- Czujki dymu na każdej kondygnacji
+- Czujki ciepła w obszarach problematycznych
+- Czujniki tlenku węgla
+- Centrala sygnalizacji pożarowej (CSP)
 
-Systemy te powinny być profesjonalnie sprawdzane co najmniej raz w roku, a częstsze testy powinny być przeprowadzane przez wyznaczonych pracowników.
+Systemy te powinny być sprawdzane co najmniej raz w roku.
 
-### 2. Zapewnienie odpowiedniego sprzętu gaśniczego
+### 2. Systemy oddymiania
 
-Posiadanie odpowiedniego sprzętu do gaszenia małych pożarów może zapobiec ich rozprzestrzenianiu się:
+Zarządzanie dymem jest kluczowe dla bezpiecznej ewakuacji:
 
-- Gaśnice odpowiednie do rodzajów pożarów, które mogą wystąpić w danym obszarze
-- Automatyczne systemy zraszaczowe w większych obiektach
-- Koce gaśnicze w obszarach kuchennych
-- Wyraźnie oznakowane szafki na węże pożarowe, tam gdzie są zainstalowane
+- Klapy dymowe i okna oddymiające
+- Wentylatory oddymiające
+- Systemy nadciśnieniowe dla klatek schodowych
+- Automatyczne sterowanie z systemami alarmowymi
 
-Upewnij się, że wszyscy pracownicy znają lokalizację tego sprzętu i przeszli szkolenie z jego prawidłowego użytkowania.
+### 3. Oświetlenie awaryjne
 
-### 3. Tworzenie i ćwiczenie planów ewakuacji
+Bezpieczna ewakuacja wymaga odpowiedniego oświetlenia:
 
-Każda firma potrzebuje jasnego planu ewakuacji, który obejmuje:
+- Znaki ewakuacyjne z podświetleniem
+- Oprawy oświetlenia awaryjnego
+- Oświetlenie dróg ewakuacyjnych
+- Systemy zasilania awaryjnego
 
-- Wielokrotne drogi ewakuacyjne ze wszystkich obszarów
-- Wyznaczone punkty zbiórki poza budynkiem
-- Procedury sprawdzania obecności wszystkich pracowników
-- Przypisane role koordynatorom działań ratowniczych
-- Udogodnienia dla pracowników z niepełnosprawnościami
+### 4. Plany ewakuacji
 
-Przeprowadzaj ćwiczenia ewakuacyjne co najmniej dwa razy w roku, aby upewnić się, że wszyscy wiedzą, co robić w sytuacji awaryjnej.
+Każda firma potrzebuje jasnego planu ewakuacji:
 
-### 4. Zapewnienie regularnych szkoleń dla personelu
+- Wielokrotne drogi ewakuacyjne
+- Wyznaczone punkty zbiórki
+- Procedury sprawdzania obecności
+- Udogodnienia dla osób niepełnosprawnych
 
-Twoi pracownicy są Twoją pierwszą linią obrony w przypadku zagrożeń pożarowych:
+Przeprowadzaj ćwiczenia ewakuacyjne co najmniej dwa razy w roku.
 
-- Szkol wszystkich pracowników w zakresie praktyk zapobiegania pożarom
-- Prowadź praktyczne szkolenia z użycia gaśnic
-- Regularnie przeglądaj procedury ewakuacyjne
-- Wyznacz i przeszkol osoby odpowiedzialne za bezpieczeństwo pożarowe (fire wardens) dla każdego działu lub piętra
-- Uwzględnij bezpieczeństwo pożarowe w orientacji dla nowych pracowników
+### 5. Szkolenia dla personelu
 
-Szkolenia przypominające powinny być przeprowadzane co roku, aby utrwalić procedury bezpieczeństwa.
+Twoi pracownicy są pierwszą linią obrony:
 
-## Zgodność z przepisami bezpieczeństwa pożarowego
+- Szkolenia z praktyk zapobiegania pożarom
+- Praktyczne szkolenia z użycia gaśnic
+- Przeglądy procedur ewakuacyjnych
+- Wyznaczenie osób odpowiedzialnych za bezpieczeństwo
 
-Firmy muszą przestrzegać lokalnych, stanowych i federalnych przepisów bezpieczeństwa pożarowego, które zazwyczaj obejmują:
+## Zgodność z przepisami
 
-- Regularne inspekcje bezpieczeństwa pożarowego
-- Odpowiednie oznakowanie wyjść i oświetlenie awaryjne
+Firmy muszą przestrzegać przepisów bezpieczeństwa pożarowego:
+
+- Regularne inspekcje techniczne
+- Odpowiednie oznakowanie wyjść
 - Nieprzesłonięte drogi ewakuacyjne
-- Maksymalne limity obłożenia
-- Dokumentację ćwiczeń pożarowych i szkoleń
-- Prawidłowe przechowywanie materiałów niebezpiecznych
+- Dokumentacja ćwiczeń i szkoleń
+- Certyfikowane badania techniczne (PKD 71.20.B)
 
-Współpraca ze specjalistą ds. bezpieczeństwa pożarowego może pomóc zapewnić, że Twoja firma spełnia wszystkie obowiązujące wymagania.
+Współpraca ze specjalistą ds. bezpieczeństwa pożarowego pomoże zapewnić zgodność z wymaganiami.
 
 ## Podsumowanie
 
-Inwestowanie w bezpieczeństwo pożarowe to nie tylko wymóg prawny – to kluczowa decyzja biznesowa, która chroni Twoje najcenniejsze aktywa: ludzi i działalność. Wdrażając te podstawowe środki bezpieczeństwa pożarowego, tworzysz bezpieczniejsze środowisko i demonstrujesz swoje zaangażowanie w dobro pracowników.
+Inwestowanie w bezpieczeństwo pożarowe to kluczowa decyzja biznesowa, która chroni ludzi i działalność. Wdrażając te podstawowe środki, tworzysz bezpieczniejsze środowisko i demonstrujesz zaangażowanie w dobro pracowników.
 
-Pamiętaj, że bezpieczeństwo pożarowe nie jest jednorazowym wysiłkiem, ale ciągłym procesem, który wymaga regularnej oceny, konserwacji i szkoleń. Zachowaj czujność i priorytetowo traktuj bezpieczeństwo, aby chronić to, co najważniejsze.
+Pamiętaj, że bezpieczeństwo pożarowe to ciągły proces wymagający regularnej oceny, konserwacji i szkoleń.
