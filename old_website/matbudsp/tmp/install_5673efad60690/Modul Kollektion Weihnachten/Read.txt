@@ -1,0 +1,13 @@
+# Modul Kollektion Weihnachten, Vers. 1.0
+# (c) by Mario Boro, Werbeagentur moremedia, 2006-2007
+
+Auswahl aus 5 weihnachtlichen Themen:
+
+* Weihnachtsmann
+* Christbaum
+* Mistelzweig
+* Schneeflocke
+* Schleife
+
+Viel Spaﬂ damit ...
+und Frohe Weihnachten!

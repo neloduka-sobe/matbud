@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>OrangeLite_EN</name>
+	<version>1.0 EN</version>
+	<creationDate>18 IV 2009</creationDate>
+	<author>Szablony.eurolol.pl</author>
+	<authorEmail>artur@cpg.superhost.pl</authorEmail>
+	<authorUrl>http://www.szablony.eurolol.pl</authorUrl>
+	<copyright>GNU/GPL</copyright>
+	<license>GNU/GPL version 2</license>
+	<description>Template to Joomla</description>
+ <files>
+     <filename>index.php</filename>
+	 <filename>favicon.ico</filename>
+     <filename>template_thumbnail.png</filename>
+  </files>
+  <images>
+     <filename>images/gorna_belka.png</filename>
+	 <filename>images/logo.png</filename>
+	 <filename>images/menu.png</filename>
+	 <filename>images/menu_2.png</filename>
+	 <filename>images/stopka.png</filename>
+	 <filename>images/stopka_w.png</filename>
+	 <filename>images/tlo.png</filename>
+	 <filename>images/tlo_l.png</filename>
+	 <filename>images/tlo_r.png</filename>
+	 <filename>images/tlo_w.png</filename>
+  </images>
+  <css>
+     <filename>css/template_css.css</filename>
+  </css>
+</install>

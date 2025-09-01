@@ -1,0 +1,13 @@
+/* IE ONLY CSS */
+
+div.module_menu div div div {
+	width: 100%;
+}
+
+div#footer {
+	width: 100%;
+}
+
+div#whitebox_b {
+	width: 100%;
+}

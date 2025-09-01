@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>wheat</name>
+	<version>1.1</version>
+	<creationDate>05/05/08</creationDate>
+	<author>Wayne Connor</author>
+	<authorEmail>wayne@dubbo.org</authorEmail>
+	<authorUrl>http://www.dubbo.org</authorUrl>
+	<copyright></copyright>
+	<license>GNU/GPL</license>
+	<description>WHEAT DESCRIPTION</description>
+	<files>
+		<filename>css/index.html</filename>
+		<filename>html/index.html</filename>
+		<filename>html/modules.php</filename>
+		<filename>html/pagination.php</filename>
+		<filename>component.php</filename>
+		<filename>images/index.html</filename>
+		<filename>js/sfhover.js</filename>
+		<filename>index.php</filename>
+		<filename>index.html</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	<images>
+		
+		<filename>images/arrow.png</filename>
+		<filename>images/login-bg.gif</filename>
+		<filename>images/mw_box_bl.png</filename>
+		<filename>images/mw_box_br.png</filename>
+		<filename>images/mw_box_tl.png</filename>
+		<filename>images/mw_box_tr.png</filename>
+		<filename>images/mw_content_b.png</filename>
+		<filename>images/mw_content_b_l.png</filename>
+		<filename>images/mw_content_b_r.png</filename>
+		<filename>images/mw_content_t.png</filename>
+		<filename>images/mw_content_t_l.png</filename>
+		<filename>images/mw_content_t_r.png</filename>
+		<filename>images/mw_footer_b.png</filename>
+		<filename>images/mw_footer_b_l.png</filename>
+		<filename>images/mw_footer_b_r.png</filename>
+		<filename>images/mw_footer_separator.png</filename>
+		<filename>images/mw_header.jpg</filename>
+		<filename>images/mw_header_b.png</filename>
+		<filename>images/mw_header_l_b.png</filename>
+		<filename>images/mw_header_r_b.png</filename>
+		<filename>images/mw_header_t.png</filename>
+		<filename>images/mw_header_t_l.png</filename>
+		<filename>images/mw_header_t_r.png</filename>
+		<filename>images/mw_joomla_logo.png</filename>
+		<filename>images/mw_line_grey.png</filename>
+		<filename>images/mw_menu_active_bg.png</filename>
+		<filename>images/mw_menu_cap_l.png</filename>
+		<filename>images/mw_menu_cap_r.png</filename>
+		<filename>images/mw_menu_normal_bg.png</filename>
+		<filename>images/mw_menu_separator.png</filename>
+		<filename>images/mw_readon.png</filename>
+		<filename>images/mw_readon_rtl.png</filename>
+		<filename>images/mw_shadow_l.png</filename>
+		<filename>images/mw_shadow_r.png</filename>
+		<filename>images/spacer.png</filename>
+		<filename>images/wheat.jpg</filename>
+		<filename>images/mw_submenu_active_bg.png</filename>
+		<filename>images/mw_menu_hover_bg.png</filename>
+		<filename>images/spacer.gif</filename>
+		<filename>template_thumbnail.png</filename>
+	</images>
+	<css>
+		<filename>css/ieonly.css</filename>
+		<filename>css/ie_hacks.css</filename>
+		<filename>css/template.css</filename>
+	</css>
+	<positions>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>user5</position>
+		<position>footer</position>
+		<position>debug</position>
+		<position>syndicate</position>
+	</positions>
+
+	<administration>
+    	<languages>
+			<language tag="en-GB">admin/en-GB.wheat.ini</language>
+		</languages>
+    </administration>
+
+	<params></params>
+</install>
+
+

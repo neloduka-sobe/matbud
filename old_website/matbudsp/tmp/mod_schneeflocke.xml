@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="4.5.1">
+	<name>Schneeflocke</name>
+	<author>Mario Boro</author>
+	<creationDate>12/2006</creationDate>
+	<copyright>(c) 2006-2007 Werbeagentur moremedia</copyright>
+	<license>http://www.mormedia.at/agb.pdf</license>
+	<authorEmail>boro@moremedia.at</authorEmail>
+	<authorUrl>www.moremedia.at</authorUrl>
+	<version>1.0</version>
+	<description>Schneeflocke, aus der Weihnachts Modul Kollektion</description>
+	<files>
+			<filename module="mod_schneeflocke">mod_schneeflocke.php</filename>
+			<filename module="mod_schneeflocke">mod_schneeflocke_js.php</filename>
+			<filename module="mod_schneeflocke">mod_schneeflocke.gif</filename>
+	</files>
+</mosinstall>

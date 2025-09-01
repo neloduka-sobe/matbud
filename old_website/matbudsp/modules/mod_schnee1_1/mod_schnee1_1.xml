@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5.0">
+    <name>Schnee 1.1</name>
+    <creationDate>30/11/2008</creationDate>
+    <author>Birdy0815 </author>
+    <copyright>This module is released under the GNU/GPL License</copyright>
+    <authorEmail>birdy08150815@yahoo.de</authorEmail>
+    <authorUrl>birdy0815.bi.ohost.de</authorUrl>
+    <version>1.2</version>
+    <description>Schneefall-Module 1.1 fuer Firefox, IE und Opera -----  <br />   
+	Modultitel deaktivieren, Anzahl Flocken und Dauer der Anzeige waehlen. ----- <br />       
+	Auswahl Flockenart bzw. Herbstblatt moeglich.-----  <br />      
+	als pos ist left also ueber menue zu waehlen(nicht sichtbar)-----  <br />       
+	nach Script von http://www.altan.hr/snow/index.html  -----  <br />   
+	birdy0815
+	</description>
+    <files>
+      <filename module="mod_schnee1_1">mod_schnee1_1.php</filename>
+    </files>
+    <images>
+      <filename>schnee_blanc.gif</filename>
+      <filename>schnee_bleu.gif</filename>
+      <filename>schnee_rose.gif</filename>
+      <filename>schnee_vert.gif</filename>
+      <filename>schnee_jaune.gif</filename>
+	  <filename>schnee_norm.gif</filename>
+	  <filename>blatt.gif</filename>
+  </images>
+  <params>
+		<param name="Flocken" type="text" description="Anzahl der Flocken mid. 1" default="10"></param>
+		<param name="Dauer" type="text" default="30" description="Anzeigedauer der Flocken 0 = unendlich" label ="Anzeigedauer in sec 0=unendlich"></param>
+		<param name="Art" type="list" default="schnee_norm.gif" label="Flockenart" description="Welche Flocke angezeigt wird">
+		<option value="schnee_norm.gif">Flocke normal</option>
+		<option value="schnee_blanc.gif">Flocke weiss</option>
+		<option value="schnee_bleu.gif">Flocke blaeulich</option>
+		<option value="schnee_rose.gif">Flocke rose</option>
+		<option value="schnee_vert.gif">Flocke gruen</option>
+		<option value="schnee_jaune.gif">Flocke gelb</option>
+		<option value="blatt.gif">Herbstblatt</option>
+		</param>
+  </params>
+  
+  
+  </install>

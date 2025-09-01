@@ -129,28 +129,28 @@
     "subtitle": "Kompleksowe rozwiązania z zakresu bezpieczeństwa przeciwpożarowego",
     "images": [
       {
-        "title": "Komercyjny System Sygnalizacji Pożaru",
-        "description": "Instalacja zaawansowanego adresowalnego systemu sygnalizacji pożaru w budynku biurowym."
+        "title": "Systemy Sygnalizacji Pożarowej SSP/SAP",
+        "description": "Instalacja zaawansowanych systemów sygnalizacji pożarowej w obiektach komercyjnych i przemysłowych."
       },
       {
-        "title": "System Oddymiania Naturalnego",
-        "description": "Kompletny projekt i instalacja systemu oddymiania naturalnego z klapami dymowymi."
+        "title": "Systemy Oddymiania Naturalnego",
+        "description": "Projektowanie i montaż klap dymowych oraz systemów oddymiania naturalnego."
       },
       {
-        "title": "System Oświetlenia Awaryjnego",
-        "description": "Instalacja oświetlenia awaryjnego i oznakowania dróg ewakuacyjnych w obiekcie handlowym."
+        "title": "Systemy Oddymiania Mechanicznego",
+        "description": "Instalacja wentylatorów oddymiających i mechanicznych systemów usuwania dymu."
       },
       {
-        "title": "Inspekcja Techniczna Systemów",
-        "description": "Certyfikowana inspekcja techniczna systemów przeciwpożarowych zgodnie z PKD 71.20.B."
+        "title": "Oświetlenie Awaryjne i Ewakuacyjne",
+        "description": "Kompleksowe systemy oświetlenia awaryjnego i znaków ewakuacyjnych."
       },
       {
-        "title": "System Ewakuacji Awaryjnej",
-        "description": "Instalacja oświetlenia awaryjnego i oznakowania dróg ewakuacyjnych w szkole."
+        "title": "Drzwi Przeciwpożarowe",
+        "description": "Montaż i serwis drzwi przeciwpożarowych oraz bram przeciwpożarowych."
       },
       {
-        "title": "Audyt Bezpieczeństwa Przeciwpożarowego",
-        "description": "Przeprowadzanie szczegółowego audytu bezpieczeństwa przeciwpożarowego w zakładzie produkcyjnym."
+        "title": "Systemy Dźwiękowe Ostrzegawcze DSO",
+        "description": "Instalacja i konserwacja dźwiękowych systemów ostrzegawczych."
       }
     ],
     "navigation": {
@@ -398,14 +398,14 @@
   "common": {
     "themeToggle": "Zmień Tryb",
     "menu": "Menu",
-    "companyName": "Matbud Systemy Ppoż. Sp. z o.o.",
+    "companyName": "Matbud - Systemy Ppoż Sp. z o.o.",
     "companyNameShort": "Matbud Systemy Ppoż.",
     "pageTitle": "Systemy Przeciwpożarowe",
-    "pageDescription": "Profesjonalne usługi instalacji, konserwacji i certyfikacji systemów bezpieczeństwa pożarowego dla budynków komercyjnych i mieszkalnych w całej Polsce.",
-    "defaultTitle": "Matbud Systemy Ppoż. Sp. z o.o. | Systemy Przeciwpożarowe",
-    "titleTemplate": "%s | Matbud Systemy Ppoż. Sp. z o.o.",
-    "defaultDescription": "Profesjonalne usługi instalacji, konserwacji i certyfikacji systemów bezpieczeństwa pożarowego dla budynków komercyjnych i mieszkalnych w całej Polsce.",
-    "siteName": "Matbud Systemy Ppoż. Sp. z o.o.",
+    "pageDescription": "Serwis, projektowanie, montaż systemów przeciwpożarowych. Profesjonalne usługi instalacji, konserwacji i certyfikacji systemów bezpieczeństwa pożarowego dla budynków komercyjnych i mieszkalnych w całej Polsce.",
+    "defaultTitle": "Matbud - Systemy Ppoż Sp. z o.o. | Systemy Przeciwpożarowe",
+    "titleTemplate": "%s | Matbud - Systemy Ppoż Sp. z o.o.",
+    "defaultDescription": "Serwis, projektowanie, montaż systemów przeciwpożarowych. Profesjonalne usługi instalacji, konserwacji i certyfikacji systemów bezpieczeństwa pożarowego dla budynków komercyjnych i mieszkalnych w całej Polsce.",
+    "siteName": "Matbud - Systemy Ppoż Sp. z o.o.",
     "keywords": [
       "systemy przeciwpożarowe",
       "ochrona przeciwpożarowa",
@@ -435,7 +435,16 @@
       "bezpieczeństwo pożarowe",
       "systemy ppoż Polska",
       "oddymianie cała Polska",
-      "serwis ppoż ogólnopolski"
+      "serwis ppoż ogólnopolski",
+      "serwis",
+      "projektowanie",
+      "montaż",
+      "DSO",
+      "SAP",
+      "dźwiękowe systemy ostrzegawcze",
+      "systemy alarmu pożarowego",
+      "przepompownie pożarowe",
+      "hydranty"
     ]
   },
   "careers": {
