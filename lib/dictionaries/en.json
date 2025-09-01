@@ -20,66 +20,40 @@
      "subtitle": "Comprehensive fire safety solutions for commercial and residential buildings",
      "services": [
       {
-       "title": "Fire Alarm Systems",
-       "description": "Early detection and warning systems",
+       "title": "In our service offer we have",
+       "description": "Professional service and maintenance services",
        "features": [
-        "Addressable fire alarm systems",
-        "Conventional fire alarm systems",
-        "Smoke and heat detectors",
-        "Manual call points"
+        "smoke dampers / smoke extraction windows",
+        "fire gates",
+        "fire doors",
+        "fire dampers",
+        "smoke curtains",
+        "smoke extraction fans",
+        "FAS (Fire Alarm System)",
+        "detectors, manual call points, sounders",
+        "fire extinguishers, internal and external hydrants"
        ]
       },
       {
-       "title": "Sprinkler Systems",
-       "description": "Automatic fire suppression",
+       "title": "Supply and installation",
+       "description": "Comprehensive project implementation",
        "features": [
-        "Wet pipe systems",
-        "Dry pipe systems",
-        "Pre-action systems",
-        "Deluge systems"
+        "smoke extraction systems",
+        "fire barriers",
+        "FAS"
        ]
       },
       {
-       "title": "Emergency Lighting",
-       "description": "Safe evacuation in emergencies",
+       "title": "Design services",
+       "description": "Professional consulting and documentation",
        "features": [
-        "Exit signs",
-        "Emergency lights",
-        "Backup power systems",
-        "Escape route marking"
-       ]
-      },
-      {
-       "title": "Fire Safety Inspections",
-       "description": "Regular checks and compliance",
-       "features": [
-        "Annual inspections",
-        "Compliance audits",
-        "Risk assessments",
-        "Safety recommendations"
-       ]
-      },
-      {
-       "title": "Maintenance Services",
-       "description": "Keeping your systems in optimal condition",
-       "features": [
-        "Preventive maintenance",
-        "Emergency repairs",
-        "System upgrades",
-        "24/7 Emergency service"
-       ]
-      },
-      {
-       "title": "Building Code Compliance",
-       "description": "Meeting legal requirements",
-       "features": [
-        "Code compliance",
-        "Documentation",
-        "Certification",
-        "Regulation updates"
+        "fire safety instructions",
+        "fire facility audits",
+        "fire protection system projects agreed with fire protection expert"
        ]
       }
-     ]
+     ],
+     "closingMessage": "We would be happy to establish cooperation and help you implement your fire protection projects."
     },
     "aboutUs": {
      "title": "About Us",
@@ -221,7 +195,11 @@
       "weekdays": "Monday - Friday",
       "saturday": "Saturday",
       "sunday": "Sunday",
-      "closed": "Emergency calls only"
+      "closed": "Emergency calls only",
+      "address": "Słocin 36F, 62-065 Grodzisk Wlkp., Poland",
+      "phone": "+48 61 448 10 28",
+      "email": "matbud@m-so.pl",
+      "hours": "8:00 - 16:00"
      },
      "form": {
       "title": "Send us a message",
@@ -253,7 +231,10 @@
      "allRightsReserved": "All rights reserved.",
      "privacyPolicy": "Privacy Policy",
      "termsOfService": "Terms of Service",
-     "companyLogoAlt": "Matbud Systemy Ppoż. Sp. z o.o."
+     "companyLogoAlt": "Matbud Systemy Ppoż. Sp. z o.o.",
+     "address": "Słocin 36F, 62-065 Grodzisk Wlkp., Poland",
+     "phone": "+48 61 448 10 28",
+     "email": "matbud@m-so.pl"
     },
     "blog": {
      "title": "Fire Safety Blog",

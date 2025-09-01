@@ -16,6 +16,10 @@ interface Dictionary {
     saturday: string;
     sunday: string;
     closed: string;
+    address: string;
+    phone: string;
+    email: string;
+    hours: string;
   };
   form: {
     title: string;
@@ -60,9 +64,7 @@ export default function Contact({ dictionary }: { dictionary: Dictionary }) {
                   <div>
                     <h4 className="font-medium">{dictionary.contactInfo.addressTitle}</h4>
                     <address className="not-italic text-muted-foreground">
-                      Słocin 36F
-                      <br />
-                      62-065 Grodzisk Wielkopolski
+                      {dictionary.contactInfo.address}
                     </address>
                   </div>
                 </div>
@@ -72,8 +74,8 @@ export default function Contact({ dictionary }: { dictionary: Dictionary }) {
                   <div>
                     <h4 className="font-medium">{dictionary.contactInfo.phoneTitle}</h4>
                     <p className="text-muted-foreground">
-                      <a href="tel:+48614481028" className="hover:text-primary transition-colors">
-                        +48 61 448 10 28
+                      <a href={`tel:${dictionary.contactInfo.phone}`} className="hover:text-primary transition-colors">
+                        {dictionary.contactInfo.phone}
                       </a>
                     </p>
                   </div>
@@ -84,8 +86,8 @@ export default function Contact({ dictionary }: { dictionary: Dictionary }) {
                   <div>
                     <h4 className="font-medium">{dictionary.contactInfo.emailTitle}</h4>
                     <p className="text-muted-foreground">
-                      <a href="mailto:matbud@m-so.pl" className="hover:text-primary transition-colors">
-                        matbud@m-so.pl
+                      <a href={`mailto:${dictionary.contactInfo.email}`} className="hover:text-primary transition-colors">
+                        {dictionary.contactInfo.email}
                       </a>
                     </p>
                   </div>
@@ -97,7 +99,7 @@ export default function Contact({ dictionary }: { dictionary: Dictionary }) {
                 <ul className="space-y-2 text-muted-foreground">
                   <li className="flex justify-between">
                     <span>{dictionary.contactInfo.weekdays}</span>
-                    <span>8:00 - 16:00</span>
+                    <span>{dictionary.contactInfo.hours}</span>
                   </li>
                   <li className="flex justify-between">
                     <span>{dictionary.contactInfo.saturday} - {dictionary.contactInfo.sunday}</span>

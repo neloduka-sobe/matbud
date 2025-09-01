@@ -20,73 +20,40 @@
     "subtitle": "Kompleksowe rozwiązania z zakresu bezpieczeństwa przeciwpożarowego dla budynków komercyjnych i mieszkalnych w całej Polsce",
     "services": [
       {
-        "title": "Systemy Sygnalizacji Pożaru (SSP/SAP)",
-        "description": "Zaawansowane systemy wczesnego wykrywania i ostrzegania",
+        "title": "W swojej ofercie serwisowej posiadamy",
+        "description": "Profesjonalne usługi serwisowe i konserwacyjne",
         "features": [
-          "Adresowalne systemy sygnalizacji pożaru z identyfikacją urządzeń",
-          "Konwencjonalne systemy sygnalizacji pożaru",
-          "Czujniki dymu (optyczne, termiczne, wielosensorowe)",
-          "Czujniki ciepła i ręczne ostrzegacze pożarowe (ROP)",
-          "Centrale sygnalizacji pożaru (CSP)",
-          "Systemy monitoringu i sterowania przeciwpożarowego"
+          "klapy dymowe / okna oddymiające",
+          "bramy ppoż.",
+          "drzwi ppoż.",
+          "klapy ppoż.",
+          "kurtyny dymowe",
+          "wentylatory oddymiające",
+          "SSP (System Sygnalizacji Pożaru)",
+          "czujki, przyciski ROP, sygnalizatory",
+          "gaśnice, hydranty wewnętrzne i zewnętrzne"
         ]
       },
       {
-        "title": "Systemy Oddymiania",
-        "description": "Naturalne i mechaniczne systemy zarządzania dymem",
+        "title": "Dostawa i montaż",
+        "description": "Kompleksowa realizacja projektów",
         "features": [
-          "Klapy dymowe/oddymiające i automatyczne okna oddymiające",
-          "Otwory wentylacji naturalnej i grawitacyjne usuwanie dymu",
-          "Wentylatory oddymiające i mechaniczne systemy usuwania dymu",
-          "Systemy nadciśnieniowe dla klatek schodowych",
-          "Systemy mieszane naturalno-mechaniczne"
+          "systemów oddymiania",
+          "grodzi ppoż.",
+          "SSP"
         ]
       },
       {
-        "title": "Oświetlenie Awaryjne i Systemy Ewakuacyjne",
-        "description": "Bezpieczna ewakuacja w sytuacjach awaryjnych",
+        "title": "Usługi projektowe",
+        "description": "Profesjonalne doradztwo i dokumentacja",
         "features": [
-          "Znaki ewakuacyjne z podświetleniem",
-          "Oprawy oświetlenia awaryjnego z zasilaniem bateryjnym",
-          "Oświetlenie dróg ewakuacyjnych i antypanikowe",
-          "Systemy zasilania awaryjnego",
-          "Oznakowanie tras ewakuacyjnych"
-        ]
-      },
-      {
-        "title": "Inspekcje Techniczne i Zgodność z Przepisami",
-        "description": "Certyfikowane badania techniczne i audyty zgodności",
-        "features": [
-          "Przeglądy okresowe systemów przeciwpożarowych",
-          "Badania i analizy techniczne (certyfikacja PKD 71.20.B)",
-          "Audyty zgodności z polskimi przepisami przeciwpożarowymi",
-          "Oceny ryzyka pożarowego",
-          "Weryfikacja zgodności z przepisami"
-        ]
-      },
-      {
-        "title": "Konserwacja i Serwis",
-        "description": "Utrzymywanie systemów w optymalnym stanie",
-        "features": [
-          "Konserwacja zapobiegawcza wszystkich systemów bezpieczeństwa",
-          "Naprawy awaryjne 24/7",
-          "Modernizacja i uaktualnienie systemów",
-          "Diagnostyka i lokalizacja usterek",
-          "Wymiana komponentów i testy wydajności"
-        ]
-      },
-      {
-        "title": "Usługi Zgodności z Kodeksem Budowlanym",
-        "description": "Spełnianie wymagań prawnych i certyfikacja",
-        "features": [
-          "Weryfikacja zgodności z przepisami bezpieczeństwa pożarowego",
-          "Przygotowanie dokumentacji technicznej",
-          "Wsparcie w uzyskiwaniu certyfikacji",
-          "Wdrażanie aktualizacji przepisów",
-          "Kontakt z organami i uzyskiwanie zatwierdzeń"
+          "instrukcję bezpieczeństwa pożarowego",
+          "audyty obiektów pożarowych",
+          "projekty systemów ppoż. uzgadniane z rzeczoznawcą ds. zabezpieczeń ppoż."
         ]
       }
-    ]
+    ],
+    "closingMessage": "Chętnie nawiążemy współpracę i pomożemy w realizacji Państwa projektów z zakresu bezpieczeństwa przeciwpożarowego."
   },
   "aboutUs": {
     "title": "O Nas",
@@ -229,7 +196,11 @@
       "weekdays": "Poniedziałek - Piątek",
       "saturday": "Sobota",
       "sunday": "Niedziela",
-      "closed": "Tylko w nagłych przypadkach"
+      "closed": "Tylko w nagłych przypadkach",
+      "address": "Słocin 36F, 62-065 Grodzisk Wlkp.",
+      "phone": "+48 61 448 10 28",
+      "email": "matbud@m-so.pl",
+      "hours": "8:00 - 16:00"
     },
     "form": {
       "title": "Wyślij nam wiadomość",
@@ -261,7 +232,10 @@
     "allRightsReserved": "Wszelkie prawa zastrzeżone.",
     "privacyPolicy": "Polityka prywatności",
     "termsOfService": "Warunki świadczenia usług",
-    "companyLogoAlt": "Matbud Systemy Ppoż. Sp. z o.o."
+    "companyLogoAlt": "Matbud Systemy Ppoż. Sp. z o.o.",
+    "address": "Słocin 36F, 62-065 Grodzisk Wlkp.",
+    "phone": "+48 61 448 10 28",
+    "email": "matbud@m-so.pl"
   },
   "blog": {
     "title": "Blog o Bezpieczeństwie Przeciwpożarowym",
@@ -398,7 +372,7 @@
   "common": {
     "themeToggle": "Zmień Tryb",
     "menu": "Menu",
-    "companyName": "Matbud - Systemy Ppoż Sp. z o.o.",
+    "companyName": "Matbud Systemy Ppoż. Sp. z o.o.",
     "companyNameShort": "Matbud Systemy Ppoż.",
     "pageTitle": "Systemy Przeciwpożarowe",
     "pageDescription": "Serwis, projektowanie, montaż systemów przeciwpożarowych. Profesjonalne usługi instalacji, konserwacji i certyfikacji systemów bezpieczeństwa pożarowego dla budynków komercyjnych i mieszkalnych w całej Polsce.",

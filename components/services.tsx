@@ -11,6 +11,7 @@ interface DictionaryType {
   title: string;
   subtitle: string;
   services: ServiceItem[];
+  closingMessage: string;
 }
 
 export default function Services({ dictionary }: { dictionary: DictionaryType }) {
@@ -48,6 +49,12 @@ export default function Services({ dictionary }: { dictionary: DictionaryType })
               </CardContent>
             </Card>
           ))}
+        </div>
+        
+        <div className="text-center mt-12">
+          <p className="text-lg text-muted-foreground italic max-w-3xl mx-auto">
+            {dictionary.closingMessage}
+          </p>
         </div>
       </div>
     </section>

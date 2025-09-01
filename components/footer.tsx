@@ -15,6 +15,9 @@ interface Dictionary {
     privacyPolicy: string
     termsOfService: string
     companyLogoAlt: string
+    address: string
+    phone: string
+    email: string
   }
   navigation: {
     services: string
@@ -117,17 +120,15 @@ export function Footer({
         <div>
           <h3 className="font-semibold text-lg mb-4">{dictionary.footer.contact}</h3>
           <address className="not-italic space-y-2 text-muted-foreground">
-            <p>Słocin 36F</p>
-            <p>62-065 Grodzisk Wielkopolski</p>
+            <p>{dictionary.footer.address}</p>
             <p className="mt-4">
-              <a href="tel:+11234567890" className="hover:text-primary transition-colors">
-                +48 61 448 10 28
-
+              <a href={`tel:${dictionary.footer.phone}`} className="hover:text-primary transition-colors">
+                {dictionary.footer.phone}
               </a>
             </p>
             <p>
-              <a href="mailto:matbud@m-so.pl" className="hover:text-primary transition-colors">
-                matbud@m-so.pl
+              <a href={`mailto:${dictionary.footer.email}`} className="hover:text-primary transition-colors">
+                {dictionary.footer.email}
               </a>
             </p>
           </address>
