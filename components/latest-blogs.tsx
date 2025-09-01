@@ -23,7 +23,7 @@ export default async function LatestBlogs({ locale, dictionary }: LatestBlogsPro
   const latestPosts = allPosts.slice(0, 3) // Get the 3 most recent posts
 
   return (
-    <section id="blog" className="py-16 md:py-24 bg-muted/50">
+    <section id="blog" className="py-16 md:py-24 bg-muted/30 border-t border-border">
       <div className="container">
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <div>
@@ -40,7 +40,7 @@ export default async function LatestBlogs({ locale, dictionary }: LatestBlogsPro
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {latestPosts.map((post) => (
-            <Card key={post.slug} className="overflow-hidden flex flex-col h-full hover:shadow-lg transition-shadow">
+            <Card key={post.slug} className="overflow-hidden flex flex-col h-full hover:shadow-lg transition-shadow border border-border">
               <div className="relative h-48 w-full">
                 <Image
                   src={post.coverImage || "/placeholder.svg?height=200&width=400"}

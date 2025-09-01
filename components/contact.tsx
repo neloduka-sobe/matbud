@@ -42,7 +42,7 @@ interface Dictionary {
 
 export default function Contact({ dictionary }: { dictionary: Dictionary }) {
   return (
-    <section id="contact" className="py-16 md:py-24 bg-muted/50">
+    <section id="contact" className="py-16 md:py-24 bg-background border-b border-border">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">{dictionary.title}</h2>
@@ -51,7 +51,7 @@ export default function Contact({ dictionary }: { dictionary: Dictionary }) {
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <div className="bg-card rounded-lg p-6 shadow-sm">
+            <div className="bg-card rounded-lg p-6 shadow-sm border border-border">
               <h3 className="text-2xl font-bold mb-6">{dictionary.contactInfo.title}</h3>
 
               <div className="space-y-6">
