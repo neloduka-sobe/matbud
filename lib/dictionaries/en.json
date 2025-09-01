@@ -3,7 +3,6 @@
      "services": "Services",
      "about": "About Us",
      "certificates": "Certificates",
-     "clients": "Clients",
      "blog": "Blog",
      "contact": "Contact",
      "gallery": "Gallery",
@@ -40,7 +39,13 @@
        "features": [
         "smoke extraction systems",
         "fire barriers",
-        "FAS"
+        "FAS (Fire Alarm System)",
+        "fire ventilation systems",
+        "emergency lighting",
+        "access control systems",
+        "hydrant installations",
+        "fire suppression systems",
+        "monitoring and supervision"
        ]
       },
       {
@@ -50,6 +55,17 @@
         "fire safety instructions",
         "fire facility audits",
         "fire protection system projects agreed with fire protection expert"
+       ]
+      },
+      {
+       "title": "Emergency lighting",
+       "description": "Comprehensive emergency and evacuation lighting systems",
+       "features": [
+        "evacuation lighting",
+        "standby lighting",
+        "anti-panic lighting",
+        "emergency power supply systems",
+        "emergency lighting maintenance and service"
        ]
       }
      ],

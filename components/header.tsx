@@ -13,7 +13,6 @@ interface Dictionary {
     services: string;
     about: string;
     certificates: string;
-    clients: string;
     blog: string;
     contact: string;
     gallery: string;
@@ -45,9 +44,6 @@ export function Header({ locale, dictionary }: { locale: string; dictionary: Dic
           </Link>
           <Link href={`/${locale}#certificates`} className="text-sm font-medium transition-colors hover:text-primary">
             {dictionary.navigation.certificates}
-          </Link>
-          <Link href={`/${locale}#clients`} className="text-sm font-medium transition-colors hover:text-primary">
-            {dictionary.navigation.clients}
           </Link>
           <Link href={`/${locale}/blog`} className="text-sm font-medium transition-colors hover:text-primary">
             {dictionary.navigation.blog}
@@ -85,9 +81,6 @@ export function Header({ locale, dictionary }: { locale: string; dictionary: Dic
                   className="text-lg font-medium transition-colors hover:text-primary"
                 >
                   {dictionary.navigation.certificates}
-                </Link>
-                <Link href={`/${locale}#clients`} className="text-lg font-medium transition-colors hover:text-primary">
-                  {dictionary.navigation.clients}
                 </Link>
                 <Link href={`/${locale}/blog`} className="text-lg font-medium transition-colors hover:text-primary">
                   {dictionary.navigation.blog}
