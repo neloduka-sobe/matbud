@@ -11,65 +11,98 @@
   },
   "hero": {
     "title": "Profesjonalne Systemy Bezpieczeństwa Przeciwpożarowego",
-    "subtitle": "Ochrona życia i mienia dzięki najnowocześniejszym systemom przeciwpożarowym, fachowej instalacji i niezawodnym usługom konserwacji.",
-    "primaryCta": "Uzyskaj wycenę",
+    "subtitle": "Ochrona życia i mienia dzięki najnowocześniejszym systemom detekcji, alarmów, oddymiania i oświetlenia awaryjnego. Zasięg ogólnopolski z certyfikowanymi uprawnieniami do badań technicznych.",
+    "primaryCta": "Uzyskaj bezpłatną wycenę",
     "secondaryCta": "Nasze usługi"
   },
   "services": {
     "title": "Nasze Usługi",
-    "subtitle": "Kompleksowe rozwiązania z zakresu bezpieczeństwa przeciwpożarowego dla budynków komercyjnych i mieszkalnych",
+    "subtitle": "Kompleksowe rozwiązania z zakresu bezpieczeństwa przeciwpożarowego dla budynków komercyjnych i mieszkalnych w całej Polsce",
     "services": [
       {
-        "title": "Systemy Sygnalizacji Pożaru",
-        "description": "Systemy wczesnego wykrywania i ostrzegania",
+        "title": "Systemy Sygnalizacji Pożaru (SSP/SAP)",
+        "description": "Zaawansowane systemy wczesnego wykrywania i ostrzegania",
         "features": [
-          "Adresowalne systemy sygnalizacji pożaru",
+          "Adresowalne systemy sygnalizacji pożaru z identyfikacją urządzeń",
           "Konwencjonalne systemy sygnalizacji pożaru",
-          "Czujniki dymu i ciepła",
-          "Ręczne ostrzegacze pożarowe"
+          "Czujniki dymu (optyczne, termiczne, wielosensorowe)",
+          "Czujniki ciepła i ręczne ostrzegacze pożarowe (ROP)",
+          "Centrale sygnalizacji pożaru (CSP)",
+          "Systemy monitoringu i sterowania przeciwpożarowego"
         ]
       },
       {
-        "title": "Systemy tryskaczowe",
-        "description": "Automatyczne tłumienie ognia",
-        "features": ["Systemy mokre", "Systemy suche", "Systemy pre-action", "Systemy zalewowe"]
+        "title": "Systemy Oddymiania",
+        "description": "Naturalne i mechaniczne systemy zarządzania dymem",
+        "features": [
+          "Klapy dymowe/oddymiające i automatyczne okna oddymiające",
+          "Otwory wentylacji naturalnej i grawitacyjne usuwanie dymu",
+          "Wentylatory oddymiające i mechaniczne systemy usuwania dymu",
+          "Systemy nadciśnieniowe dla klatek schodowych",
+          "Systemy mieszane naturalno-mechaniczne"
+        ]
       },
       {
-        "title": "Oświetlenie awaryjne",
+        "title": "Oświetlenie Awaryjne i Systemy Ewakuacyjne",
         "description": "Bezpieczna ewakuacja w sytuacjach awaryjnych",
-        "features": ["Znaki ewakuacyjne", "Oświetlenie awaryjne", "Systemy zasilania awaryjnego", "Oznakowanie dróg ewakuacyjnych"]
+        "features": [
+          "Znaki ewakuacyjne z podświetleniem",
+          "Oprawy oświetlenia awaryjnego z zasilaniem bateryjnym",
+          "Oświetlenie dróg ewakuacyjnych i antypanikowe",
+          "Systemy zasilania awaryjnego",
+          "Oznakowanie tras ewakuacyjnych"
+        ]
       },
       {
-        "title": "Inspekcje bezpieczeństwa przeciwpożarowego",
-        "description": "Regularne przeglądy i zgodność z przepisami",
-        "features": ["Inspekcje roczne", "Audyty zgodności", "Oceny ryzyka", "Zalecenia dotyczące bezpieczeństwa"]
+        "title": "Inspekcje Techniczne i Zgodność z Przepisami",
+        "description": "Certyfikowane badania techniczne i audyty zgodności",
+        "features": [
+          "Przeglądy okresowe systemów przeciwpożarowych",
+          "Badania i analizy techniczne (certyfikacja PKD 71.20.B)",
+          "Audyty zgodności z polskimi przepisami przeciwpożarowymi",
+          "Oceny ryzyka pożarowego",
+          "Weryfikacja zgodności z przepisami"
+        ]
       },
       {
-        "title": "Usługi konserwacyjne",
+        "title": "Konserwacja i Serwis",
         "description": "Utrzymywanie systemów w optymalnym stanie",
-        "features": ["Konserwacja zapobiegawcza", "Naprawy awaryjne", "Modernizacje systemów", "Serwis awaryjny 24/7"]
+        "features": [
+          "Konserwacja zapobiegawcza wszystkich systemów bezpieczeństwa",
+          "Naprawy awaryjne 24/7",
+          "Modernizacja i uaktualnienie systemów",
+          "Diagnostyka i lokalizacja usterek",
+          "Wymiana komponentów i testy wydajności"
+        ]
       },
       {
-        "title": "Zgodność budynku z przepisami",
-        "description": "Spełnianie wymagań prawnych",
-        "features": ["Zgodność z kodeksem", "Dokumentacja", "Certyfikacja", "Aktualizacje przepisów"]
+        "title": "Usługi Zgodności z Kodeksem Budowlanym",
+        "description": "Spełnianie wymagań prawnych i certyfikacja",
+        "features": [
+          "Weryfikacja zgodności z przepisami bezpieczeństwa pożarowego",
+          "Przygotowanie dokumentacji technicznej",
+          "Wsparcie w uzyskiwaniu certyfikacji",
+          "Wdrażanie aktualizacji przepisów",
+          "Kontakt z organami i uzyskiwanie zatwierdzeń"
+        ]
       }
     ]
   },
   "aboutUs": {
     "title": "O Nas",
-    "subtitle": "Ponad 25 lat doświadczenia w bezpieczeństwie przeciwpożarowym",
+    "subtitle": "Ponad 25 lat łącznego doświadczenia w bezpieczeństwie przeciwpożarowym z zasięgiem ogólnopolskim",
     "historyTitle": "Nasza Historia",
-    "historyContent": "Założona w 1998 roku firma Matbud Systemy Ppoż. sp. z o.o. z małej lokalnej firmy przekształciła się w wiodącego dostawcę rozwiązań z zakresu bezpieczeństwa przeciwpożarowego. Dzięki zaangażowaniu w doskonałość i satysfakcję klienta, zbudowaliśmy reputację firmy niezawodnej i posiadającej fachową wiedzę w branży.",
+    "historyContent": "Założona w 2008 roku firma Matbud Systemy Ppoż. sp. z o.o. z małej lokalnej firmy przekształciła się w wiodącego dostawcę rozwiązań z zakresu bezpieczeństwa przeciwpożarowego w całej Polsce. Dzięki zaangażowaniu w doskonałość i satysfakcję klienta, zbudowaliśmy reputację firmy niezawodnej i posiadającej fachową wiedzę w branży.",
     "missionTitle": "Nasza Misja",
-    "missionContent": "Naszą misją jest ochrona życia i mienia poprzez dostarczanie najwyższej jakości systemów i usług z zakresu bezpieczeństwa przeciwpożarowego. Dążymy do pozostawania na czele technologii bezpieczeństwa przeciwpożarowego i dostarczania rozwiązań spełniających unikalne potrzeby każdego klienta.",
+    "missionContent": "Naszą misją jest ochrona życia i mienia poprzez dostarczanie najwyższej jakości systemów detekcji, alarmów, oddymiania i oświetlenia awaryjnego. Dążymy do pozostawania na czele technologii bezpieczeństwa przeciwpożarowego i dostarczania rozwiązań spełniających unikalne potrzeby każdego klienta w całej Polsce.",
     "valuesTitle": "Nasze Wartości",
     "values": [
       "Bezpieczeństwo jako nasz priorytet",
       "Doskonałość w świadczeniu usług",
       "Uczciwość we wszystkich naszych działaniach",
       "Innowacyjność w rozwiązaniach bezpieczeństwa przeciwpożarowego",
-      "Zaangażowanie w satysfakcję klienta"
+      "Zaangażowanie w satysfakcję klienta",
+      "Zgodność z przepisami i certyfikacjami"
     ],
     "stats": [
       {
@@ -92,24 +125,24 @@
     "aboutImageAlt": "O Matbud Systemy Ppoż"
   },
   "gallery": {
-    "title": "Nasza Galeria Projektów",
-    "subtitle": "Zobacz nasze ostatnie instalacje i projekty z zakresu bezpieczeństwa przeciwpożarowego",
+    "title": "W Naszej Ofercie",
+    "subtitle": "Kompleksowe rozwiązania z zakresu bezpieczeństwa przeciwpożarowego",
     "images": [
       {
         "title": "Komercyjny System Sygnalizacji Pożaru",
         "description": "Instalacja zaawansowanego adresowalnego systemu sygnalizacji pożaru w budynku biurowym."
       },
       {
-        "title": "Instalacja Systemu Tryskaczowego",
-        "description": "Kompletny projekt i instalacja systemu tryskaczowego dla centrum handlowego."
+        "title": "System Oddymiania Naturalnego",
+        "description": "Kompletny projekt i instalacja systemu oddymiania naturalnego z klapami dymowymi."
       },
       {
-        "title": "Szkolenie z Bezpieczeństwa Przeciwpożarowego",
-        "description": "Przeprowadzanie kompleksowych szkoleń z zakresu bezpieczeństwa przeciwpożarowego dla pracowników firmy."
+        "title": "System Oświetlenia Awaryjnego",
+        "description": "Instalacja oświetlenia awaryjnego i oznakowania dróg ewakuacyjnych w obiekcie handlowym."
       },
       {
-        "title": "Inspekcja Gaśnic",
-        "description": "Regularna inspekcja i konserwacja gaśnic w hotelu."
+        "title": "Inspekcja Techniczna Systemów",
+        "description": "Certyfikowana inspekcja techniczna systemów przeciwpożarowych zgodnie z PKD 71.20.B."
       },
       {
         "title": "System Ewakuacji Awaryjnej",
@@ -129,12 +162,12 @@
     "title": "Nasze Certyfikaty",
     "subtitle": "Utrzymujemy najwyższe standardy branżowe i certyfikaty",
     "certificateNames": [
-      "Zarządzanie Jakością ISO 9001:2015",
-      "Certyfikowany Specjalista Ochrony Przeciwpożarowej NFPA",
-      "Systemy Sygnalizacji Pożaru z Certyfikatem UL",
-      "Systemy Ochrony Przeciwpożarowej Zatwierdzone przez FM",
-      "Technicy z Certyfikatem NICET",
-      "Certyfikat Bezpieczeństwa OSHA"
+      "Uprawnienia do badań technicznych PKD 71.20.B",
+      "Instalacje certyfikowane przez CNBOP",
+      "Zgodność z normami europejskimi PN-EN",
+      "Zgodność z przepisami MSWiA",
+      "Certyfikowany Specjalista Ochrony Przeciwpożarowej",
+      "Systemy Sygnalizacji Pożaru z Certyfikatem UL"
     ],
     "navigation": {
       "previous": "Poprzedni",
@@ -143,10 +176,10 @@
   },
   "clients": {
     "title": "Nasi Klienci",
-    "subtitle": "Zaufali nam klienci biznesowi i organizacje każdej wielkości",
+    "subtitle": "Zaufali nam klienci biznesowi i organizacje każdej wielkości w całej Polsce",
     "testimonials": [
       {
-        "quote": "Matbud Systemy Ppoż. sp. z o.o. zapewniło wyjątkową obsługę od wstępnej konsultacji do instalacji. Ich zespół był profesjonalny, kompetentny i sprawny.",
+        "quote": "Matbud Systemy Ppoż. sp. z o.o. zapewniło wyjątkową obsługę od wstępnej konsultacji do instalacji systemów oddymiania. Ich zespół był profesjonalny, kompetentny i sprawny.",
         "name": "Jan Kowalski",
         "position": "Manager Obiektu, ABC Corporation"
       },
@@ -186,7 +219,7 @@
   },
   "contact": {
     "title": "Skontaktuj się z nami",
-    "subtitle": "Skontaktuj się z naszym zespołem, aby uzyskać bezpłatną konsultację",
+    "subtitle": "Skontaktuj się z naszym zespołem, aby uzyskać bezpłatną konsultację - zasięg ogólnopolski",
     "contactInfo": {
       "title": "Nasze informacje",
       "addressTitle": "Adres",
@@ -221,7 +254,7 @@
     }
   },
   "footer": {
-    "description": "Matbud Systemy Ppoż. Sp. z o.o. dostarcza kompleksowe rozwiązania z zakresu bezpieczeństwa przeciwpożarowego dla budynków komercyjnych i mieszkalnych. Nasze usługi obejmują instalację, konserwację i certyfikację systemów sygnalizacji pożaru, tryskaczowych i innych.",
+    "description": "Matbud Systemy Ppoż. Sp. z o.o. dostarcza kompleksowe rozwiązania z zakresu bezpieczeństwa przeciwpożarowego dla budynków komercyjnych i mieszkalnych w całej Polsce. Nasze usługi obejmują instalację, konserwację i certyfikację systemów sygnalizacji pożaru, oddymiania i oświetlenia awaryjnego.",
     "quickLinks": "Szybkie linki",
     "locations": "Obszary działania",
     "contact": "Kontakt",
@@ -239,16 +272,16 @@
   },
   "cityPage": {
     "title": "Systemy bezpieczeństwa przeciwpożarowego {city}",
-    "intro": "Matbud Systemy Ppoż. sp. z o.o. świadczy profesjonalne usługi z zakresu bezpieczeństwa przeciwpożarowego {city} i okolicach.",
+    "intro": "Matbud Systemy Ppoż. sp. z o.o. świadczy profesjonalne usługi z zakresu bezpieczeństwa przeciwpożarowego {city} i okolicach. Zasięg ogólnopolski z lokalnym wsparciem.",
     "servicesTitle": "Nasze Usługi {city}",
     "servicesDescription": "Oferujemy kompleksowy zakres usług z zakresu bezpieczeństwa przeciwpożarowego dla firm i mieszkańców {city}:",
     "servicesList": [
-      "Instalacja i konserwacja systemów sygnalizacji pożaru",
-      "Projektowanie i instalacja systemów tryskaczowych",
-      "Rozwiązania oświetlenia awaryjnego",
-      "Inspekcje bezpieczeństwa przeciwpożarowego i audyty zgodności",
+      "Instalacja i konserwacja systemów sygnalizacji pożaru (SSP/SAP)",
+      "Systemy oddymiania naturalnego i mechanicznego",
+      "Rozwiązania oświetlenia awaryjnego i ewakuacyjnego",
+      "Inspekcje techniczne i audyty zgodności (PKD 71.20.B)",
       "Serwis awaryjny i naprawy 24/7",
-      "Szkolenia z bezpieczeństwa przeciwpożarowego dla Twojego personelu"
+      "Usługi zgodności z kodeksem budowlanym"
     ],
     "whyChooseTitle": "Dlaczego warto wybrać Matbud Systemy Ppoż. sp. z o.o. {city}",
     "whyChooseDescription": "Jako zaufany dostawca rozwiązań z zakresu bezpieczeństwa przeciwpożarowego {city}, łączymy lokalną wiedzę z doświadczeniem branżowym. Nasi certyfikowani technicy rozumieją specyficzne wymagania i przepisy obowiązujące w Twojej okolicy, zapewniając, że Twoje systemy bezpieczeństwa przeciwpożarowego są zgodne z przepisami i skuteczne.",
@@ -263,144 +296,8 @@
     "title": "Warunki Świadczenia Usług",
     "lastUpdated": "Ostatnia aktualizacja",
     "lastUpdatedDate": "15 grudnia 2024",
-    "introduction": "Niniejsze Warunki Świadczenia Usług regulują świadczenie usług przez Matbud Systemy Ppoż. Sp. z o.o. oraz określają prawa i obowiązki stron w związku z korzystaniem z naszych usług z zakresu bezpieczeństwa przeciwpożarowego.",
-    "sections": {
-      "definitions": {
-        "title": "Definicje",
-        "content": "W niniejszych Warunkach Świadczenia Usług:",
-        "items": [
-          "\"Firma\" oznacza Matbud Systemy Ppoż. Sp. z o.o.",
-          "\"Klient\" oznacza osobę fizyczną lub prawną korzystającą z usług Firmy",
-          "\"Usługi\" oznacza usługi z zakresu bezpieczeństwa przeciwpożarowego świadczone przez Firmę",
-          "\"Umowa\" oznacza umowę o świadczenie usług zawartą między Firmą a Klientem"
-        ]
-      },
-      "scope": {
-        "title": "Zakres usług",
-        "content": "Firma świadczy następujące usługi z zakresu bezpieczeństwa przeciwpożarowego:",
-        "items": [
-          "Projektowanie i instalacja systemów sygnalizacji pożaru",
-          "Instalacja i konserwacja systemów tryskaczowych",
-          "Montaż oświetlenia awaryjnego i znaków ewakuacyjnych",
-          "Inspekcje bezpieczeństwa przeciwpożarowego",
-          "Audyty zgodności z przepisami przeciwpożarowymi",
-          "Szkolenia z zakresu bezpieczeństwa przeciwpożarowego",
-          "Serwis awaryjny i naprawy systemów",
-          "Konserwacja zapobiegawcza urządzeń przeciwpożarowych"
-        ]
-      },
-      "obligations": {
-        "title": "Zobowiązania Firmy",
-        "content": "Firma zobowiązuje się do:",
-        "items": [
-          "Świadczenia usług zgodnie z obowiązującymi przepisami i normami",
-          "Wykorzystywania wysokiej jakości materiałów i urządzeń",
-          "Zapewnienia wykwalifikowanego personelu do realizacji zleceń",
-          "Przestrzegania terminów realizacji ustalonych z Klientem",
-          "Zapewnienia serwisu awaryjnego w uzgodnionych godzinach",
-          "Przechowywania dokumentacji technicznej i gwarancyjnej",
-          "Przeprowadzania regularnych szkoleń personelu"
-        ]
-      },
-      "clientObligations": {
-        "title": "Zobowiązania Klienta",
-        "content": "Klient zobowiązuje się do:",
-        "items": [
-          "Dostarczenia wszystkich niezbędnych informacji i dokumentacji",
-          "Zapewnienia dostępu do obiektu w uzgodnionych terminach",
-          "Przestrzegania zaleceń bezpieczeństwa przekazanych przez Firmę",
-          "Niezwłocznego zgłaszania awarii i problemów technicznych",
-          "Umożliwienia przeprowadzenia niezbędnych inspekcji i testów",
-          "Przechowywania dokumentacji technicznej w bezpiecznym miejscu",
-          "Przestrzegania harmonogramu konserwacji i przeglądów"
-        ]
-      },
-      "pricing": {
-        "title": "Cennik i płatności",
-        "content": "Zasady ustalania cen i płatności:",
-        "items": [
-          "Ceny usług są ustalane indywidualnie na podstawie zakresu prac",
-          "Firma wystawia faktury VAT zgodnie z obowiązującymi przepisami",
-          "Termin płatności wynosi 14 dni od daty wystawienia faktury",
-          "W przypadku opóźnienia w płatności naliczane są odsetki ustawowe",
-          "Koszty materiałów i urządzeń są rozliczane osobno",
-          "Ceny nie obejmują podatku VAT, który jest doliczany zgodnie z przepisami"
-        ]
-      },
-      "warranty": {
-        "title": "Gwarancja i odpowiedzialność",
-        "content": "Firma udziela gwarancji na świadczone usługi i urządzenia zgodnie z przepisami prawa. Gwarancja obejmuje:",
-        "items": [
-          "24-miesięczną gwarancję na urządzenia przeciwpożarowe",
-          "12-miesięczną gwarancję na prace instalacyjne",
-          "Bezpłatne usunięcie wad w okresie gwarancyjnym",
-          "Odpowiedzialność za szkody wyrządzone przez wady urządzeń",
-          "Ograniczenie odpowiedzialności do wartości umowy",
-          "Wyłączenie odpowiedzialności za szkody pośrednie"
-        ]
-      },
-      "safety": {
-        "title": "Bezpieczeństwo i zgodność",
-        "content": "Firma zapewnia, że wszystkie świadczone usługi są zgodne z:",
-        "items": [
-          "Przepisami prawa budowlanego",
-          "Normami bezpieczeństwa przeciwpożarowego",
-          "Wymaganiami technicznymi dla systemów przeciwpożarowych",
-          "Zaleceniami producentów urządzeń",
-          "Przepisami BHP obowiązującymi w obiekcie",
-          "Międzynarodowymi standardami bezpieczeństwa"
-        ]
-      },
-      "confidentiality": {
-        "title": "Poufność",
-        "content": "Firma zobowiązuje się do zachowania poufności informacji przekazanych przez Klienta, w tym:",
-        "items": [
-          "Danych technicznych obiektu",
-          "Informacji o systemach bezpieczeństwa",
-          "Danych kontaktowych i adresowych",
-          "Szczegółów realizowanych projektów",
-          "Informacji handlowych i biznesowych",
-          "Danych osobowych pracowników Klienta"
-        ]
-      },
-      "termination": {
-        "title": "Rozwiązanie umowy",
-        "content": "Umowa może zostać rozwiązana w następujących przypadkach:",
-        "items": [
-          "Za porozumieniem stron",
-          "W przypadku rażącego naruszenia warunków umowy",
-          "W przypadku niewypłacalności jednej ze stron",
-          "W przypadku siły wyższej uniemożliwiającej realizację umowy",
-          "Z zachowaniem 30-dniowego okresu wypowiedzenia",
-          "Z obowiązkiem rozliczenia wykonanych prac"
-        ]
-      },
-      "disputes": {
-        "title": "Rozstrzyganie sporów",
-        "content": "W przypadku sporów wynikających z realizacji umowy:",
-        "items": [
-          "Strony dążą do polubownego rozwiązania sporu",
-          "W przypadku braku porozumienia spór rozstrzyga sąd właściwy",
-          "Stosuje się prawo polskie",
-          "Językiem postępowania jest język polski",
-          "Strony mogą skorzystać z mediacji",
-          "Rozstrzygnięcia sądu są ostateczne"
-        ]
-      },
-      "contact": {
-        "title": "Kontakt w sprawie warunków świadczenia usług",
-        "content": "W przypadku pytań dotyczących niniejszych Warunków Świadczenia Usług, skontaktuj się z nami:",
-        "items": [
-          "E-mail: matbud@m-so.pl",
-          "Telefon: +48 61 448 10 28",
-          "Adres: Słocin 36F, 62-065 Grodzisk Wielkopolski"
-        ]
-      },
-      "changes": {
-        "title": "Zmiany warunków świadczenia usług",
-        "content": "Firma zastrzega sobie prawo do zmiany niniejszych Warunków Świadczenia Usług. O wszelkich zmianach Klienci będą informowani z wyprzedzeniem co najmniej 30 dni poprzez stronę internetową lub bezpośrednio."
-      }
-    }
+    "introduction": "Ta strona internetowa jest obecnie w trakcie budowy. Pełne warunki świadczenia usług będą dostępne po zakończeniu procesu tworzenia strony.",
+    "sections": {}
   },
   "privacyPolicy": {
     "title": "Polityka Prywatności",
@@ -504,28 +401,29 @@
     "companyName": "Matbud Systemy Ppoż. Sp. z o.o.",
     "companyNameShort": "Matbud Systemy Ppoż.",
     "pageTitle": "Systemy Przeciwpożarowe",
-    "pageDescription": "Profesjonalne usługi instalacji, konserwacji i certyfikacji systemów bezpieczeństwa pożarowego dla budynków komercyjnych i mieszkalnych.",
+    "pageDescription": "Profesjonalne usługi instalacji, konserwacji i certyfikacji systemów bezpieczeństwa pożarowego dla budynków komercyjnych i mieszkalnych w całej Polsce.",
     "defaultTitle": "Matbud Systemy Ppoż. Sp. z o.o. | Systemy Przeciwpożarowe",
     "titleTemplate": "%s | Matbud Systemy Ppoż. Sp. z o.o.",
-    "defaultDescription": "Profesjonalne usługi instalacji, konserwacji i certyfikacji systemów bezpieczeństwa pożarowego dla budynków komercyjnych i mieszkalnych.",
+    "defaultDescription": "Profesjonalne usługi instalacji, konserwacji i certyfikacji systemów bezpieczeństwa pożarowego dla budynków komercyjnych i mieszkalnych w całej Polsce.",
     "siteName": "Matbud Systemy Ppoż. Sp. z o.o.",
     "keywords": [
       "systemy przeciwpożarowe",
       "ochrona przeciwpożarowa",
       "instalacje ppoż",
       "zabezpieczenia przeciwpożarowe",
-      "systemy sygnalizacji pożarowej",
-      "systemy gaszenia pożarów",
+      "systemy sygnalizacji pożarowej SSP",
+      "systemy oddymiania",
       "projektowanie systemów ppoż",
       "konserwacja systemów ppoż",
       "audyt przeciwpożarowy",
       "czujki pożarowe",
-      "systemy oddymiania",
-      "hydranty przeciwpożarowe",
-      "centrale sygnalizacji pożarowej",
-      "systemy tryskaczowe",
-      "gaśnice",
-      "szkolenia ppoż",
+      "klapy dymowe oddymiające",
+      "oświetlenie awaryjne",
+      "centrale pożarowe CSP",
+      "wentylatory oddymiające",
+      "znaki ewakuacyjne",
+      "certyfikat CNBOP",
+      "badania techniczne PKD 71.20.B",
       "przepisy przeciwpożarowe",
       "instrukcja bezpieczeństwa pożarowego",
       "normy ppoż",
@@ -534,7 +432,10 @@
       "ochrona ppoż",
       "instalacje przeciwpożarowe",
       "przeglądy ppoż",
-      "bezpieczeństwo pożarowe"
+      "bezpieczeństwo pożarowe",
+      "systemy ppoż Polska",
+      "oddymianie cała Polska",
+      "serwis ppoż ogólnopolski"
     ]
   },
   "careers": {
