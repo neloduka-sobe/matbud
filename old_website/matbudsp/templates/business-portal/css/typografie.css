@@ -1,8 +1,0 @@
-/* typografie CSS */
-/* Beispiel: */
-/* <typo class="tips">hier kommt der Text rein - text goes here</p> */
-typo.info { color: #039; background: url(../images/information.png) no-repeat; padding-left: 25px }
-typo.tips { color: #f60; background: url(../images/lightbulb.png) no-repeat; padding-left: 25px }
-typo.error   { color: #c00; background: url(../images/error.png) no-repeat; padding-left: 25px }
-typo.accept  { color: #060; background: url(../images/icon_accept.gif) no-repeat; padding-left: 25px }
-typo.cancel { color: #c00; background: url(../images/cancel.png) no-repeat; padding-left: 25px }
