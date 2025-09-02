@@ -32,16 +32,16 @@ export default function Services({ dictionary }: { dictionary: DictionaryType })
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">{dictionary.subtitle}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
           {dictionary.services.map((service, index) => (
-            <Card key={index} className="border-2 border-muted hover:border-primary/50 transition-colors">
-              <CardHeader>
+            <Card key={index} className="border-2 border-muted hover:border-primary/50 transition-colors h-full flex flex-col">
+              <CardHeader className="flex-shrink-0">
                 <div className="mb-4">{serviceIcons[index].icon}</div>
-                <CardTitle>{service.title}</CardTitle>
-                <CardDescription>{service.description}</CardDescription>
+                <CardTitle className="text-lg">{service.title}</CardTitle>
+                <CardDescription className="text-sm">{service.description}</CardDescription>
               </CardHeader>
-              <CardContent>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <CardContent className="flex-1 flex flex-col">
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground text-sm flex-1">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex}>{feature}</li>
                   ))}
