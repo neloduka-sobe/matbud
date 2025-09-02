@@ -6,7 +6,6 @@
     "dev": "next dev --turbopack",
     "build": "next build --no-lint",
     "deploy": "node deploy.js",
-    "deploy-built": "node scripts/deploy-built.js",
     "start": "next start",
     "lint": "next lint"
   },
