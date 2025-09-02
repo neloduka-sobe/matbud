@@ -10,7 +10,7 @@
   },
   "hero": {
     "title": "Profesjonalne Systemy Bezpieczeństwa Przeciwpożarowego",
-    "subtitle": "Ochrona życia i mienia dzięki najnowocześniejszym systemom detekcji, alarmów, oddymiania i oświetlenia awaryjnego. Zasięg ogólnopolski z certyfikowanymi uprawnieniami do badań technicznych.",
+    "subtitle": "Ochrona życia i mienia dzięki najnowocześniejszym systemom detekcji, alarmów, oddymiania i oświetlenia awaryjnego.",
     "primaryCta": "Uzyskaj bezpłatną wycenę",
     "secondaryCta": "Nasze usługi"
   },
@@ -73,7 +73,7 @@
   },
   "aboutUs": {
     "title": "O Nas",
-    "subtitle": "Ponad 25 lat łącznego doświadczenia w bezpieczeństwie przeciwpożarowym z zasięgiem ogólnopolskim",
+    "subtitle": "Ponad 25 lat łącznego doświadczenia w bezpieczeństwie przeciwpożarowym",
     "historyTitle": "Nasza Historia",
     "historyContent": "Założona w 2008 roku firma Matbud Systemy Ppoż. sp. z o.o. z małej lokalnej firmy przekształciła się w wiodącego dostawcę rozwiązań z zakresu bezpieczeństwa przeciwpożarowego w całej Polsce. Dzięki zaangażowaniu w doskonałość i satysfakcję klienta, zbudowaliśmy reputację firmy niezawodnej i posiadającej fachową wiedzę w branży.",
     "missionTitle": "Nasza Misja",
@@ -202,7 +202,7 @@
   },
   "contact": {
     "title": "Skontaktuj się z nami",
-    "subtitle": "Skontaktuj się z naszym zespołem, aby uzyskać bezpłatną konsultację - zasięg ogólnopolski",
+    "subtitle": "Skontaktuj się z naszym zespołem, aby uzyskać bezpłatną konsultację",
     "contactInfo": {
       "title": "Nasze informacje",
       "addressTitle": "Adres",
@@ -262,7 +262,7 @@
   },
   "cityPage": {
     "title": "Systemy bezpieczeństwa przeciwpożarowego {city}",
-    "intro": "Matbud Systemy Ppoż. sp. z o.o. świadczy profesjonalne usługi z zakresu bezpieczeństwa przeciwpożarowego {city} i okolicach. Zasięg ogólnopolski z lokalnym wsparciem.",
+    "intro": "Matbud Systemy Ppoż. sp. z o.o. świadczy profesjonalne usługi z zakresu bezpieczeństwa przeciwpożarowego {city} i okolicach.",
     "servicesTitle": "Nasze Usługi {city}",
     "servicesDescription": "Oferujemy kompleksowy zakres usług z zakresu bezpieczeństwa przeciwpożarowego dla firm i mieszkańców {city}:",
     "servicesList": [
