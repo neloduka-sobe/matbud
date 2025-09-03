@@ -45,9 +45,9 @@ export function Header({ locale, dictionary }: { locale: string; dictionary: Dic
           <Link href={`/${locale}#certificates`} className="text-sm font-medium transition-colors hover:text-primary">
             {dictionary.navigation.certificates}
           </Link>
-          <Link href={`/${locale}/blog`} className="text-sm font-medium transition-colors hover:text-primary">
+          {/* <Link href={`/${locale}/blog`} className="text-sm font-medium transition-colors hover:text-primary">
             {dictionary.navigation.blog}
-          </Link>
+          </Link> */}
           <Link href={`/${locale}/careers`} className="text-sm font-medium transition-colors hover:text-primary">
             {dictionary.navigation.careers}
           </Link>
@@ -82,9 +82,9 @@ export function Header({ locale, dictionary }: { locale: string; dictionary: Dic
                 >
                   {dictionary.navigation.certificates}
                 </Link>
-                <Link href={`/${locale}/blog`} className="text-lg font-medium transition-colors hover:text-primary">
+                {/* <Link href={`/${locale}/blog`} className="text-lg font-medium transition-colors hover:text-primary">
                   {dictionary.navigation.blog}
-                </Link>
+                </Link> */}
                 <Link href={`/${locale}/careers`} className="text-lg font-medium transition-colors hover:text-primary">
                   {dictionary.navigation.careers}
                 </Link>

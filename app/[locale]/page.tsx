@@ -6,7 +6,7 @@ import AboutUs from "@/components/about-us"
 import Certificates from "@/components/certificates"
 // import Clients from "@/components/clients"
 import Gallery from "@/components/gallery"
-import LatestBlogs from "@/components/latest-blogs"
+// import LatestBlogs from "@/components/latest-blogs"
 import Contact from "@/components/contact"
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
@@ -40,7 +40,7 @@ export default async function Home({
       <Certificates dictionary={dict.certificates} />
       {/* <Clients dictionary={dict.clients} /> */}
       <Contact dictionary={dict.contact} />
-      <LatestBlogs locale={locale} dictionary={dict.latestBlogs} />
+      {/* <LatestBlogs locale={locale} dictionary={dict.latestBlogs} /> */}
     </>
   )
 }

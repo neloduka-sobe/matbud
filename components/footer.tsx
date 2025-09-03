@@ -83,11 +83,11 @@ export function Footer({
                 {dictionary.navigation.clients}
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href={`/${locale}/blog`} className="text-muted-foreground hover:text-primary transition-colors">
                 {dictionary.navigation.blog}
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href={`/${locale}/careers`} className="text-muted-foreground hover:text-primary transition-colors">
                 {dictionary.navigation.careers}
