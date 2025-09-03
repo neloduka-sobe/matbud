@@ -44,19 +44,20 @@ export async function generateMetadata({
   }
 }
 
-export async function generateStaticParams({
-  params,
-}: {
-  params: { locale: string }
-}) {
-  const paramsCopy = await Promise.resolve(params)
-  const locale = paramsCopy.locale
+export async function generateStaticParams() {
+  const locales = ["pl", "en"] // Available locales from i18n config
+  const allParams: { locale: string; slug: string }[] = []
   
-  const posts = await getAllPosts(locale)
+  for (const locale of locales) {
+    const posts = await getAllPosts(locale)
+    const localeParams = posts.map((post) => ({
+      locale,
+      slug: post.slug,
+    }))
+    allParams.push(...localeParams)
+  }
   
-  return posts.map((post) => ({
-    slug: post.slug,
-  }))
+  return allParams
 }
 
 export default async function PostPage({ 
