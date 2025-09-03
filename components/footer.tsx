@@ -141,18 +141,20 @@ export function Footer({
             &copy; {new Date().getFullYear()} {dictionary.common.companyName} {dictionary.footer.allRightsReserved}
           </p>
           <div className="flex gap-4">
-            <Link
-              href={`/${locale}/privacy-policy`}
+            <a
+              href="https://matbud.net/images/rodo.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               {dictionary.footer.privacyPolicy}
-            </Link>
-            <Link
+            </a>
+            {/* <Link
               href={`/${locale}/terms-of-service`}
               className="text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               {dictionary.footer.termsOfService}
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
