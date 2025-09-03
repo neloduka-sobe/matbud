@@ -17,17 +17,26 @@ interface JobPageProps {
   }
 }
 
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<Array<{ locale: string; jobId: string }>> {
   const jobs = await getJobs()
   const activeJobs = jobs.filter(job => job.isActive)
   
-  const params = []
+  const params: Array<{ locale: string; jobId: string }> = []
   
+  // Always generate at least one param for each locale to satisfy Next.js export requirements
   for (const locale of i18n.locales) {
-    for (const job of activeJobs) {
+    if (activeJobs.length > 0) {
+      for (const job of activeJobs) {
+        params.push({
+          locale,
+          jobId: job.id,
+        })
+      }
+    } else {
+      // Add a placeholder param when no jobs exist
       params.push({
         locale,
-        jobId: job.id,
+        jobId: 'no-jobs',
       })
     }
   }
@@ -65,6 +74,12 @@ export default async function JobPage({
   const jobId = paramsCopy.jobId
   
   const dict = await getDictionary(locale)
+  
+  // Handle the case when no jobs exist
+  if (jobId === 'no-jobs') {
+    notFound()
+  }
+  
   const job = await getJobById(jobId)
 
   if (!job) {
