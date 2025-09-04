@@ -32,14 +32,14 @@ export default function Gallery({ dictionary }: { dictionary: DictionaryType }) 
       description: dictionary.images[0].description,
     },
     {
-      src: "/matbud/gallery/fire-system-2.jpg",
-      alt: "Sprinkler System",
+      src: "/matbud/gallery/smokedamper.jpeg",
+      alt: "Natural Smoke Extraction Systems",
       title: dictionary.images[1].title,
       description: dictionary.images[1].description,
     },
     {
-      src: "/matbud/gallery/fire-system-3.jpg",
-      alt: "Fire Safety Training",
+      src: "/matbud/gallery/smokedetector.jpeg",
+      alt: "Mechanical Smoke Extraction Systems",
       title: dictionary.images[2].title,
       description: dictionary.images[2].description,
     },
