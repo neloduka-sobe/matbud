@@ -28,13 +28,14 @@ export default function AboutUs({ dictionary }: { dictionary: Dictionary }) {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">{dictionary.subtitle}</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="relative h-[400px]">
+        <div className="grid md:grid-cols-2 gap-12 items-stretch">
+          <div className="relative min-h-[500px] md:min-h-[600px]">
             <Image
-              src="/placeholder.svg?height=400&width=600"
+              src="/matbud/gallery/ONas.jpeg"
               alt={dictionary.aboutImageAlt}
               fill
               className="object-cover rounded-lg"
+              style={{ objectPosition: '66% center' }}
             />
           </div>
 
