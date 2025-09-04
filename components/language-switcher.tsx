@@ -17,12 +17,12 @@ export function LanguageSwitcher({ locale }: { locale: string }) {
 
   const languageNames: Record<string, string> = {
     pl: "🇵🇱 Polski",
-    en: "🇬🇧 English",
-    es: "🇪🇸 Español",
-    de: "🇩🇪 Deutsch",
-    ru: "🇷🇺 Русский",
-    cz: "🇨🇿 Česky",
-    sk: "🇸🇰 Slovenská",
+    // en: "🇬🇧 English",
+    // es: "🇪🇸 Español",
+    //de: "🇩🇪 Deutsch",
+    //ru: "🇷🇺 Русский",
+    //cz: "🇨🇿 Česky",
+    //sk: "🇸🇰 Slovenská",
   }
 
   return (
