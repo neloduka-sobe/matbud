@@ -100,17 +100,19 @@ export default async function CityPage({ params }: PageProps) {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary-dark to-primary dark:from-black/70 dark:via-black/50 dark:to-black/30 py-16 md:py-24 text-white">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl font-bold tracking-tight mb-6">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            <div className="space-y-6">
+              <h1 className="text-4xl font-bold tracking-tight">
                 {trimWords(replaceCity(dict.cityPage?.title), 7)}
               </h1>
-              <p className="text-xl mb-8">{trimWords(replaceCity(dict.cityPage?.intro), 20)}</p>
-              <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
-                <Link href="#contact-form">
-                  {replaceCity(dict.cityPage?.ctaButton)}
-                </Link>
-              </Button>
+              <p className="text-xl">{trimWords(replaceCity(dict.cityPage?.intro), 20)}</p>
+              <div className="pt-4">
+                <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
+                  <Link href="#contact-form">
+                    {replaceCity(dict.cityPage?.ctaButton)}
+                  </Link>
+                </Button>
+              </div>
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
               <Image
